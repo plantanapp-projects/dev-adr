@@ -156,11 +156,6 @@
       "GlobalId": "f32a29b3-db76-4d23-bbd8-4ef2079c3fe4",
       "TabPath": "//NotificariCetatean",
       "ContentPath": "Pages/NotificariCetatean/tab.xml"
-    },
-    {
-      "GlobalId": "a266678f-22ca-4297-a6bf-d479e34a5833",
-      "TabPath": "//testdontcry",
-      "ContentPath": "Pages/testdontcry/tab.xml"
     }
   ],
   "Modules": [
@@ -936,6 +931,10 @@
     {
       "GlobalId": "30c73246-2227-49d7-8710-cf0aac3e02eb",
       "Name": "Cetatean"
+    },
+    {
+      "GlobalId": "00000000-0000-0000-0000-000000000000",
+      "Name": "Notifications"
     }
   ],
   "Tokens": [
@@ -1111,12 +1110,6 @@
       "NamespaceGlobalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
       "DefinitionPath": "Tokens/Notifications/RenderUnreadNotificationsIcon.json",
       "SourcePath": "Tokens/Notifications/RenderUnreadNotificationsIcon.cshtml"
-    },
-    {
-      "GlobalId": "4883ed04-fad4-4de0-8a0f-b15e6e9491a5",
-      "NamespaceGlobalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
-      "DefinitionPath": "Tokens/Notifications/SimpleRzR.json",
-      "SourcePath": "Tokens/Notifications/SimpleRzR.cshtml"
     },
     {
       "GlobalId": "08a0498b-3a5b-4f8c-80d1-9bb4be406f3f",
