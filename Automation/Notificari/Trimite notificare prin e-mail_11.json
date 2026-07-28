@@ -1,0 +1,54 @@
+{
+  "ApiId": "55454ba4855ce598fb9298",
+  "ContextPortal": 0,
+  "IsDebug": false,
+  "IsEnabled": true,
+  "Name": "Trimite notificare prin e-mail",
+  "Triggers": [
+    {
+      "IsEnabled": true,
+      "TriggerDefId": "Daily",
+      "Parameters": {
+        "Time": "12:00 AM",
+        "SkipIfRunning": "",
+        "OnMissfire": {
+          "Value": "FireNow",
+          "IsExpression": false,
+          "Expression": null
+        },
+        "DaysOfWeek": {
+          "MON": true,
+          "TUE": true,
+          "WED": true,
+          "THU": true,
+          "FRI": true,
+          "SAT": true,
+          "SUN": true
+        }
+      }
+    }
+  ],
+  "ActionStack": [
+    {
+      "ActionType": "LoadUser",
+      "OrderIndex": 0,
+      "IsDisabled": false,
+      "Parameters": {}
+    },
+    {
+      "ActionType": "LoadEntitiesFromSql",
+      "Description": "Lista de cetateni de notificat",
+      "OrderIndex": 1,
+      "IsDisabled": false,
+      "Parameters": {}
+    },
+    {
+      "ActionType": "ExecuteActionsOnEntityList",
+      "Description": "Pentru fiecare cetatean de notificat",
+      "OrderIndex": 2,
+      "IsDisabled": false,
+      "Parameters": {}
+    }
+  ],
+  "OnErrorActionStack": []
+}

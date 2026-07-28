@@ -1,0 +1,1425 @@
+{
+  "Settings": {
+    "LogoPath": "Static/logo.png",
+    "AppDefinitionPath": "Static/app.json"
+  },
+  "Pages": [
+    {
+      "GlobalId": "7fe88160-5e6c-4c67-9e28-1f4df16334ed",
+      "TabPath": "//Home",
+      "ContentPath": "Pages/Home/tab.xml"
+    },
+    {
+      "GlobalId": "839c6fb7-6d6e-4d22-a15c-292d1896a8a2",
+      "TabPath": "//SearchResults",
+      "ContentPath": "Pages/SearchResults/tab.xml"
+    },
+    {
+      "GlobalId": "750c3de0-4d65-4bbe-876b-a7e2f0ca5697",
+      "TabPath": "//404ErrorPage",
+      "ContentPath": "Pages/404ErrorPage/tab.xml"
+    },
+    {
+      "GlobalId": "b32809df-86c4-4612-ab48-e497e524e873",
+      "TabPath": "//UserProfile",
+      "ContentPath": "Pages/UserProfile/tab.xml"
+    },
+    {
+      "GlobalId": "0f825d27-3f38-4469-b2b2-5f1dc9532d8a",
+      "TabPath": "//pap-login",
+      "ContentPath": "Pages/pap-login/tab.xml"
+    },
+    {
+      "GlobalId": "a252b8cb-e853-4697-81eb-314cd93b004f",
+      "TabPath": "//reset-password",
+      "ContentPath": "Pages/reset-password/tab.xml"
+    },
+    {
+      "GlobalId": "db912cfe-434b-4df1-b9ee-b972d8a7bca5",
+      "TabPath": "//forgot-password",
+      "ContentPath": "Pages/forgot-password/tab.xml"
+    },
+    {
+      "GlobalId": "c7d1369a-4964-402b-8631-c18485979296",
+      "TabPath": "//registration",
+      "ContentPath": "Pages/registration/tab.xml"
+    },
+    {
+      "GlobalId": "25b26964-168f-48bb-9ba2-4efb18d935c9",
+      "ParentPageGlobalId": "82bf4ea6-55c5-4ae6-bef3-4e39182d98ed",
+      "TabPath": "//Nomenclatoare//Nomenclatoareactiuni//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "82bf4ea6-55c5-4ae6-bef3-4e39182d98ed",
+      "ParentPageGlobalId": "1085f351-e508-4565-9a26-19b0f74591e4",
+      "TabPath": "//Nomenclatoare//Nomenclatoareactiuni",
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/tab.xml"
+    },
+    {
+      "GlobalId": "2b7db8c5-0c0f-4ea8-9515-1c9d01a37e6e",
+      "ParentPageGlobalId": "9f698d98-a83a-4fc5-8c32-6763ade8af66",
+      "TabPath": "//Nomenclatoare//NomenclatoareTipurideDate//Detail",
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "9f698d98-a83a-4fc5-8c32-6763ade8af66",
+      "ParentPageGlobalId": "1085f351-e508-4565-9a26-19b0f74591e4",
+      "TabPath": "//Nomenclatoare//NomenclatoareTipurideDate",
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/tab.xml"
+    },
+    {
+      "GlobalId": "a8e0e22b-8f66-4ca7-8f7d-cfaa81a40dcd",
+      "ParentPageGlobalId": "96e36acc-db13-4444-9ce7-4a9db65e6d4f",
+      "TabPath": "//Nomenclatoare//Nomenclatoareutilizatori//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "8bfc8466-03d7-45cf-943e-cc7983e6a016",
+      "ParentPageGlobalId": "b12206f8-7c81-4ea6-b254-c48684987e80",
+      "TabPath": "//Nomenclatoare//Nomenclatoareutilizatori//Statusuri//Detail",
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "b12206f8-7c81-4ea6-b254-c48684987e80",
+      "ParentPageGlobalId": "96e36acc-db13-4444-9ce7-4a9db65e6d4f",
+      "TabPath": "//Nomenclatoare//Nomenclatoareutilizatori//Statusuri",
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/tab.xml"
+    },
+    {
+      "GlobalId": "96e36acc-db13-4444-9ce7-4a9db65e6d4f",
+      "ParentPageGlobalId": "1085f351-e508-4565-9a26-19b0f74591e4",
+      "TabPath": "//Nomenclatoare//Nomenclatoareutilizatori",
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/tab.xml"
+    },
+    {
+      "GlobalId": "be9effff-fb28-48c6-9aa5-15e7c46a89a3",
+      "ParentPageGlobalId": "b868de55-42ad-4f94-9e5d-68c2c9ce6d95",
+      "TabPath": "//Nomenclatoare//NomenclatoareAplicatiiSursa//Detail",
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "b868de55-42ad-4f94-9e5d-68c2c9ce6d95",
+      "ParentPageGlobalId": "1085f351-e508-4565-9a26-19b0f74591e4",
+      "TabPath": "//Nomenclatoare//NomenclatoareAplicatiiSursa",
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/tab.xml"
+    },
+    {
+      "GlobalId": "1085f351-e508-4565-9a26-19b0f74591e4",
+      "TabPath": "//Nomenclatoare",
+      "ContentPath": "Pages/Nomenclatoare/tab.xml"
+    },
+    {
+      "GlobalId": "2d0bbbb9-3cf2-4737-98e4-9740df1ea0fd",
+      "ParentPageGlobalId": "a287e8b8-2238-4f36-9590-64ceabfa0324",
+      "TabPath": "//Cetateni//Detail",
+      "ContentPath": "Pages/Cetateni/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "a287e8b8-2238-4f36-9590-64ceabfa0324",
+      "TabPath": "//Cetateni",
+      "ContentPath": "Pages/Cetateni/tab.xml"
+    },
+    {
+      "GlobalId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "TabPath": "//Contulmeu",
+      "ContentPath": "Pages/Contulmeu/tab.xml"
+    },
+    {
+      "GlobalId": "10363e34-47d3-498a-8476-19a03547f46f",
+      "TabPath": "//OIDCConfig",
+      "ContentPath": "Pages/OIDCConfig/tab.xml"
+    },
+    {
+      "GlobalId": "6e86f460-6905-487a-865b-e06960cb01b0",
+      "ParentPageGlobalId": "cdd6cec3-f5c2-46cc-8b3d-54c625915404",
+      "TabPath": "//Notificari//Detail",
+      "ContentPath": "Pages/Notificari/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "cdd6cec3-f5c2-46cc-8b3d-54c625915404",
+      "TabPath": "//Notificari",
+      "ContentPath": "Pages/Notificari/tab.xml"
+    },
+    {
+      "GlobalId": "107e4eae-f430-4794-bf56-262a84d79e28",
+      "ParentPageGlobalId": "c9425322-0963-44d2-a36f-7f4e7fe26049",
+      "TabPath": "//Categoriitipuridedate//Detail",
+      "ContentPath": "Pages/Categoriitipuridedate/Detail/tab.xml"
+    },
+    {
+      "GlobalId": "c9425322-0963-44d2-a36f-7f4e7fe26049",
+      "TabPath": "//Categoriitipuridedate",
+      "ContentPath": "Pages/Categoriitipuridedate/tab.xml"
+    },
+    {
+      "GlobalId": "f32a29b3-db76-4d23-bbd8-4ef2079c3fe4",
+      "TabPath": "//NotificariCetatean",
+      "ContentPath": "Pages/NotificariCetatean/tab.xml"
+    },
+    {
+      "GlobalId": "a266678f-22ca-4297-a6bf-d479e34a5833",
+      "TabPath": "//testdontcry",
+      "ContentPath": "Pages/testdontcry/tab.xml"
+    }
+  ],
+  "Modules": [
+    {
+      "GlobalId": "4aceb58a-a39a-4ada-b194-52b787b64ad3",
+      "ParentPageId": "7fe88160-5e6c-4c67-9e28-1f4df16334ed",
+      "ModuleTitle": "Getting Started with Plant an App",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Home/Getting Started with Plant an App.xml"
+    },
+    {
+      "GlobalId": "9334b349-cdb0-475c-9152-b6e288f4ffc1",
+      "ParentPageId": "839c6fb7-6d6e-4d22-a15c-292d1896a8a2",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/SearchResults/Header.xml"
+    },
+    {
+      "GlobalId": "a172217a-78ec-4a22-bf79-0625cca960b5",
+      "ParentPageId": "839c6fb7-6d6e-4d22-a15c-292d1896a8a2",
+      "ModuleTitle": "avt.SearchBoost.Results",
+      "FriendlyName": "avt.SearchBoost.Results",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/SearchResults/Untitled avt.SearchBoost.Results 3 in ContentPane.xml"
+    },
+    {
+      "GlobalId": "b99cf113-7592-4b14-b132-4448ccf9d04e",
+      "ParentPageId": "750c3de0-4d65-4bbe-876b-a7e2f0ca5697",
+      "ModuleTitle": "Page cannot be found",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/404ErrorPage/Page cannot be found.xml"
+    },
+    {
+      "GlobalId": "f0c75617-254e-4e63-8955-d7e9c1954aa0",
+      "ParentPageId": "b32809df-86c4-4612-ab48-e497e524e873",
+      "ModuleTitle": "My Profile",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/UserProfile/My Profile.xml"
+    },
+    {
+      "GlobalId": "a1ca0e8e-0c71-4279-abc7-3701750f01f6",
+      "ParentPageId": "0f825d27-3f38-4469-b2b2-5f1dc9532d8a",
+      "ModuleTitle": "Login Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPaneCenter",
+      "Order": 1,
+      "ContentPath": "Pages/pap-login/Login Form.xml"
+    },
+    {
+      "GlobalId": "fef3c238-f06d-4cbc-a3ed-86f46c0135ca",
+      "ParentPageId": "0f825d27-3f38-4469-b2b2-5f1dc9532d8a",
+      "ModuleTitle": "Account Login",
+      "FriendlyName": "Account Login",
+      "PaneName": "DnnHiddenLogin",
+      "Order": 1,
+      "ContentPath": "Pages/pap-login/Untitled Account Login 1 in DnnHiddenLogin.xml"
+    },
+    {
+      "GlobalId": "e5f50f35-937d-46c9-ba99-d2b7e9d9957b",
+      "ParentPageId": "a252b8cb-e853-4697-81eb-314cd93b004f",
+      "ModuleTitle": "Reset Password",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPaneCenter",
+      "Order": 1,
+      "ContentPath": "Pages/reset-password/Reset Password.xml"
+    },
+    {
+      "GlobalId": "4f71e341-bff8-4b51-b626-f87141122063",
+      "ParentPageId": "db912cfe-434b-4df1-b9ee-b972d8a7bca5",
+      "ModuleTitle": "Forgot Password",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPaneCenter",
+      "Order": 1,
+      "ContentPath": "Pages/forgot-password/Forgot Password.xml"
+    },
+    {
+      "GlobalId": "469c1f04-e39b-4402-9fa4-e1227e038bc4",
+      "ParentPageId": "c7d1369a-4964-402b-8631-c18485979296",
+      "ModuleTitle": "Register Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/registration/Register Form.xml"
+    },
+    {
+      "GlobalId": "8a250dc4-03d1-4115-8965-abe815d425b4",
+      "ParentPageId": "1085f351-e508-4565-9a26-19b0f74591e4",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Enter Title.xml"
+    },
+    {
+      "GlobalId": "7d3b2282-f8bc-42a1-8950-a6abce107852",
+      "ParentPageId": "a287e8b8-2238-4f36-9590-64ceabfa0324",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Cetateni/Header.xml"
+    },
+    {
+      "GlobalId": "68fe0a3c-e2a5-48a2-8671-be1762067323",
+      "ParentPageId": "a287e8b8-2238-4f36-9590-64ceabfa0324",
+      "ModuleTitle": "Cetateni Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Cetateni/Cetateni Listing.xml"
+    },
+    {
+      "GlobalId": "53cc226b-9bd6-4126-8056-b6260ff30e23",
+      "ParentPageId": "a287e8b8-2238-4f36-9590-64ceabfa0324",
+      "ModuleTitle": "Cetatean Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Cetateni/Cetatean Form.xml"
+    },
+    {
+      "GlobalId": "a759dbe1-c212-4bcc-821b-e964444ec243",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Contulmeu/Enter Title.xml"
+    },
+    {
+      "GlobalId": "40aad69f-baf4-457c-bff7-d474fbf729a6",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Statistici",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "HeaderPane",
+      "Order": 1,
+      "ContentPath": "Pages/Contulmeu/Statistici.xml"
+    },
+    {
+      "GlobalId": "33b3f494-ccc9-47dc-843c-03b10c620c32",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Utilizatori Suplimentari",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "HeaderPane",
+      "Order": 3,
+      "ContentPath": "Pages/Contulmeu/Utilizatori Suplimentari.xml"
+    },
+    {
+      "GlobalId": "47abfef8-f01a-4436-aea2-3e03d2f6324f",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "avt.TabsPro",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "HeaderPane",
+      "Order": 5,
+      "ContentPath": "Pages/Contulmeu/Untitled avt.TabsPro 5 in HeaderPane.xml"
+    },
+    {
+      "GlobalId": "fa02ab7c-f81e-47dd-b690-5c2ea61ea544",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Grafice Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P1_25_2",
+      "Order": 1,
+      "ContentPath": "Pages/Contulmeu/Grafice Form.xml"
+    },
+    {
+      "GlobalId": "88e4d95a-d3e7-4cbd-856a-e0c2ccb5d9e9",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Filtre Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P1_25_2",
+      "Order": 3,
+      "ContentPath": "Pages/Contulmeu/Filtre Form.xml"
+    },
+    {
+      "GlobalId": "a4d38c36-6a96-46d5-aba3-410ee5e00de1",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Preferinte",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P1_75_1",
+      "Order": 1,
+      "ContentPath": "Pages/Contulmeu/Preferinte.xml"
+    },
+    {
+      "GlobalId": "845bd340-9b06-4318-8c7f-39788b3d9f00",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Distribu\u021Bia acces\u0103rilor per institu\u021Bie",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "P4_50_2",
+      "Order": 1,
+      "ContentPath": "Pages/Contulmeu/Distribu\u021Bia acces\u0103rilor per institu\u021Bie.xml"
+    },
+    {
+      "GlobalId": "b4e8541a-5b5b-4555-9364-8687dad6f290",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Acces\u0103ri per institu\u021Bie",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "P4_50_2",
+      "Order": 3,
+      "ContentPath": "Pages/Contulmeu/Acces\u0103ri per institu\u021Bie.xml"
+    },
+    {
+      "GlobalId": "ebc5f1c3-e9c8-47f0-85fb-c1ef0f1e03d5",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Jurnal al interac\u021Biunilor cu datele",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "P4_50_2",
+      "Order": 5,
+      "ContentPath": "Pages/Contulmeu/Jurnal al interac\u021Biunilor cu datele.xml"
+    },
+    {
+      "GlobalId": "4cd25793-7d45-4a45-9ba4-13ac2e0cdc27",
+      "ParentPageId": "10363e34-47d3-498a-8476-19a03547f46f",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/OIDCConfig/Enter Title.xml"
+    },
+    {
+      "GlobalId": "7512398e-8ece-4761-b9d2-cddaeaf1b0b7",
+      "ParentPageId": "10363e34-47d3-498a-8476-19a03547f46f",
+      "ModuleTitle": "DnnSharp.OpenIdConnect.Settings",
+      "FriendlyName": "DnnSharp.OpenIdConnect.Settings",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/OIDCConfig/Untitled DnnSharp.OpenIdConnect.Settings 3 in ContentPane.xml"
+    },
+    {
+      "GlobalId": "db061bd3-31e9-497a-98d4-0e2f95442977",
+      "ParentPageId": "cdd6cec3-f5c2-46cc-8b3d-54c625915404",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Notificari/Header.xml"
+    },
+    {
+      "GlobalId": "984d173a-5953-4912-8f1e-bc313290f4fc",
+      "ParentPageId": "cdd6cec3-f5c2-46cc-8b3d-54c625915404",
+      "ModuleTitle": "Notificari Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Notificari/Notificari Listing.xml"
+    },
+    {
+      "GlobalId": "436a6349-8a3b-494b-b939-97068edfd666",
+      "ParentPageId": "cdd6cec3-f5c2-46cc-8b3d-54c625915404",
+      "ModuleTitle": "Notificare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Notificari/Notificare Form.xml"
+    },
+    {
+      "GlobalId": "51f55cc8-551a-4088-bee3-db22112549a7",
+      "ParentPageId": "c9425322-0963-44d2-a36f-7f4e7fe26049",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Categoriitipuridedate/Header.xml"
+    },
+    {
+      "GlobalId": "ba2083a4-e84a-4bd5-a6e2-ecddfff58a90",
+      "ParentPageId": "c9425322-0963-44d2-a36f-7f4e7fe26049",
+      "ModuleTitle": "Categorii tipuri de date Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Categoriitipuridedate/Categorii tipuri de date Listing.xml"
+    },
+    {
+      "GlobalId": "540e9502-de35-47aa-be3e-9caf856aa94f",
+      "ParentPageId": "c9425322-0963-44d2-a36f-7f4e7fe26049",
+      "ModuleTitle": "Categorie tipuri de date Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Categoriitipuridedate/Categorie tipuri de date Form.xml"
+    },
+    {
+      "GlobalId": "bc2af4d1-4a45-4c22-b8fc-c06460926610",
+      "ParentPageId": "f32a29b3-db76-4d23-bbd8-4ef2079c3fe4",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/NotificariCetatean/Enter Title.xml"
+    },
+    {
+      "GlobalId": "1284f40a-8bff-44ec-b9aa-25caff6b0a97",
+      "ParentPageId": "f32a29b3-db76-4d23-bbd8-4ef2079c3fe4",
+      "ModuleTitle": "Notific\u0103ri",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/NotificariCetatean/Notific\u0103ri.xml"
+    },
+    {
+      "GlobalId": "1c80c9f6-09d8-4620-9b9e-cd4ba13ea2a5",
+      "ParentPageId": "a266678f-22ca-4297-a6bf-d479e34a5833",
+      "ModuleTitle": "Enter Title",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/testdontcry/Enter Title.xml"
+    },
+    {
+      "GlobalId": "5278fd7c-91eb-495e-9194-269dd920eabb",
+      "ParentPageId": "a266678f-22ca-4297-a6bf-d479e34a5833",
+      "ModuleTitle": "avt.ActionGrid",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "HeaderPane",
+      "Order": 1,
+      "ContentPath": "Pages/testdontcry/Untitled avt.ActionGrid 1 in HeaderPane.xml"
+    },
+    {
+      "GlobalId": "c2c32401-5269-43a8-b222-94579890af6d",
+      "ParentPageId": "82bf4ea6-55c5-4ae6-bef3-4e39182d98ed",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/Header.xml"
+    },
+    {
+      "GlobalId": "2a03ccd6-1a5c-4b3f-b90b-07f5c2a07aa7",
+      "ParentPageId": "82bf4ea6-55c5-4ae6-bef3-4e39182d98ed",
+      "ModuleTitle": "Nomenclatoare actiuni Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/Nomenclatoare actiuni Listing.xml"
+    },
+    {
+      "GlobalId": "7f2d8714-859b-42ca-9804-9a352f2e273c",
+      "ParentPageId": "82bf4ea6-55c5-4ae6-bef3-4e39182d98ed",
+      "ModuleTitle": "Nomenclator actiuni Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/Nomenclator actiuni Form.xml"
+    },
+    {
+      "GlobalId": "ad2b1490-d447-4d86-a3f8-da3492066491",
+      "ParentPageId": "9f698d98-a83a-4fc5-8c32-6763ade8af66",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/Header.xml"
+    },
+    {
+      "GlobalId": "d8afe617-1380-4638-abab-690c387c5a79",
+      "ParentPageId": "9f698d98-a83a-4fc5-8c32-6763ade8af66",
+      "ModuleTitle": "Nomenclatoare Tipuri de Date Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/Nomenclatoare Tipuri de Date Listing.xml"
+    },
+    {
+      "GlobalId": "78cd932a-672d-4243-b63a-b3cc6ee35f99",
+      "ParentPageId": "9f698d98-a83a-4fc5-8c32-6763ade8af66",
+      "ModuleTitle": "Nomenclator Tipuri de Date Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/Nomenclator Tipuri de Date Form.xml"
+    },
+    {
+      "GlobalId": "c7a754a4-3404-4b3c-ab11-f7fe18815892",
+      "ParentPageId": "96e36acc-db13-4444-9ce7-4a9db65e6d4f",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Header.xml"
+    },
+    {
+      "GlobalId": "99d0ebd6-648a-4c05-89b8-ef4e139a16e4",
+      "ParentPageId": "96e36acc-db13-4444-9ce7-4a9db65e6d4f",
+      "ModuleTitle": "Nomenclatoare utilizatori Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Nomenclatoare utilizatori Listing.xml"
+    },
+    {
+      "GlobalId": "0ee0cffb-ca53-46c8-b3f3-6892bc9604af",
+      "ParentPageId": "96e36acc-db13-4444-9ce7-4a9db65e6d4f",
+      "ModuleTitle": "Nomenclator utilizator Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Nomenclator utilizator Form.xml"
+    },
+    {
+      "GlobalId": "b85544e2-9ece-4369-a0bd-86446c19385f",
+      "ParentPageId": "b868de55-42ad-4f94-9e5d-68c2c9ce6d95",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/Header.xml"
+    },
+    {
+      "GlobalId": "a559724b-d256-458e-b0d2-da1201de5caa",
+      "ParentPageId": "b868de55-42ad-4f94-9e5d-68c2c9ce6d95",
+      "ModuleTitle": "Nomenclatoare Aplicatii Sursa Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/Nomenclatoare Aplicatii Sursa Listing.xml"
+    },
+    {
+      "GlobalId": "1080db35-74ea-4404-9595-302f3ed3b281",
+      "ParentPageId": "b868de55-42ad-4f94-9e5d-68c2c9ce6d95",
+      "ModuleTitle": "Nomenclator Aplicatii Sursa Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/Nomenclator Aplicatii Sursa Form.xml"
+    },
+    {
+      "GlobalId": "972d35eb-bc9c-45e7-8a15-e9d76b5b4350",
+      "ParentPageId": "2d0bbbb9-3cf2-4737-98e4-9740df1ea0fd",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Cetateni/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "96989217-7a3f-43fe-99ab-697e88b49d73",
+      "ParentPageId": "2d0bbbb9-3cf2-4737-98e4-9740df1ea0fd",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Cetateni/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "94153254-3ce7-4224-9c31-b3047ac54279",
+      "ParentPageId": "2d0bbbb9-3cf2-4737-98e4-9740df1ea0fd",
+      "ModuleTitle": "Cetatean Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Cetateni/Detail/Cetatean Form.xml"
+    },
+    {
+      "GlobalId": "5183f94f-451d-48bb-a11c-adaf9da1a696",
+      "ParentPageId": "2d0bbbb9-3cf2-4737-98e4-9740df1ea0fd",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Cetateni/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "076b529e-bdc0-4a5c-9650-d353247bcf6f",
+      "ParentPageId": "6e86f460-6905-487a-865b-e06960cb01b0",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Notificari/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "13833f56-8390-4917-a3ad-918afa1b6ecf",
+      "ParentPageId": "6e86f460-6905-487a-865b-e06960cb01b0",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Notificari/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "0fdbc450-11a5-4949-bd4f-b55813d122ef",
+      "ParentPageId": "6e86f460-6905-487a-865b-e06960cb01b0",
+      "ModuleTitle": "Notificare Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Notificari/Detail/Notificare Form.xml"
+    },
+    {
+      "GlobalId": "d571d5be-24a5-4542-942e-309d9469f974",
+      "ParentPageId": "6e86f460-6905-487a-865b-e06960cb01b0",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Notificari/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "da86bbd7-2269-4232-b202-965da0a800e1",
+      "ParentPageId": "107e4eae-f430-4794-bf56-262a84d79e28",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Categoriitipuridedate/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "d322d3e5-e2c5-40e2-9d85-0b4d9096b542",
+      "ParentPageId": "107e4eae-f430-4794-bf56-262a84d79e28",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Categoriitipuridedate/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "b896f179-32c7-40cb-bf80-887b093bded2",
+      "ParentPageId": "107e4eae-f430-4794-bf56-262a84d79e28",
+      "ModuleTitle": "Categorie tipuri de date Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Categoriitipuridedate/Detail/Categorie tipuri de date Form.xml"
+    },
+    {
+      "GlobalId": "2463e00c-a794-4c81-bde0-885aa4dce0da",
+      "ParentPageId": "107e4eae-f430-4794-bf56-262a84d79e28",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Categoriitipuridedate/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "90331c8a-eee7-40d6-9f29-10460dd38b35",
+      "ParentPageId": "a8e0e22b-8f66-4ca7-8f7d-cfaa81a40dcd",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "f9f240f0-ad88-41c5-939b-3c1383ec987b",
+      "ParentPageId": "a8e0e22b-8f66-4ca7-8f7d-cfaa81a40dcd",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "7e316727-9c27-4096-b4d8-34f1aa6fbe39",
+      "ParentPageId": "a8e0e22b-8f66-4ca7-8f7d-cfaa81a40dcd",
+      "ModuleTitle": "Nomenclator utilizator Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Detail/Nomenclator utilizator Form.xml"
+    },
+    {
+      "GlobalId": "5504d93f-5a11-4e2a-b5ba-9201658f6076",
+      "ParentPageId": "a8e0e22b-8f66-4ca7-8f7d-cfaa81a40dcd",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "53b26bd3-6ce1-4df7-91be-cb1ae43a35c0",
+      "ParentPageId": "b12206f8-7c81-4ea6-b254-c48684987e80",
+      "ModuleTitle": "Header",
+      "FriendlyName": "Text/HTML",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Header.xml"
+    },
+    {
+      "GlobalId": "86d01d4b-f1e0-4e57-bc16-877f3feb86a8",
+      "ParentPageId": "b12206f8-7c81-4ea6-b254-c48684987e80",
+      "ModuleTitle": "Statusuri Listing",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Statusuri Listing.xml"
+    },
+    {
+      "GlobalId": "f350a8fe-7479-4de1-bd08-c25d3e720750",
+      "ParentPageId": "b12206f8-7c81-4ea6-b254-c48684987e80",
+      "ModuleTitle": "Status Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Status Form.xml"
+    },
+    {
+      "GlobalId": "8782a2e8-8fa1-402a-a9fc-20177f8b7f62",
+      "ParentPageId": "25b26964-168f-48bb-9ba2-4efb18d935c9",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "782dce74-e1a8-493b-a6f6-a1a5bdde312a",
+      "ParentPageId": "25b26964-168f-48bb-9ba2-4efb18d935c9",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "e551da88-74e2-45f2-9928-fe2c59183f3b",
+      "ParentPageId": "25b26964-168f-48bb-9ba2-4efb18d935c9",
+      "ModuleTitle": "Nomenclator actiuni Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/Detail/Nomenclator actiuni Form.xml"
+    },
+    {
+      "GlobalId": "bbfffb10-d537-4cfa-8049-ccbd734c87be",
+      "ParentPageId": "25b26964-168f-48bb-9ba2-4efb18d935c9",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareactiuni/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "367bff14-8194-4851-ba75-aaeac978d81e",
+      "ParentPageId": "2b7db8c5-0c0f-4ea8-9515-1c9d01a37e6e",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "c1f2e7f3-dcfa-4819-905b-d2db89532ef6",
+      "ParentPageId": "2b7db8c5-0c0f-4ea8-9515-1c9d01a37e6e",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "51ac5aa9-43d5-479e-92b7-dd75c96eeeb5",
+      "ParentPageId": "2b7db8c5-0c0f-4ea8-9515-1c9d01a37e6e",
+      "ModuleTitle": "Nomenclator Informatii Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/Detail/Nomenclator Informatii Form.xml"
+    },
+    {
+      "GlobalId": "9a9ef23f-bd56-48c9-9a84-70f9bdb8af3a",
+      "ParentPageId": "2b7db8c5-0c0f-4ea8-9515-1c9d01a37e6e",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareTipurideDate/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "450112e9-3a7f-4d0a-9aad-f6c511b89aaa",
+      "ParentPageId": "be9effff-fb28-48c6-9aa5-15e7c46a89a3",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "e29c5928-11aa-4783-b207-3bcc5470d435",
+      "ParentPageId": "be9effff-fb28-48c6-9aa5-15e7c46a89a3",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "43760bf3-21c7-4641-a68f-a5fa18ca34a6",
+      "ParentPageId": "be9effff-fb28-48c6-9aa5-15e7c46a89a3",
+      "ModuleTitle": "Nomenclator Aplicatii Sursa Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/Detail/Nomenclator Aplicatii Sursa Form.xml"
+    },
+    {
+      "GlobalId": "bbca4ffb-a684-464b-975e-24c7b3990368",
+      "ParentPageId": "be9effff-fb28-48c6-9aa5-15e7c46a89a3",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/NomenclatoareAplicatiiSursa/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "ef6aa977-a0f1-4260-834c-a1d9eddeabc4",
+      "ParentPageId": "8bfc8466-03d7-45cf-943e-cc7983e6a016",
+      "ModuleTitle": "Header Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 1,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Detail/Header Form.xml"
+    },
+    {
+      "GlobalId": "87dbc6c3-aaa8-46f1-8738-a71ec22b531d",
+      "ParentPageId": "8bfc8466-03d7-45cf-943e-cc7983e6a016",
+      "ModuleTitle": "Details Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 3,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Detail/Details Form.xml"
+    },
+    {
+      "GlobalId": "8d417a87-4017-47f4-9420-6388cb6622e7",
+      "ParentPageId": "8bfc8466-03d7-45cf-943e-cc7983e6a016",
+      "ModuleTitle": "Status Institutie Form",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "ContentPane",
+      "Order": 5,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Detail/Status Institutie Form.xml"
+    },
+    {
+      "GlobalId": "e4bdc25f-de08-4bfc-9e3c-6c6ea3dcdfd5",
+      "ParentPageId": "8bfc8466-03d7-45cf-943e-cc7983e6a016",
+      "ModuleTitle": "Tabs",
+      "FriendlyName": "avt.TabsPro",
+      "PaneName": "ContentPane",
+      "Order": 7,
+      "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Detail/Tabs.xml"
+    }
+  ],
+  "TokenNamespaces": [
+    {
+      "GlobalId": "b63b3ce9-a96a-459d-bec4-adc8044c087f",
+      "Name": "PAASysAutomation"
+    },
+    {
+      "GlobalId": "cc05da6f-5032-4f1e-8038-7b0aebb463c8",
+      "Name": "PAASysDocuments"
+    },
+    {
+      "GlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "Name": "PAASysUpdates"
+    },
+    {
+      "GlobalId": "ea7dd6bd-e76b-40e6-a2d2-dd818e7209dd",
+      "Name": "PAASysUserGuide"
+    },
+    {
+      "GlobalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
+      "Name": "Notifications"
+    },
+    {
+      "GlobalId": "30c73246-2227-49d7-8710-cf0aac3e02eb",
+      "Name": "Cetatean"
+    }
+  ],
+  "Tokens": [
+    {
+      "GlobalId": "f5dfe3d1-96a5-42a2-a58b-2c2975b28912",
+      "NamespaceGlobalId": "b63b3ce9-a96a-459d-bec4-adc8044c087f",
+      "DefinitionPath": "Tokens/PAASysAutomation/JobStatusLabel.json",
+      "SourcePath": "Tokens/PAASysAutomation/JobStatusLabel.cshtml"
+    },
+    {
+      "GlobalId": "3cc2b464-10f8-424f-905c-8a20bdd30685",
+      "NamespaceGlobalId": "cc05da6f-5032-4f1e-8038-7b0aebb463c8",
+      "DefinitionPath": "Tokens/PAASysDocuments/ConvertBtoMB.json",
+      "SourcePath": "Tokens/PAASysDocuments/ConvertBtoMB.cshtml"
+    },
+    {
+      "GlobalId": "7262c6af-4c52-4f2f-9ffb-5f735b032226",
+      "NamespaceGlobalId": "cc05da6f-5032-4f1e-8038-7b0aebb463c8",
+      "DefinitionPath": "Tokens/PAASysDocuments/FolderFileListingLink.json",
+      "SourcePath": "Tokens/PAASysDocuments/FolderFileListingLink.cshtml"
+    },
+    {
+      "GlobalId": "56d1163e-30de-45d3-a376-c9fcf2e632f9",
+      "NamespaceGlobalId": "cc05da6f-5032-4f1e-8038-7b0aebb463c8",
+      "DefinitionPath": "Tokens/PAASysDocuments/PortalRootFolderId.json"
+    },
+    {
+      "GlobalId": "45488827-3312-445e-a199-58fdfed2f22c",
+      "NamespaceGlobalId": "cc05da6f-5032-4f1e-8038-7b0aebb463c8",
+      "DefinitionPath": "Tokens/PAASysDocuments/RenderIcon.json",
+      "SourcePath": "Tokens/PAASysDocuments/RenderIcon.cshtml"
+    },
+    {
+      "GlobalId": "cb838c04-8152-466d-b09d-0ece33839b5d",
+      "NamespaceGlobalId": "cc05da6f-5032-4f1e-8038-7b0aebb463c8",
+      "DefinitionPath": "Tokens/PAASysDocuments/MoveFile.json",
+      "SourcePath": "Tokens/PAASysDocuments/MoveFile.cshtml"
+    },
+    {
+      "GlobalId": "bf73cdf4-f563-4670-a5e9-1251e964a91b",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/ActualModuleVersion.json"
+    },
+    {
+      "GlobalId": "ce932470-71e7-43ab-871f-171d22986930",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/AppBuilderVersion.json"
+    },
+    {
+      "GlobalId": "73694d11-f06e-423f-bd97-43ba49369c43",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/AppInstallChecker.json",
+      "SourcePath": "Tokens/PAASysUpdates/AppInstallChecker.cshtml"
+    },
+    {
+      "GlobalId": "4466d5a8-cb2b-4bc9-8dc8-ed903fab2fa2",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/ChangeLogRed.json",
+      "SourcePath": "Tokens/PAASysUpdates/ChangeLogRed.cshtml"
+    },
+    {
+      "GlobalId": "475d9330-e047-4467-b7c6-1f9a91b8fd7e",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/CheckIfAppIsDev.json"
+    },
+    {
+      "GlobalId": "dd0f3726-30c8-4af3-bfe2-c174d504f55a",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/CurrentDNNVersion.json"
+    },
+    {
+      "GlobalId": "6daf239e-1956-4df8-a1c1-0fa7d29831b7",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/GetHotfixHighestState.json"
+    },
+    {
+      "GlobalId": "e680fa06-15cb-47c0-9667-9e9257b0efc9",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/GetLastCheckedDate.json"
+    },
+    {
+      "GlobalId": "d4bdc1ce-b4da-4b0f-a5de-2d386d64d878",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/GetMajorUpdate.json"
+    },
+    {
+      "GlobalId": "21e498b6-5ce6-4456-8035-51cf531be2e2",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/GetMIDbyModuleName.json"
+    },
+    {
+      "GlobalId": "bba7891c-1bfe-46a7-a919-728af795dbb9",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/GetNextMajorVersion.json"
+    },
+    {
+      "GlobalId": "8d0b3710-2b66-4c1d-b616-177275cb4e81",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/GetUpdatesWFGUID.json"
+    },
+    {
+      "GlobalId": "3a9acbe7-1500-49fd-b7e2-efbfbdb4168a",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/HotfixCount.json"
+    },
+    {
+      "GlobalId": "6c8e4498-fc04-41ec-bc25-89558d646cb7",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/HotfixesBanner.json",
+      "SourcePath": "Tokens/PAASysUpdates/HotfixesBanner.cshtml"
+    },
+    {
+      "GlobalId": "3d664eb9-8e41-4105-86d0-9e4dfc2babee",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/HotfixesBannerToggle.json"
+    },
+    {
+      "GlobalId": "f75a5a10-c3c2-4374-99ac-4c227c32aca1",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/LastVersionReleased.json"
+    },
+    {
+      "GlobalId": "c87aa991-f8dc-4cdd-9cd9-abd335a2abf8",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/NextDNNVersion.json"
+    },
+    {
+      "GlobalId": "54a9a5b9-9cfb-4776-8931-94f96cbc82dc",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/ReleaseVersion.json",
+      "SourcePath": "Tokens/PAASysUpdates/ReleaseVersion.cshtml"
+    },
+    {
+      "GlobalId": "e8b07ee5-f7b1-4317-959c-51ddf7cc651e",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/VersionCompare.json",
+      "SourcePath": "Tokens/PAASysUpdates/VersionCompare.cshtml"
+    },
+    {
+      "GlobalId": "37c1313b-e36b-4b0c-8500-f594a1ccbd20",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/VersionConvert.json",
+      "SourcePath": "Tokens/PAASysUpdates/VersionConvert.cshtml"
+    },
+    {
+      "GlobalId": "f1fc6758-3aef-4210-932a-03c29a3ab5d4",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/CurrentEnvId.json"
+    },
+    {
+      "GlobalId": "2a045e8a-cc7d-4378-8d88-01c5d9988375",
+      "NamespaceGlobalId": "62f87937-617d-409f-990d-0c2028932681",
+      "DefinitionPath": "Tokens/PAASysUpdates/FormatVersion.json"
+    },
+    {
+      "GlobalId": "17e3273e-aaab-4c1f-a620-6ef1f09ae69b",
+      "NamespaceGlobalId": "ea7dd6bd-e76b-40e6-a2d2-dd818e7209dd",
+      "DefinitionPath": "Tokens/PAASysUserGuide/GetNextEntityName.json"
+    },
+    {
+      "GlobalId": "aaf09d85-cacf-4390-8bcf-85777156b9b2",
+      "NamespaceGlobalId": "ea7dd6bd-e76b-40e6-a2d2-dd818e7209dd",
+      "DefinitionPath": "Tokens/PAASysUserGuide/GetConfigurationPath.json",
+      "SourcePath": "Tokens/PAASysUserGuide/GetConfigurationPath.cshtml"
+    },
+    {
+      "GlobalId": "0bce7592-89f4-4669-aac6-9b0f37bfa5b6",
+      "NamespaceGlobalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
+      "DefinitionPath": "Tokens/Notifications/CountUnreadNotifications.json"
+    },
+    {
+      "GlobalId": "8efda07b-8c12-439b-bf46-ba7cf16636ad",
+      "NamespaceGlobalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
+      "DefinitionPath": "Tokens/Notifications/RenderUnreadNotificationsIcon.json",
+      "SourcePath": "Tokens/Notifications/RenderUnreadNotificationsIcon.cshtml"
+    },
+    {
+      "GlobalId": "4883ed04-fad4-4de0-8a0f-b15e6e9491a5",
+      "NamespaceGlobalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
+      "DefinitionPath": "Tokens/Notifications/SimpleRzR.json",
+      "SourcePath": "Tokens/Notifications/SimpleRzR.cshtml"
+    },
+    {
+      "GlobalId": "08a0498b-3a5b-4f8c-80d1-9bb4be406f3f",
+      "NamespaceGlobalId": "30c73246-2227-49d7-8710-cf0aac3e02eb",
+      "DefinitionPath": "Tokens/Cetatean/GetCetateanData.json"
+    }
+  ],
+  "Namespaces": [
+    {
+      "GlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "Name": "Nomenclatoare",
+      "ContentPath": "Namespaces/Nomenclatoare.json"
+    },
+    {
+      "GlobalId": "0a00e182-835c-4a84-a40c-ffc72083f6cf",
+      "Name": "Cetatean",
+      "ContentPath": "Namespaces/Cetatean.json"
+    },
+    {
+      "GlobalId": "8baf7d4f-a1f8-4c78-be9a-ae2a93928afc",
+      "Name": "Notificari",
+      "ContentPath": "Namespaces/Notificari.json"
+    },
+    {
+      "GlobalId": "7eaefa01-bd05-4216-b78b-96b3a3cfb46c",
+      "Name": "Rapoarte",
+      "ContentPath": "Namespaces/Rapoarte.json"
+    }
+  ],
+  "BuiltInEntities": [
+    {
+      "BuiltInEntityType": "Users",
+      "ContentPath": "Entities/System/Users.json"
+    },
+    {
+      "BuiltInEntityType": "Roles",
+      "ContentPath": "Entities/System/Roles.json"
+    },
+    {
+      "BuiltInEntityType": "Documents",
+      "ContentPath": "Entities/System/Documents.json"
+    },
+    {
+      "BuiltInEntityType": "Images",
+      "ContentPath": "Entities/System/Images.json"
+    }
+  ],
+  "Entities": [
+    {
+      "GlobalId": "d1ba079d-b618-413d-a9a4-791df658245a",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "Entities/Nomenclatoare/Status.json"
+    },
+    {
+      "GlobalId": "c1267be6-743d-4e45-9327-a4bbeb185097",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "Entities/Nomenclatoare/Nomenclator utilizator.json"
+    },
+    {
+      "GlobalId": "ff24c0ce-7cc4-494c-abd4-21688fdd150c",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "Entities/Nomenclatoare/Nomenclator actiuni.json"
+    },
+    {
+      "GlobalId": "af030759-0ed7-41f2-bb6d-eff1f9f8a88a",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "Entities/Nomenclatoare/Nomenclator Tipuri de Date.json"
+    },
+    {
+      "GlobalId": "3f4eb33b-c6de-43d0-b8a9-16c950d62940",
+      "NamespaceGlobalId": "0399f986-2f10-4bd8-85dc-484814378e64",
+      "ContentPath": "Entities/Default/Cetatean.json"
+    },
+    {
+      "GlobalId": "fd3adf0d-384d-4499-8b11-0db9c5da6b43",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "Entities/Nomenclatoare/Nomenclator Aplicatii Sursa.json"
+    },
+    {
+      "GlobalId": "7c09e18a-9e9a-4ed7-98f4-bd68aa2e6bed",
+      "NamespaceGlobalId": "0399f986-2f10-4bd8-85dc-484814378e64",
+      "ContentPath": "Entities/Default/Notificare.json"
+    },
+    {
+      "GlobalId": "03da5f78-e0ab-41f7-959b-0ee21a1a0287",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "Entities/Nomenclatoare/Categorie tipuri de date.json"
+    }
+  ],
+  "ApiMethods": [
+    {
+      "GlobalId": "7a497825-0432-4429-a1c5-26324b9b1cc8",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclatorutilizator.json"
+    },
+    {
+      "GlobalId": "7d8fabd9-3f05-4356-acff-f755910ed884",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclatorutilizator.json"
+    },
+    {
+      "GlobalId": "6b2c83d0-fdae-440f-a053-49fd48947064",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclatoareutilizatori.json"
+    },
+    {
+      "GlobalId": "f04dfb21-d93a-4a94-bc36-07329c1ae2ef",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclatorutilizator.json"
+    },
+    {
+      "GlobalId": "478769ec-873f-42ce-8f41-75bef81aabd5",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclatorutilizator.json"
+    },
+    {
+      "GlobalId": "9688ea87-605f-4e65-bdb4-36f2d2e2fdb2",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclator Institutii.json"
+    },
+    {
+      "GlobalId": "bbaae63e-2ed2-4e55-9828-85456a14a501",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclator Tipuri de Actiuni.json"
+    },
+    {
+      "GlobalId": "b70c8762-cf74-4376-af20-c6dd4134a7f5",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclator Aplicatii Sursa.json"
+    },
+    {
+      "GlobalId": "3114606e-7383-4688-ada8-530ec15ffa62",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclator Tipuri de Date.json"
+    },
+    {
+      "GlobalId": "501261d0-c47a-4836-acba-4f2188d8a15e",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "ContentPath": "APIs/Nomenclatoare/Nomenclator Statusuri.json"
+    },
+    {
+      "GlobalId": "2e18c1d9-87e8-490b-8bd6-d9aae0c44e84",
+      "NamespaceGlobalId": "0a00e182-835c-4a84-a40c-ffc72083f6cf",
+      "ContentPath": "APIs/Cetatean/Cetateni de Notificat.json"
+    },
+    {
+      "GlobalId": "44ec5e47-1567-4dfe-a93c-8c1cf48b4f70",
+      "NamespaceGlobalId": "8baf7d4f-a1f8-4c78-be9a-ae2a93928afc",
+      "ContentPath": "APIs/Notificari/Push Notificare.json"
+    },
+    {
+      "GlobalId": "d7972f2f-d17b-4f1b-b0c2-d8b0a0faf120",
+      "NamespaceGlobalId": "0399f986-2f10-4bd8-85dc-484814378e64",
+      "ContentPath": "APIs/Default/test.json"
+    },
+    {
+      "GlobalId": "0fd0a89c-a123-4ed1-8271-fec6aecff8db",
+      "NamespaceGlobalId": "7eaefa01-bd05-4216-b78b-96b3a3cfb46c",
+      "ContentPath": "APIs/Rapoarte/Get Events from CQ endpoint.json"
+    },
+    {
+      "GlobalId": "fff728a7-cd3d-425f-af29-344e10bedf96",
+      "NamespaceGlobalId": "7eaefa01-bd05-4216-b78b-96b3a3cfb46c",
+      "ContentPath": "APIs/Rapoarte/Get Events from CQ Aggregate endpoint.json"
+    }
+  ],
+  "Roles": [
+    {
+      "Name": "Administratori",
+      "ContentPath": "Roles/Administratori.json"
+    }
+  ],
+  "SchedulerJobs": [
+    {
+      "GlobalId": "72b45c4b-4dab-4f39-ac0b-5d1c70abe590",
+      "NamespaceGlobalId": "8baf7d4f-a1f8-4c78-be9a-ae2a93928afc",
+      "ContentPath": "Automation/Notificari/Trimite notificare prin e-mail_11.json"
+    }
+  ],
+  "Connectors": [
+    {
+      "GlobalId": "bedc39de-e2d1-4a25-a5d4-9dedf2e15e2f",
+      "ContentPath": "Connectors/Built-in Database.json"
+    },
+    {
+      "GlobalId": "0e10b475-f61d-4b0b-8458-7278de04c4c6",
+      "ContentPath": "Connectors/Default SMTP.json"
+    }
+  ],
+  "Workflows": [
+    {
+      "GlobalId": "6c5ed3d1-ea53-48c1-bfd2-d2494b4e7025",
+      "NamespaceGlobalId": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+      "DefinitionPath": "Workflows/Nomenclatoare/Create tipuri de date/workflow.json",
+      "DiagramPath": "Workflows/Nomenclatoare/Create tipuri de date/diagram.xml"
+    },
+    {
+      "GlobalId": "62b8f2a0-67cc-49c4-9b44-1cb18ae323a4",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/PaaSysAlerts - Create or Update Alerts/workflow.json",
+      "DiagramPath": "Workflows/System/PaaSysAlerts - Create or Update Alerts/diagram.xml"
+    },
+    {
+      "GlobalId": "897b24ed-a406-48da-9d04-0343aed29420",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/PaaSysHealthCheck - Bootstrap3 Forms/workflow.json",
+      "DiagramPath": "Workflows/System/PaaSysHealthCheck - Bootstrap3 Forms/diagram.xml"
+    },
+    {
+      "GlobalId": "4a01bcfa-19de-48f7-9580-b973f8f48f89",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/PaaSysHealthCheck - Bootstrap3 Grids/workflow.json",
+      "DiagramPath": "Workflows/System/PaaSysHealthCheck - Bootstrap3 Grids/diagram.xml"
+    },
+    {
+      "GlobalId": "b760a85d-41d0-4b00-813d-36b7e42e438a",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/PaaSysHealthCheck - Bootstrap3 Tabs/workflow.json",
+      "DiagramPath": "Workflows/System/PaaSysHealthCheck - Bootstrap3 Tabs/diagram.xml"
+    },
+    {
+      "GlobalId": "2a5fda3b-b733-4ae4-99cd-410eabe87e3a",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/PaaSysHealthCheck - SQL Compatibility Level is Valid/workflow.json",
+      "DiagramPath": "Workflows/System/PaaSysHealthCheck - SQL Compatibility Level is Valid/diagram.xml"
+    },
+    {
+      "GlobalId": "28eb6565-e488-463f-85b9-e942d9486d6d",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/PaaSysHealthCheck - SQL User has necessary rights/workflow.json",
+      "DiagramPath": "Workflows/System/PaaSysHealthCheck - SQL User has necessary rights/diagram.xml"
+    },
+    {
+      "GlobalId": "069d5d08-e3b7-43da-87ae-92214d7377e8",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/PaaSysAlerts - Run Alert/workflow.json",
+      "DiagramPath": "Workflows/System/PaaSysAlerts - Run Alert/diagram.xml"
+    },
+    {
+      "GlobalId": "aa60ba3d-03da-4d3a-b4ae-3d8328642a23",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/Check If App Is Dev/workflow.json",
+      "DiagramPath": "Workflows/System/Check If App Is Dev/diagram.xml"
+    },
+    {
+      "GlobalId": "1f497b52-dcd0-4450-bc0b-54a5ffc46eef",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/Format Version/workflow.json",
+      "DiagramPath": "Workflows/System/Format Version/diagram.xml"
+    },
+    {
+      "GlobalId": "a19e4122-fe9f-46c6-8670-419b3f0eec92",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/Last Version Released/workflow.json",
+      "DiagramPath": "Workflows/System/Last Version Released/diagram.xml"
+    },
+    {
+      "GlobalId": "638eecc4-551a-4d81-8f2d-a289a98c3b32",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/Get Major Update/workflow.json",
+      "DiagramPath": "Workflows/System/Get Major Update/diagram.xml"
+    },
+    {
+      "GlobalId": "84650210-1219-4946-b846-a24c7ac7185f",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/Next DNN Version/workflow.json",
+      "DiagramPath": "Workflows/System/Next DNN Version/diagram.xml"
+    },
+    {
+      "GlobalId": "ef26cf67-5294-48b9-b1f3-66b050ee77aa",
+      "NamespaceGlobalId": "13d064f6-b733-4128-97d9-7882cb879e61",
+      "DefinitionPath": "Workflows/System/Get App Builder Updates/workflow.json",
+      "DiagramPath": "Workflows/System/Get App Builder Updates/diagram.xml"
+    },
+    {
+      "GlobalId": "66c3c872-ef4e-4eb6-a54e-19e96cb5379e",
+      "NamespaceGlobalId": "0399f986-2f10-4bd8-85dc-484814378e64",
+      "DefinitionPath": "Workflows/Default/Request to Get Data Endpoint from CQ/workflow.json",
+      "DiagramPath": "Workflows/Default/Request to Get Data Endpoint from CQ/diagram.xml"
+    },
+    {
+      "GlobalId": "19266965-1a97-4adb-9b64-62b83c755b5c",
+      "NamespaceGlobalId": "0399f986-2f10-4bd8-85dc-484814378e64",
+      "DefinitionPath": "Workflows/Default/Request to Get Aggregated Data Endpoint from CQ/workflow.json",
+      "DiagramPath": "Workflows/Default/Request to Get Aggregated Data Endpoint from CQ/diagram.xml"
+    },
+    {
+      "GlobalId": "5fc4339a-0af1-49b9-ac1a-787397d632eb",
+      "NamespaceGlobalId": "0399f986-2f10-4bd8-85dc-484814378e64",
+      "DefinitionPath": "Workflows/Default/Request to Get Alerts Endpoint from CQ/workflow.json",
+      "DiagramPath": "Workflows/Default/Request to Get Alerts Endpoint from CQ/diagram.xml"
+    },
+    {
+      "GlobalId": "8c7698dd-d361-42fa-8b0d-42ef2c59fede",
+      "NamespaceGlobalId": "0399f986-2f10-4bd8-85dc-484814378e64",
+      "DefinitionPath": "Workflows/Default/Request to Get Data Endpoint from CQ Draft/workflow.json",
+      "DiagramPath": "Workflows/Default/Request to Get Data Endpoint from CQ Draft/diagram.xml"
+    },
+    {
+      "GlobalId": "e84ecc49-a5f8-4048-be59-f808a3b79448",
+      "NamespaceGlobalId": "0399f986-2f10-4bd8-85dc-484814378e64",
+      "DefinitionPath": "Workflows/Default/Request to Get Aggregated Data Endpoint from CQ Draft/workflow.json",
+      "DiagramPath": "Workflows/Default/Request to Get Aggregated Data Endpoint from CQ Draft/diagram.xml"
+    }
+  ]
+}

@@ -1,0 +1,293 @@
+<module type="ActionGrid" version="05.28.314.00">
+    <contentKey />
+    <moduleID>620</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Citizen Developers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Low-Code Engineer</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Distribuția accesărilor per instituție</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>845bd340-9b06-4318-8c7f-39788b3d9f00</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>Action Grid</definition>
+    <moduledefinition>avt.ActionGrid</moduledefinition>
+    <content type="ActionGrid" version="05.28.314.00"><![CDATA[&lt;ActionGrid&gt;
+  &lt;Settings&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.314&lt;/Build&gt;
+    &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
+    &lt;ModuleId&gt;620&lt;/ModuleId&gt;
+    &lt;DataSource&gt;{&quot;DefinitionId&quot;:&quot;ServerRequestSource&quot;,&quot;Parameters&quot;:{&quot;Url&quot;:&quot;[URL:DomainRoot]/api/v1/rapoarte/getAggregateDataCQ&quot;,&quot;MethodName&quot;:{&quot;Value&quot;:&quot;GET&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;RequestBody&quot;:&quot;EventId=*\nutilizator=[User:UserId]\ndataStart=[QueryString:drillStartdate=[DateTime:Relative(add=\&quot;-30 days\&quot;,RelativeTo=\&quot;[DateTime:Now]\&quot;)|yyyy-MM-dd HH:mm:ss]]\ndataEnd=[QueryString:drillEnddate=[DateTime:Now|yyyy-MM-dd HH:mm:ss]]\ncampAgreagare=S13\nEvents=[QueryString:tipuriactiuni=\&quot;*\&quot;]\nInstitutii=[QueryString:institutii=\&quot;\&quot;]&quot;,&quot;IdProperty&quot;:&quot;key&quot;,&quot;BaseName&quot;:&quot;&quot;,&quot;JsonPath&quot;:&quot;data.buckets&quot;,&quot;PivotObjectResponse&quot;:&quot;&quot;,&quot;CustomHeaders&quot;:[{&quot;value&quot;:&quot;application/json&quot;,&quot;name&quot;:&quot;Content-Type&quot;},{&quot;value&quot;:&quot;Bearer 97e21635bceb93d27a94772e39321fc1&quot;,&quot;name&quot;:&quot;Authorization&quot;}]},&quot;Fields&quot;:[{&quot;Title&quot;:null,&quot;Name&quot;:&quot;key&quot;,&quot;TypeStr&quot;:&quot;System.Void, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:null},{&quot;Title&quot;:null,&quot;Name&quot;:&quot;doc_count&quot;,&quot;TypeStr&quot;:&quot;System.Void, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:null}]}&lt;/DataSource&gt;
+    &lt;ShowTitle&gt;True&lt;/ShowTitle&gt;
+    &lt;NoDataMessage&gt;No Data&lt;/NoDataMessage&gt;
+    &lt;AditionalHtmlHeader /&gt;
+    &lt;OnInitJs /&gt;
+    &lt;OnRefreshJs /&gt;
+    &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
+    &lt;ShowCondition /&gt;
+    &lt;SearchPlaceholder&gt;Search&lt;/SearchPlaceholder&gt;
+    &lt;SearchDelayTime&gt;300&lt;/SearchDelayTime&gt;
+    &lt;TableHeight /&gt;
+    &lt;PagerStyle&gt;TouchFriendly&lt;/PagerStyle&gt;
+    &lt;DisplayMode&gt;Popup&lt;/DisplayMode&gt;
+    &lt;PopupWidth /&gt;
+    &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
+    &lt;PopupName /&gt;
+    &lt;PageSizes&gt;[12,24,48]&lt;/PageSizes&gt;
+    &lt;DefaultPageSize&gt;12&lt;/DefaultPageSize&gt;
+    &lt;IsDebug&gt;False&lt;/IsDebug&gt;
+    &lt;SearchEnabled&gt;True&lt;/SearchEnabled&gt;
+    &lt;ExactSearch&gt;False&lt;/ExactSearch&gt;
+    &lt;HideEmptyGrid&gt;False&lt;/HideEmptyGrid&gt;
+    &lt;LoadOnSearch&gt;False&lt;/LoadOnSearch&gt;
+    &lt;HideTableHead&gt;False&lt;/HideTableHead&gt;
+    &lt;EnableStickyHead&gt;False&lt;/EnableStickyHead&gt;
+    &lt;ItemButtonPosition&gt;Right&lt;/ItemButtonPosition&gt;
+    &lt;ItemButtonPositionInColumn&gt;Right&lt;/ItemButtonPositionInColumn&gt;
+    &lt;ItemButtonGroupingOptions&gt;HorizontalAlign&lt;/ItemButtonGroupingOptions&gt;
+    &lt;FiltersEnabled&gt;True&lt;/FiltersEnabled&gt;
+    &lt;ShowFilters&gt;False&lt;/ShowFilters&gt;
+    &lt;SyncUrl&gt;False&lt;/SyncUrl&gt;
+    &lt;IncludeBootstrapJS&gt;True&lt;/IncludeBootstrapJS&gt;
+    &lt;IncludeBootstrapCSS&gt;True&lt;/IncludeBootstrapCSS&gt;
+    &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
+    &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
+    &lt;SelectAllPosition&gt;None&lt;/SelectAllPosition&gt;
+    &lt;SearchPosition&gt;top&lt;/SearchPosition&gt;
+    &lt;RootCSSClasses /&gt;
+    &lt;ModalRefresh&gt;False&lt;/ModalRefresh&gt;
+    &lt;ShowLoading&gt;True&lt;/ShowLoading&gt;
+    &lt;TabsProLoading&gt;True&lt;/TabsProLoading&gt;
+    &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
+    &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
+    &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
+    &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
+    &lt;ItemButtons&gt;[{&quot;ItemActions&quot;:[{&quot;Id&quot;:-1,&quot;IsDeleted&quot;:false,&quot;ActionInfo&quot;:{&quot;Id&quot;:-1,&quot;GlobalId&quot;:&quot;8197b317-8a2d-46f8-a8b8-f8719da22976&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:-1,&quot;ActionType&quot;:&quot;DataSource.DetailView&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DisplayMode&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Inline&quot;},&quot;Title&quot;:null,&quot;Template&quot;:&quot;&amp;lt;p&amp;gt;&amp;lt;iframe src=\&quot;/Contul-meu/mid/621/dnnprintmode/true?SkinSrc=%255bG%255dSkins%252f_default%252fNo%2bSkin&amp;amp;amp;ContainerSrc=%255bG%255dContainers%252f_default%252fNo%2bContainer&amp;amp;amp;drillInstitutii=[key]\&quot; width=\&quot;100%\&quot; height=\&quot;400\&quot;&amp;gt;&amp;lt;/iframe&amp;gt;&amp;lt;br&amp;gt;&amp;lt;/p&amp;gt;&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}}],&quot;OnItemClickActionStackId&quot;:-1,&quot;Url&quot;:&quot;&amp;amp;buttonName=Detalii&quot;,&quot;ModuleId&quot;:620,&quot;AutoName&quot;:true,&quot;Name&quot;:&quot;Detalii&quot;,&quot;Title&quot;:&quot;Detalii&quot;,&quot;Help&quot;:null,&quot;ShowCondition&quot;:null,&quot;IsEnabled&quot;:false,&quot;Metadata&quot;:{},&quot;Type&quot;:&quot;ItemButton&quot;,&quot;OrderIndex&quot;:0,&quot;CssClass&quot;:&quot;outline-default&quot;,&quot;CustomCssClass&quot;:null,&quot;IconClass&quot;:null,&quot;FaIconClass&quot;:null,&quot;PermissionAllUsers&quot;:true,&quot;PermissionsExportJson&quot;:&quot;[]&quot;,&quot;Permissions&quot;:[],&quot;AskForConfirmation&quot;:false,&quot;ConfirmationMessage&quot;:&quot;Are you sure you want to do this?&quot;,&quot;ConfirmationOk&quot;:&quot;Yes, pretty sure&quot;,&quot;ConfirmationCancel&quot;:&quot;No, I&#39;m having second thoughts&quot;,&quot;JsCode&quot;:null,&quot;IsClientButton&quot;:false,&quot;ButtonGroupId&quot;:null,&quot;ButtonGroupName&quot;:null,&quot;Id&quot;:0,&quot;EnableCondition&quot;:null,&quot;IsDeleted&quot;:false}]&lt;/ItemButtons&gt;
+    &lt;GridButtons&gt;[]&lt;/GridButtons&gt;
+    &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
+    &lt;TooltipContent /&gt;
+    &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+    &lt;TooltipIcon&gt;glyphicon-info-sign&lt;/TooltipIcon&gt;
+    &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
+    &lt;TooltipInEdit&gt;right&lt;/TooltipInEdit&gt;
+    &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+    &lt;TooltipOrientation /&gt;
+    &lt;TooltipTitle /&gt;
+    &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+    &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+    &lt;DefaultDesktopView /&gt;
+    &lt;DefaultMobileView /&gt;
+    &lt;RefreshOnTabChange&gt;False&lt;/RefreshOnTabChange&gt;
+    &lt;UseDragAndDropActions&gt;False&lt;/UseDragAndDropActions&gt;
+    &lt;DragAndDropActions&gt;[]&lt;/DragAndDropActions&gt;
+    &lt;InitLoadFromTabsPro&gt;False&lt;/InitLoadFromTabsPro&gt;
+    &lt;LockIntoEditMode&gt;False&lt;/LockIntoEditMode&gt;
+    &lt;LockInEditForEachRowActions&gt;[]&lt;/LockInEditForEachRowActions&gt;
+    &lt;LockInEditFinalActions&gt;[]&lt;/LockInEditFinalActions&gt;
+    &lt;Template /&gt;
+    &lt;MobileTemplate /&gt;
+    &lt;SwitchingTemplates&gt;False&lt;/SwitchingTemplates&gt;
+    &lt;TemplateConfig&gt;{}&lt;/TemplateConfig&gt;
+    &lt;Views&gt;[{&quot;Id&quot;:568,&quot;ListingModuleId&quot;:620,&quot;ViewName&quot;:&quot;Calendar&quot;,&quot;ViewTitle&quot;:&quot;Calendar&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:false,&quot;ShowWhenNoData&quot;:true,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;Icon&quot;:&quot;far fa-calendar-alt&quot;,&quot;Settings&quot;:{&quot;EventCssClasses&quot;:{&quot;ViewId&quot;:568,&quot;Id&quot;:1050,&quot;Name&quot;:&quot;EventCssClasses&quot;,&quot;ValueType&quot;:null,&quot;ValueToString&quot;:null,&quot;Value&quot;:null,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5588586+00:00&quot;,&quot;IsDeleted&quot;:false}},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:569,&quot;ListingModuleId&quot;:620,&quot;ViewName&quot;:&quot;Cards&quot;,&quot;ViewTitle&quot;:&quot;Cards&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;Icon&quot;:&quot;fas fa-th-large&quot;,&quot;Settings&quot;:{&quot;PageSizes&quot;:{&quot;ViewId&quot;:569,&quot;Id&quot;:1051,&quot;Name&quot;:&quot;PageSizes&quot;,&quot;ValueType&quot;:&quot;System.String&quot;,&quot;ValueToString&quot;:&quot;10,20,50&quot;,&quot;Value&quot;:&quot;10,20,50&quot;,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5588586+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;DefaultPageSize&quot;:{&quot;ViewId&quot;:569,&quot;Id&quot;:1052,&quot;Name&quot;:&quot;DefaultPageSize&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;10&quot;,&quot;Value&quot;:10,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5588586+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;CardCssClasses&quot;:{&quot;ViewId&quot;:569,&quot;Id&quot;:1053,&quot;Name&quot;:&quot;CardCssClasses&quot;,&quot;ValueType&quot;:null,&quot;ValueToString&quot;:null,&quot;Value&quot;:null,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5588586+00:00&quot;,&quot;IsDeleted&quot;:false}},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:570,&quot;ListingModuleId&quot;:620,&quot;ViewName&quot;:&quot;Conversation&quot;,&quot;ViewTitle&quot;:&quot;Conversation (Experimental)&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;Icon&quot;:&quot;fas fa-comments&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:571,&quot;ListingModuleId&quot;:620,&quot;ViewName&quot;:&quot;DataTable&quot;,&quot;ViewTitle&quot;:&quot;Data Table&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:true,&quot;OrderIndex&quot;:3,&quot;Icon&quot;:&quot;fas fa-th-list&quot;,&quot;Settings&quot;:{&quot;PageSizes&quot;:{&quot;ViewId&quot;:571,&quot;Id&quot;:1054,&quot;Name&quot;:&quot;PageSizes&quot;,&quot;ValueType&quot;:&quot;System.String&quot;,&quot;ValueToString&quot;:&quot;10,20,50&quot;,&quot;Value&quot;:&quot;10,20,50&quot;,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5744762+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;DefaultPageSize&quot;:{&quot;ViewId&quot;:571,&quot;Id&quot;:1055,&quot;Name&quot;:&quot;DefaultPageSize&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;10&quot;,&quot;Value&quot;:10,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5744762+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonPosition&quot;:{&quot;ViewId&quot;:571,&quot;Id&quot;:1056,&quot;Name&quot;:&quot;ItemButtonPosition&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5744762+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonPositionInColumn&quot;:{&quot;ViewId&quot;:571,&quot;Id&quot;:1057,&quot;Name&quot;:&quot;ItemButtonPositionInColumn&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5744762+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonGroupingOptions&quot;:{&quot;ViewId&quot;:571,&quot;Id&quot;:1058,&quot;Name&quot;:&quot;ItemButtonGroupingOptions&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5744762+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;RowCssClasses&quot;:{&quot;ViewId&quot;:571,&quot;Id&quot;:1059,&quot;Name&quot;:&quot;RowCssClasses&quot;,&quot;ValueType&quot;:null,&quot;ValueToString&quot;:null,&quot;Value&quot;:null,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-24T15:34:46.5744762+00:00&quot;,&quot;IsDeleted&quot;:false}},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:572,&quot;ListingModuleId&quot;:620,&quot;ViewName&quot;:&quot;Hierarchy&quot;,&quot;ViewTitle&quot;:&quot;Hierarchy (Experimental)&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:4,&quot;Icon&quot;:&quot;fas fa-folder-tree&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:573,&quot;ListingModuleId&quot;:620,&quot;ViewName&quot;:&quot;Kanban&quot;,&quot;ViewTitle&quot;:&quot;Kanban Board (Experimental)&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:5,&quot;Icon&quot;:&quot;fas fa-columns&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:574,&quot;ListingModuleId&quot;:620,&quot;ViewName&quot;:&quot;Legacy&quot;,&quot;ViewTitle&quot;:&quot;Legacy View&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:false,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:6,&quot;Icon&quot;:&quot;fas fa-th-list&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false}]&lt;/Views&gt;
+    &lt;RevisionNumber&gt;14&lt;/RevisionNumber&gt;
+    &lt;RevisionLastChangedBy&gt;dragos.dascaleanu@plantanapp.com&lt;/RevisionLastChangedBy&gt;
+    &lt;RevisionLastChangedDate&gt;2026-07-24T15:34:46.5119886+00:00&lt;/RevisionLastChangedDate&gt;
+  &lt;/Settings&gt;
+  &lt;Fields&gt;
+    &lt;FieldInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Title&gt;Instituție&lt;/Title&gt;
+      &lt;RefName&gt;key&lt;/RefName&gt;
+      &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
+      &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
+      &lt;IsSortable&gt;true&lt;/IsSortable&gt;
+      &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
+      &lt;IsSearchable&gt;false&lt;/IsSearchable&gt;
+      &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
+      &lt;CanBeSearchable&gt;true&lt;/CanBeSearchable&gt;
+      &lt;IsFilterable&gt;true&lt;/IsFilterable&gt;
+      &lt;CanBeFilterable&gt;true&lt;/CanBeFilterable&gt;
+      &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;FormatterParameters /&gt;
+      &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
+      &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+      &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+      &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
+      &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
+      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
+      &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
+      &lt;EditFieldTypeParameters /&gt;
+      &lt;Validation /&gt;
+      &lt;FieldType&gt;Field&lt;/FieldType&gt;
+      &lt;FieldTypeStr&gt;Field&lt;/FieldTypeStr&gt;
+      &lt;ShowOnDetail&gt;true&lt;/ShowOnDetail&gt;
+      &lt;ShowOnMobile&gt;true&lt;/ShowOnMobile&gt;
+      &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
+      &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
+      &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/FieldInfo&gt;
+    &lt;FieldInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Title&gt;Număr Accesări&lt;/Title&gt;
+      &lt;RefName&gt;doc_count&lt;/RefName&gt;
+      &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
+      &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
+      &lt;IsSortable&gt;true&lt;/IsSortable&gt;
+      &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
+      &lt;IsSearchable&gt;false&lt;/IsSearchable&gt;
+      &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
+      &lt;CanBeSearchable&gt;true&lt;/CanBeSearchable&gt;
+      &lt;IsFilterable&gt;false&lt;/IsFilterable&gt;
+      &lt;CanBeFilterable&gt;true&lt;/CanBeFilterable&gt;
+      &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;FormatterParameters /&gt;
+      &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
+      &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+      &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+      &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
+      &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
+      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
+      &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;EditFieldType&gt;auto&lt;/EditFieldType&gt;
+      &lt;EditFieldTypeParameters /&gt;
+      &lt;Validation /&gt;
+      &lt;FieldType&gt;Field&lt;/FieldType&gt;
+      &lt;FieldTypeStr&gt;Field&lt;/FieldTypeStr&gt;
+      &lt;ShowOnDetail&gt;true&lt;/ShowOnDetail&gt;
+      &lt;ShowOnMobile&gt;true&lt;/ShowOnMobile&gt;
+      &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
+      &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
+      &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
+      &lt;MetadataJson&gt;{}&lt;/MetadataJson&gt;
+      &lt;Metadata /&gt;
+    &lt;/FieldInfo&gt;
+  &lt;/Fields&gt;
+&lt;/ActionGrid&gt;]]></content>
+</module>

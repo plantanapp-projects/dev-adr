@@ -1,0 +1,226 @@
+{
+  "Children": [],
+  "DisplayInMenu": false,
+  "ParentPageId": -1,
+  "DisplayAfter": null,
+  "RecordNamePropertyId": 38,
+  "UpdateRecordNameProperty": null,
+  "ShowDashboardModule": false,
+  "GenerateApiAccess": false,
+  "Properties": [
+    {
+      "Id": 38,
+      "GlobalId": "6c0f8748-dabb-441f-a2d6-500590a40ce3",
+      "EntityVersionId": 13,
+      "Name": "Nume",
+      "Type": {
+        "Id": "Text",
+        "Name": "Text",
+        "InputType": {
+          "Id": "Text",
+          "Name": "Text",
+          "ValueType": 2,
+          "Length": 450,
+          "Icon": "short_text"
+        }
+      },
+      "DefaultValue": null,
+      "NullRecordsValue": null,
+      "EntityVersionRefId": null,
+      "IsDeleted": false,
+      "IsRequired": true,
+      "IsSearchable": true,
+      "IsFilterable": false,
+      "IsSortable": true,
+      "OrderIndex": 1
+    }
+  ],
+  "RolePermissions": {
+    "1": [
+      {
+        "Id": 151,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 1,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 152,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 1,
+        "RoleName": "Admins",
+        "Value": "true"
+      },
+      {
+        "Id": 153,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 1,
+        "RoleName": "Admins",
+        "Value": "all"
+      },
+      {
+        "Id": 154,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 1,
+        "RoleName": "Admins",
+        "Value": "all"
+      }
+    ],
+    "2": [
+      {
+        "Id": 155,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 2,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 156,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 2,
+        "RoleName": "Citizen Developers",
+        "Value": "true"
+      },
+      {
+        "Id": 157,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 2,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      },
+      {
+        "Id": 158,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 2,
+        "RoleName": "Citizen Developers",
+        "Value": "all"
+      }
+    ],
+    "3": [
+      {
+        "Id": 159,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 3,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 160,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 3,
+        "RoleName": "Low-Code Engineer",
+        "Value": "true"
+      },
+      {
+        "Id": 161,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 3,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      },
+      {
+        "Id": 162,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 3,
+        "RoleName": "Low-Code Engineer",
+        "Value": "all"
+      }
+    ],
+    "4": [
+      {
+        "Id": 163,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 4,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 164,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 4,
+        "RoleName": "Managers",
+        "Value": "true"
+      },
+      {
+        "Id": 165,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 4,
+        "RoleName": "Managers",
+        "Value": "all"
+      },
+      {
+        "Id": 166,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 4,
+        "RoleName": "Managers",
+        "Value": "all"
+      }
+    ]
+  },
+  "Id": 13,
+  "GlobalId": "03da5f78-e0ab-41f7-959b-0ee21a1a0287",
+  "ConfigGenerationGlobalId": "03da5f78-e0ab-41f7-959b-0ee21a1a0287",
+  "VersionId": 13,
+  "EntityTabId": 80,
+  "Name": "Categorie tipuri de date",
+  "PluralName": "Categorii tipuri de date",
+  "PageUiLibrary": 2,
+  "CreatedDate": "2026-07-14T11:21:09.0233333",
+  "CreatedBy": "Dragos Dascaleanu",
+  "LastModifiedBy": "",
+  "LastModifiedOn": null,
+  "Icon": "table",
+  "Type": 0,
+  "BuiltInType": null,
+  "EnableIndexing": false,
+  "NamespaceUid": "fcf9f909-da95-4e35-bc0a-5f7efdc97d5d",
+  "EntityTabGlobalId": "c9425322-0963-44d2-a36f-7f4e7fe26049"
+}

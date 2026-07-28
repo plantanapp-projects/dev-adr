@@ -1,0 +1,25 @@
+{
+  "globalId": "ce932470-71e7-43ab-871f-171d22986930",
+  "namespace": {
+    "globalId": "62f87937-617d-409f-990d-0c2028932681",
+    "name": "PAASysUpdates",
+    "description": "",
+    "isSystem": true
+  },
+  "name": "AppBuilderVersion",
+  "description": "",
+  "defaultValue": "",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "db",
+    "sql": "SELECT Version FROM {databaseOwner}[{objectQualifier}Packages]\r\nWHERE Name = 'App.Builder'",
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "Name": "Nomenclator Aplicatii Sursa",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Input": [
+    {
+      "Name": "CUIInstitutie",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Description": "CUI-ul institutiei pentru care să fie returnate aplicațiile sursă. Poate fi fără valoare; în acest caz vor fi returnate toate aplicațiile sursă pentru toate instituțiile.",
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "OnActions": [
+    {
+      "ActionType": "LoadEntitiesFromSql",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "JsonEntityList",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}

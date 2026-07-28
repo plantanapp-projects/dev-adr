@@ -1,0 +1,51 @@
+{
+  "Name": "Nomenclatorutilizator",
+  "Description": "Deletes the provided Nomenclator utilizator record",
+  "HttpMethod": "DELETE",
+  "IsEnabled": true,
+  "OrderIndex": 5,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Input": [
+    {
+      "Name": "RecordId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"RecordId is required.\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {
+            "PAP_InternalIdentifier": "Api.InputField.RequiredValidator"
+          }
+        }
+      ]
+    }
+  ],
+  "OnActions": [
+    {
+      "ActionType": "PlantAnApp.DeleteEntity.c1267be6-743d-4e45-9327-a4bbeb185097",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.DeleteEntity",
+        "EntityIdentifier": "c1267be6-743d-4e45-9327-a4bbeb185097",
+        "IsUidEnabled": "True"
+      }
+    },
+    {
+      "ActionType": "JsonObject",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {
+        "PAP_InternalIdentifier": "Api.Response"
+      }
+    }
+  ],
+  "OnErrorActions": []
+}

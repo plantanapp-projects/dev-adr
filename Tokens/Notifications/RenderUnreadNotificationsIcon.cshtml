@@ -1,0 +1,79 @@
+@inherits PlantAnApp.Tokens.Core.RazorTokenBase
+@{
+    var domain = "https://dev.adr.external.plantanapp.com/Notificari-Cetatean"; /*To remove hardcoded value once we figure out how to call tokens*/
+    var currentUserId = User.UserID;
+    var cetateanData = Tokens.Cetatean.GetCetateanData(UserId:currentUserId);
+    var notificariInApp = cetateanData.NotificariAppActivate;
+    var notifCount = Tokens.Notifications.CountUnreadnotifications(UserId:currentUserId);
+    int count = 0;
+    if (notifCount != null) {
+        string tokenResult = notifCount.ToString().Trim();
+        int.TryParse(tokenResult, out count);
+    }
+
+    string notificariInAppStr = notificariInApp?.ToString().Trim() ?? "";
+    bool notificationsEnabled = notificariInAppStr.Equals("True", StringComparison.OrdinalIgnoreCase);
+    // Anything else ("False", "-1", empty, etc.) falls through to the disabled state.
+
+    string tooltipText = notificationsEnabled ? "Notificări" : "Notificări în aplicație dezactivate";
+}
+<style>
+    .notif-bell-container {
+        position: relative;
+        display: inline-block;
+        padding: 4px;
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+    .notif-bell-icon {
+        font-size: 22px;
+        color: #ffffff !important;
+    }
+    .notif-badge {
+        position: absolute;
+        top: 4px;
+        right: -2px;
+        background-color: #ffffff;
+        color: #008e81;
+        font-family: Arial, sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 2px 5px;
+        border-radius: 4px;
+        min-width: 12px;
+        text-align: center;
+        line-height: 1;
+    }
+    /* Subtle hover effect for visual click feedback */
+    .notif-bell-container:hover .notif-bell-icon {
+        opacity: 0.8;
+    }
+    
+    .notif-bell-container-disabled {
+        cursor: auto;
+    }
+</style>
+
+    @if (notificationsEnabled)
+    {
+        <!-- SVG Bell Icon (notifications enabled) -->
+        <a href="@domain" class="notif-bell-container" title="@tooltipText">
+        <svg class="notif-bell-icon-disabled" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+            <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        </svg>
+        <span class="notif-badge">@count</span>
+        </a>
+    }
+    else
+    {
+        <!-- SVG Bell-Off Icon (notifications disabled / -1) -->
+        <div class="notif-bell-container-disabled" title="@tooltipText">
+        <svg class="notif-bell-icon-disabled" width="22" height="30" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+            <path d="M8.7 3A6 6 0 0 1 18 8a21.3 21.3 0 0 0 .6 5"></path>
+            <path d="M17 17H3s3-2 3-9a4.67 4.67 0 0 1 .3-1.7"></path>
+            <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path>
+            <path d="m2 2 20 20"></path>
+        </svg>
+        </div>
+    }

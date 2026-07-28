@@ -1,0 +1,1477 @@
+<module type="ActionForm" version="05.28.226.00">
+    <contentKey />
+    <moduleID>619</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>false</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administrators</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Citizen Developers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Low-Code Engineer</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Grafice Form</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>fa02ab7c-f81e-47dd-b690-5c2ea61ea544</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings />
+    <tabmodulesettings />
+    <definition>Action Form</definition>
+    <moduledefinition>avt.Action Form</moduledefinition>
+    <content type="ActionForm" version="05.28.226.00"><![CDATA[&lt;ActionForm&gt;
+  &lt;Fields&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[840]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Indicator de Activitate Totală]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;IndicatordeActivitateTotal&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card kpi-card\&quot;\u003e\n  \u003ch2\u003eIndicator de Activitate Totală \u003c/h2\u003e\n  \u003cdiv class=\&quot;kpi-value\&quot; id=\&quot;totalActivityValue\&quot;\u003e0\u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  const totalRaw = [eventsNumber]; // now just a number\n\n  // Validate value\n  const total = (typeof totalRaw === \u0027number\u0027 \u0026\u0026 !isNaN(totalRaw)) ? totalRaw : 0;\n\n  const element = document.getElementById(\u0027totalActivityValue\u0027);\n\n  function animateValue(el, end, duration = 1200) {\n    let start = 0;\n    const startTime = performance.now();\n\n    function update(currentTime) {\n      const elapsed = currentTime - startTime;\n      const progress = Math.min(elapsed / duration, 1);\n\n      const eased = 1 - Math.pow(1 - progress, 3);\n\n      const currentValue = Math.floor(eased * end);\n\n      el.textContent = currentValue.toLocaleString(\u0027ro-RO\u0027);\n\n      if (progress \u003c 1) {\n        requestAnimationFrame(update);\n      } else {\n        el.textContent = end.toLocaleString(\u0027ro-RO\u0027);\n      }\n    }\n\n    requestAnimationFrame(update);\n  }\n\n  animateValue(element, total);\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card kpi-card&quot;&gt;
+  &lt;h2&gt;Indicator de Activitate Totală &lt;/h2&gt;
+  &lt;div class=&quot;kpi-value&quot; id=&quot;totalActivityValue&quot;&gt;0&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const totalRaw = [eventsNumber]; // now just a number
+
+  // Validate value
+  const total = (typeof totalRaw === &#39;number&#39; &amp;&amp; !isNaN(totalRaw)) ? totalRaw : 0;
+
+  const element = document.getElementById(&#39;totalActivityValue&#39;);
+
+  function animateValue(el, end, duration = 1200) {
+    let start = 0;
+    const startTime = performance.now();
+
+    function update(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      const eased = 1 - Math.pow(1 - progress, 3);
+
+      const currentValue = Math.floor(eased * end);
+
+      el.textContent = currentValue.toLocaleString(&#39;ro-RO&#39;);
+
+      if (progress &lt; 1) {
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = end.toLocaleString(&#39;ro-RO&#39;);
+      }
+    }
+
+    requestAnimationFrame(update);
+  }
+
+  animateValue(element, total);
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;8&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;0&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;4&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;4&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[832]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Top 5 Institutii Bar Chart]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;Top5InstitutiiBarChart&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card\&quot;\u003e\n  \u003ch2\u003eDistribuția Accesărilor (Top 5 Instituții)\u003c/h2\u003e\n  \u003cdiv class=\&quot;chart-container\&quot;\u003e\n    \u003ccanvas id=\&quot;institutionsChart\&quot;\u003e\u003c/canvas\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  const apiResponse = [JSONAggrTop5Inst];\n\n  // Safe extraction with optional chaining and fallback empty array\n  const buckets = apiResponse?.data?.buckets || [];\n  const top5 = buckets.slice(0, 5);\n\n  const chartLabels = top5.map(item =\u003e item.key);\n  const chartData = top5.map(item =\u003e item.doc_count);\n\n  const ctx = document.getElementById(\u0027institutionsChart\u0027).getContext(\u00272d\u0027);\n  \n  new Chart(ctx, {\n    type: \u0027bar\u0027,\n    data: {\n      labels: chartLabels,\n      datasets: [{\n        label: \u0027Număr Accesări\u0027,\n        data: chartData,\n        backgroundColor: [\n          \u0027rgba(54, 162, 235, 0.75)\u0027,\n          \u0027rgba(75, 192, 192, 0.75)\u0027,\n          \u0027rgba(255, 206, 86, 0.75)\u0027,\n          \u0027rgba(153, 102, 255, 0.75)\u0027,\n          \u0027rgba(255, 159, 64, 0.75)\u0027\n        ],\n        borderColor: [\n          \u0027rgba(54, 162, 235, 1)\u0027,\n          \u0027rgba(75, 192, 192, 1)\u0027,\n          \u0027rgba(255, 206, 86, 1)\u0027,\n          \u0027rgba(153, 102, 255, 1)\u0027,\n          \u0027rgba(255, 159, 64, 1)\u0027\n        ],\n        borderWidth: 1.5,\n        borderRadius: 6\n      }]\n    },\n    options: {\n      responsive: true,\n      maintainAspectRatio: false,\n      plugins: {\n        legend: {\n          display: false\n        },\n        tooltip: {\n          callbacks: {\n            label: function(context) {\n              return ` Accesări: ${context.raw}`;\n            }\n          }\n        }\n      },\n      scales: {\n        y: {\n          beginAtZero: true,\n          ticks: {\n            precision: 0\n          },\n          title: {\n            display: true,\n            text: \u0027Număr Accesări\u0027\n          }\n        },\n        x: {\n          title: {\n            display: true,\n            text: \u0027Instituții\u0027\n          }\n        }\n      }\n    }\n  });\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card&quot;&gt;
+  &lt;h2&gt;Distribuția Accesărilor (Top 5 Instituții)&lt;/h2&gt;
+  &lt;div class=&quot;chart-container&quot;&gt;
+    &lt;canvas id=&quot;institutionsChart&quot;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const apiResponse = [JSONAggrTop5Inst];
+
+  // Safe extraction with optional chaining and fallback empty array
+  const buckets = apiResponse?.data?.buckets || [];
+  const top5 = buckets.slice(0, 5);
+
+  const chartLabels = top5.map(item =&gt; item.key);
+  const chartData = top5.map(item =&gt; item.doc_count);
+
+  const ctx = document.getElementById(&#39;institutionsChart&#39;).getContext(&#39;2d&#39;);
+  
+  new Chart(ctx, {
+    type: &#39;bar&#39;,
+    data: {
+      labels: chartLabels,
+      datasets: [{
+        label: &#39;Număr Accesări&#39;,
+        data: chartData,
+        backgroundColor: [
+          &#39;rgba(54, 162, 235, 0.75)&#39;,
+          &#39;rgba(75, 192, 192, 0.75)&#39;,
+          &#39;rgba(255, 206, 86, 0.75)&#39;,
+          &#39;rgba(153, 102, 255, 0.75)&#39;,
+          &#39;rgba(255, 159, 64, 0.75)&#39;
+        ],
+        borderColor: [
+          &#39;rgba(54, 162, 235, 1)&#39;,
+          &#39;rgba(75, 192, 192, 1)&#39;,
+          &#39;rgba(255, 206, 86, 1)&#39;,
+          &#39;rgba(153, 102, 255, 1)&#39;,
+          &#39;rgba(255, 159, 64, 1)&#39;
+        ],
+        borderWidth: 1.5,
+        borderRadius: 6
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false
+        },
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              return ` Accesări: ${context.raw}`;
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            precision: 0
+          },
+          title: {
+            display: true,
+            text: &#39;Număr Accesări&#39;
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: &#39;Instituții&#39;
+          }
+        }
+      }
+    }
+  });
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;12&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;1&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;4&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[833]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Tipologia Actiunilor Pie Chart]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;TipologiaActiunilorPieChart&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card\&quot;\u003e\n  \u003ch2\u003eDistribuție tipuri de accesări\u003c/h2\u003e\n  \u003cdiv class=\&quot;chart-container\&quot;\u003e\n    \u003ccanvas id=\&quot;actionTypePieChart\&quot;\u003e\u003c/canvas\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  const apiResponse = [JSONAggrTipActiune];\n\n  const buckets = apiResponse?.data?.buckets || [];\n\n  const hasData = buckets.length \u003e 0 \u0026\u0026 buckets.some(item =\u003e item.doc_count \u003e 0);\n\n  let actionLabels, actionData, backgroundColors;\n\n  if (hasData) {\n    actionLabels = buckets.map(item =\u003e item.key);\n    actionData = buckets.map(item =\u003e item.doc_count);\n\n    const colorMap = {\n      \u0027Citire\u0027: \u0027#2ec4b6\u0027,\n      \u0027Actualizare\u0027: \u0027#ff9f1c\u0027,\n      \u0027Creare\u0027: \u0027#3a86ef\u0027,\n      \u0027Stergere\u0027: \u0027#e71d36\u0027\n    };\n    const fallbackPalette = [\u0027#2ec4b6\u0027, \u0027#ff9f1c\u0027, \u0027#3a86ef\u0027, \u0027#e71d36\u0027, \u0027#9966ff\u0027, \u0027#4bc0c0\u0027];\n\n    backgroundColors = actionLabels.map((label, index) =\u003e \n      colorMap[label] || fallbackPalette[index % fallbackPalette.length]\n    );\n  } else {\n    actionLabels = [\u0027Fără date\u0027];\n    actionData = [1];\n    backgroundColors = [\u0027#e0e0e0\u0027];\n  }\n\n  const totalCount = hasData ? actionData.reduce((sum, value) =\u003e sum + value, 0) : 0;\n\n  // 3. Render Chart\n  const actionCtx = document.getElementById(\u0027actionTypePieChart\u0027).getContext(\u00272d\u0027);\n\n  new Chart(actionCtx, {\n    type: \u0027pie\u0027,\n    data: {\n      labels: actionLabels,\n      datasets: [{\n        label: \u0027Tipologia Acțiunilor\u0027,\n        data: actionData,\n        backgroundColor: backgroundColors,\n        borderWidth: hasData ? 1 : 0,\n        hoverOffset: hasData ? 6 : 0\n      }]\n    },\n    options: {\n      responsive: true,\n      maintainAspectRatio: false,\n      plugins: {\n        legend: {\n          position: \u0027bottom\u0027,\n          labels: {\n            boxWidth: 14,\n            padding: 15,\n            font: {\n              size: 13\n            }\n          }\n        },\n        tooltip: {\n          enabled: hasData, // Disable tooltips if there\u0027s no data\n          callbacks: {\n            label: function(context) {\n              const label = context.label || \u0027\u0027;\n              const value = context.raw || 0;\n              const percentage = totalCount \u003e 0 ? ((value / totalCount) * 100).toFixed(1) : 0;\n              return ` ${label}: ${value} accesări (${percentage}%)`;\n            }\n          }\n        }\n      }\n    }\n  });\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card&quot;&gt;
+  &lt;h2&gt;Distribuție tipuri de accesări&lt;/h2&gt;
+  &lt;div class=&quot;chart-container&quot;&gt;
+    &lt;canvas id=&quot;actionTypePieChart&quot;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const apiResponse = [JSONAggrTipActiune];
+
+  const buckets = apiResponse?.data?.buckets || [];
+
+  const hasData = buckets.length &gt; 0 &amp;&amp; buckets.some(item =&gt; item.doc_count &gt; 0);
+
+  let actionLabels, actionData, backgroundColors;
+
+  if (hasData) {
+    actionLabels = buckets.map(item =&gt; item.key);
+    actionData = buckets.map(item =&gt; item.doc_count);
+
+    const colorMap = {
+      &#39;Citire&#39;: &#39;#2ec4b6&#39;,
+      &#39;Actualizare&#39;: &#39;#ff9f1c&#39;,
+      &#39;Creare&#39;: &#39;#3a86ef&#39;,
+      &#39;Stergere&#39;: &#39;#e71d36&#39;
+    };
+    const fallbackPalette = [&#39;#2ec4b6&#39;, &#39;#ff9f1c&#39;, &#39;#3a86ef&#39;, &#39;#e71d36&#39;, &#39;#9966ff&#39;, &#39;#4bc0c0&#39;];
+
+    backgroundColors = actionLabels.map((label, index) =&gt; 
+      colorMap[label] || fallbackPalette[index % fallbackPalette.length]
+    );
+  } else {
+    actionLabels = [&#39;Fără date&#39;];
+    actionData = [1];
+    backgroundColors = [&#39;#e0e0e0&#39;];
+  }
+
+  const totalCount = hasData ? actionData.reduce((sum, value) =&gt; sum + value, 0) : 0;
+
+  // 3. Render Chart
+  const actionCtx = document.getElementById(&#39;actionTypePieChart&#39;).getContext(&#39;2d&#39;);
+
+  new Chart(actionCtx, {
+    type: &#39;pie&#39;,
+    data: {
+      labels: actionLabels,
+      datasets: [{
+        label: &#39;Tipologia Acțiunilor&#39;,
+        data: actionData,
+        backgroundColor: backgroundColors,
+        borderWidth: hasData ? 1 : 0,
+        hoverOffset: hasData ? 6 : 0
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: &#39;bottom&#39;,
+          labels: {
+            boxWidth: 14,
+            padding: 15,
+            font: {
+              size: 13
+            }
+          }
+        },
+        tooltip: {
+          enabled: hasData, // Disable tooltips if there&#39;s no data
+          callbacks: {
+            label: function(context) {
+              const label = context.label || &#39;&#39;;
+              const value = context.raw || 0;
+              const percentage = totalCount &gt; 0 ? ((value / totalCount) * 100).toFixed(1) : 0;
+              return ` ${label}: ${value} accesări (${percentage}%)`;
+            }
+          }
+        }
+      }
+    }
+  });
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;16&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;1&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;4&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[835]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Categorii de Date Accesate Donut Chart]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;CategoriideDateAccesateDonutChart&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card\&quot;\u003e\n  \u003ch2\u003eCategorii de Date Accesate\u003c/h2\u003e\n  \u003cdiv class=\&quot;chart-container\&quot;\u003e\n    \u003ccanvas id=\&quot;dataCategoryDonutChart\&quot;\u003e\u003c/canvas\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  const apiResponse = [JSONAggrCategoriiDate];\n  const categoryList = [JSONCategorii];\n\n  const buckets = apiResponse?.data?.buckets || [];\n\n  // Build lookup: code -\u003e category\n  const codeToCategory = {};\n  categoryList.forEach(item =\u003e {\n    codeToCategory[item.Cod] = item.Nume;\n  });\n\n  // Aggregate counts per category\n  const categoryCounts = {};\n\n  buckets.forEach(item =\u003e {\n    const category = codeToCategory[item.key] || \u0027Altele\u0027;\n\n    if (!categoryCounts[category]) {\n      categoryCounts[category] = 0;\n    }\n\n    categoryCounts[category] += item.doc_count;\n  });\n\n  // Convert to sortable array\n  let categoryEntries = Object.entries(categoryCounts);\n\n  // Sort descending by value\n  categoryEntries.sort((a, b) =\u003e b[1] - a[1]);\n\n  const hasData = categoryEntries.length \u003e 0 \u0026\u0026 categoryEntries.some(entry =\u003e entry[1] \u003e 0);\n\n  const labels = hasData ? categoryEntries.map(entry =\u003e entry[0]) : [\u0027Fără date\u0027];\n  const data = hasData ? categoryEntries.map(entry =\u003e entry[1]) : [1];\n\n  const colorMap = {\n    \u0027Date de identificare directa\u0027: \u0027#3a86ef\u0027,\n    \u0027Date de contact\u0027: \u0027#2ec4b6\u0027,\n    \u0027Date financiare\u0027: \u0027#ffbe0b\u0027,\n    \u0027Date cu caracter special\u0027: \u0027#ff006e\u0027,\n    \u0027Date demografice\u0027: \u0027#8338ec\u0027,\n    \u0027Date profesionale\u0027: \u0027#fb5607\u0027,\n    \u0027Date de identificare electronica\u0027: \u0027#4cc9f0\u0027,\n    \u0027Date de asigurare si asistenta sociala\u0027: \u0027#90dbf4\u0027,\n    \u0027Date biometrice simple\u0027: \u0027#c77dff\u0027,\n    \u0027Altele\u0027: \u0027#8d99ae\u0027\n  };\n\n  const backgroundColors = hasData\n    ? labels.map(label =\u003e colorMap[label] || \u0027#8d99ae\u0027)\n    : [\u0027#e0e0e0\u0027];\n\n  const total = hasData ? data.reduce((a, b) =\u003e a + b, 0) : 0;\n\n  const ctx = document.getElementById(\u0027dataCategoryDonutChart\u0027).getContext(\u00272d\u0027);\n\n  new Chart(ctx, {\n    type: \u0027doughnut\u0027,\n    data: {\n      labels: labels,\n      datasets: [{\n        data: data,\n        backgroundColor: backgroundColors,\n        borderWidth: hasData ? 1 : 0,\n        hoverOffset: hasData ? 6 : 0\n      }]\n    },\n    options: {\n      responsive: true,\n      maintainAspectRatio: false,\n      cutout: \u002760%\u0027,\n      plugins: {\n        legend: {\n          position: \u0027bottom\u0027,\n          labels: {\n            boxWidth: 14,\n            padding: 15,\n            font: {\n              size: 13\n            }\n          }\n        },\n        tooltip: {\n          enabled: hasData,\n          callbacks: {\n            label: function(context) {\n              const label = context.label || \u0027\u0027;\n              const value = context.raw || 0;\n              const percentage = total \u003e 0 ? ((value / total) * 100).toFixed(1) : 0;\n              return ` ${label}: ${value} (${percentage}%)`;\n            }\n          }\n        }\n      }\n    }\n  });\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card&quot;&gt;
+  &lt;h2&gt;Categorii de Date Accesate&lt;/h2&gt;
+  &lt;div class=&quot;chart-container&quot;&gt;
+    &lt;canvas id=&quot;dataCategoryDonutChart&quot;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const apiResponse = [JSONAggrCategoriiDate];
+  const categoryList = [JSONCategorii];
+
+  const buckets = apiResponse?.data?.buckets || [];
+
+  // Build lookup: code -&gt; category
+  const codeToCategory = {};
+  categoryList.forEach(item =&gt; {
+    codeToCategory[item.Cod] = item.Nume;
+  });
+
+  // Aggregate counts per category
+  const categoryCounts = {};
+
+  buckets.forEach(item =&gt; {
+    const category = codeToCategory[item.key] || &#39;Altele&#39;;
+
+    if (!categoryCounts[category]) {
+      categoryCounts[category] = 0;
+    }
+
+    categoryCounts[category] += item.doc_count;
+  });
+
+  // Convert to sortable array
+  let categoryEntries = Object.entries(categoryCounts);
+
+  // Sort descending by value
+  categoryEntries.sort((a, b) =&gt; b[1] - a[1]);
+
+  const hasData = categoryEntries.length &gt; 0 &amp;&amp; categoryEntries.some(entry =&gt; entry[1] &gt; 0);
+
+  const labels = hasData ? categoryEntries.map(entry =&gt; entry[0]) : [&#39;Fără date&#39;];
+  const data = hasData ? categoryEntries.map(entry =&gt; entry[1]) : [1];
+
+  const colorMap = {
+    &#39;Date de identificare directa&#39;: &#39;#3a86ef&#39;,
+    &#39;Date de contact&#39;: &#39;#2ec4b6&#39;,
+    &#39;Date financiare&#39;: &#39;#ffbe0b&#39;,
+    &#39;Date cu caracter special&#39;: &#39;#ff006e&#39;,
+    &#39;Date demografice&#39;: &#39;#8338ec&#39;,
+    &#39;Date profesionale&#39;: &#39;#fb5607&#39;,
+    &#39;Date de identificare electronica&#39;: &#39;#4cc9f0&#39;,
+    &#39;Date de asigurare si asistenta sociala&#39;: &#39;#90dbf4&#39;,
+    &#39;Date biometrice simple&#39;: &#39;#c77dff&#39;,
+    &#39;Altele&#39;: &#39;#8d99ae&#39;
+  };
+
+  const backgroundColors = hasData
+    ? labels.map(label =&gt; colorMap[label] || &#39;#8d99ae&#39;)
+    : [&#39;#e0e0e0&#39;];
+
+  const total = hasData ? data.reduce((a, b) =&gt; a + b, 0) : 0;
+
+  const ctx = document.getElementById(&#39;dataCategoryDonutChart&#39;).getContext(&#39;2d&#39;);
+
+  new Chart(ctx, {
+    type: &#39;doughnut&#39;,
+    data: {
+      labels: labels,
+      datasets: [{
+        data: data,
+        backgroundColor: backgroundColors,
+        borderWidth: hasData ? 1 : 0,
+        hoverOffset: hasData ? 6 : 0
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      cutout: &#39;60%&#39;,
+      plugins: {
+        legend: {
+          position: &#39;bottom&#39;,
+          labels: {
+            boxWidth: 14,
+            padding: 15,
+            font: {
+              size: 13
+            }
+          }
+        },
+        tooltip: {
+          enabled: hasData,
+          callbacks: {
+            label: function(context) {
+              const label = context.label || &#39;&#39;;
+              const value = context.raw || 0;
+              const percentage = total &gt; 0 ? ((value / total) * 100).toFixed(1) : 0;
+              return ` ${label}: ${value} (${percentage}%)`;
+            }
+          }
+        }
+      }
+    }
+  });
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;20&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;1&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;4&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[848]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Evoluția Accesărilor &#238;n Timp pe Instituții]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName&gt;EvolutiaAccesarilorinTimppeInstitutii&lt;/OverrideName&gt;
+      &lt;Name&gt;EvolutiaAccesarilorinTimppeInstitutii&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card\&quot;\u003e\n  \u003ch2\u003eEvoluția Accesărilor &#238;n Timp pe Instituții\u003c/h2\u003e\n  \u003cdiv class=\&quot;chart-container\&quot;\u003e\n    \u003ccanvas id=\&quot;institutionsTimeChart\&quot;\u003e\u003c/canvas\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  const rawData = [dataArr] || [];\n\n  // Step 1: Aggregate data → { month: { institution: count } }\n  const aggregation = {};\n\n  rawData.forEach(item =\u003e {\n    const dateStr = item?.S14?.value;\n    const institution = item?.S13?.value || \u0027Necunoscut\u0027;\n\n    if (!dateStr) return;\n\n    const date = new Date(dateStr);\n    const monthKey = date.getFullYear() + \u0027-\u0027 + String(date.getMonth() + 1).padStart(2, \u00270\u0027);\n\n    if (!aggregation[monthKey]) {\n      aggregation[monthKey] = {};\n    }\n\n    if (!aggregation[monthKey][institution]) {\n      aggregation[monthKey][institution] = 0;\n    }\n\n    aggregation[monthKey][institution]++;\n  });\n\n  // Step 2: Get sorted months\n  const months = Object.keys(aggregation).sort();\n\n  // Step 3: Get all institutions\n  const institutionsSet = new Set();\n  Object.values(aggregation).forEach(monthData =\u003e {\n    Object.keys(monthData).forEach(inst =\u003e institutionsSet.add(inst));\n  });\n\n  const institutions = Array.from(institutionsSet);\n\n  // Step 4: Build datasets\n  const colors = [\n    \u0027#3a86ef\u0027, \u0027#2ec4b6\u0027, \u0027#ffbe0b\u0027, \u0027#ff006e\u0027,\n    \u0027#8338ec\u0027, \u0027#fb5607\u0027, \u0027#4cc9f0\u0027, \u0027#90dbf4\u0027\n  ];\n\n  const datasets = institutions.map((inst, index) =\u003e {\n    const data = months.map(month =\u003e {\n      return aggregation[month][inst] || 0;\n    });\n\n    return {\n      label: inst,\n      data: data,\n      borderColor: colors[index % colors.length],\n      backgroundColor: colors[index % colors.length],\n      tension: 0.3,\n      fill: false\n    };\n  });\n\n  const hasData = months.length \u003e 0 \u0026\u0026 datasets.some(ds =\u003e ds.data.some(v =\u003e v \u003e 0));\n\n  const ctx = document.getElementById(\u0027institutionsTimeChart\u0027).getContext(\u00272d\u0027);\n\n  new Chart(ctx, {\n    type: \u0027line\u0027,\n    data: {\n      labels: hasData ? months : [\u0027\u0027],\n      datasets: hasData ? datasets : []\n    },\n    options: {\n      responsive: true,\n      maintainAspectRatio: false,\n      plugins: {\n        legend: {\n          position: \u0027bottom\u0027\n        },\n        tooltip: {\n          enabled: hasData\n        }\n      },\n      scales: {\n        y: {\n          beginAtZero: true,\n          ticks: {\n            precision: 0\n          },\n          title: {\n            display: true,\n            text: \u0027Număr accesări\u0027\n          }\n        },\n        x: {\n          title: {\n            display: true,\n            text: \u0027Lună\u0027\n          }\n        }\n      }\n    }\n  });\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card&quot;&gt;
+  &lt;h2&gt;Evoluția Accesărilor &#238;n Timp pe Instituții&lt;/h2&gt;
+  &lt;div class=&quot;chart-container&quot;&gt;
+    &lt;canvas id=&quot;institutionsTimeChart&quot;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const rawData = [dataArr] || [];
+
+  // Step 1: Aggregate data → { month: { institution: count } }
+  const aggregation = {};
+
+  rawData.forEach(item =&gt; {
+    const dateStr = item?.S14?.value;
+    const institution = item?.S13?.value || &#39;Necunoscut&#39;;
+
+    if (!dateStr) return;
+
+    const date = new Date(dateStr);
+    const monthKey = date.getFullYear() + &#39;-&#39; + String(date.getMonth() + 1).padStart(2, &#39;0&#39;);
+
+    if (!aggregation[monthKey]) {
+      aggregation[monthKey] = {};
+    }
+
+    if (!aggregation[monthKey][institution]) {
+      aggregation[monthKey][institution] = 0;
+    }
+
+    aggregation[monthKey][institution]++;
+  });
+
+  // Step 2: Get sorted months
+  const months = Object.keys(aggregation).sort();
+
+  // Step 3: Get all institutions
+  const institutionsSet = new Set();
+  Object.values(aggregation).forEach(monthData =&gt; {
+    Object.keys(monthData).forEach(inst =&gt; institutionsSet.add(inst));
+  });
+
+  const institutions = Array.from(institutionsSet);
+
+  // Step 4: Build datasets
+  const colors = [
+    &#39;#3a86ef&#39;, &#39;#2ec4b6&#39;, &#39;#ffbe0b&#39;, &#39;#ff006e&#39;,
+    &#39;#8338ec&#39;, &#39;#fb5607&#39;, &#39;#4cc9f0&#39;, &#39;#90dbf4&#39;
+  ];
+
+  const datasets = institutions.map((inst, index) =&gt; {
+    const data = months.map(month =&gt; {
+      return aggregation[month][inst] || 0;
+    });
+
+    return {
+      label: inst,
+      data: data,
+      borderColor: colors[index % colors.length],
+      backgroundColor: colors[index % colors.length],
+      tension: 0.3,
+      fill: false
+    };
+  });
+
+  const hasData = months.length &gt; 0 &amp;&amp; datasets.some(ds =&gt; ds.data.some(v =&gt; v &gt; 0));
+
+  const ctx = document.getElementById(&#39;institutionsTimeChart&#39;).getContext(&#39;2d&#39;);
+
+  new Chart(ctx, {
+    type: &#39;line&#39;,
+    data: {
+      labels: hasData ? months : [&#39;&#39;],
+      datasets: hasData ? datasets : []
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: &#39;bottom&#39;
+        },
+        tooltip: {
+          enabled: hasData
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            precision: 0
+          },
+          title: {
+            display: true,
+            text: &#39;Număr accesări&#39;
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: &#39;Lună&#39;
+          }
+        }
+      }
+    }
+  });
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;24&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;2&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;4&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[849]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Matricea Acțiunilor pe Tip de Date]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName&gt;MatriceaActiunilorpeTipdeDate&lt;/OverrideName&gt;
+      &lt;Name&gt;MatriceaActiunilorpeTipdeDate&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card\&quot;\u003e\n  \u003ch2\u003eMatricea Acțiunilor pe Tip de Date\u003c/h2\u003e\n  \u003cdiv class=\&quot;chart-container\&quot;\u003e\n    \u003ccanvas id=\&quot;stackedActionsChart\&quot;\u003e\u003c/canvas\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  const rawData = [dataArr] || [];\n\n  // Step 1: Aggregate → { dataType: { action: count } }\n  const aggregation = {};\n\n  rawData.forEach(item =\u003e {\n    const dataType = item?.S22?.value || \u0027Necunoscut\u0027;\n    const action = item?.S20?.value || \u0027Necunoscut\u0027;\n\n    if (!aggregation[dataType]) {\n      aggregation[dataType] = {};\n    }\n\n    if (!aggregation[dataType][action]) {\n      aggregation[dataType][action] = 0;\n    }\n\n    aggregation[dataType][action]++;\n  });\n\n  const dataTypes = Object.keys(aggregation);\n\n  // Step 2: Get all actions\n  const actionsSet = new Set();\n  Object.values(aggregation).forEach(obj =\u003e {\n    Object.keys(obj).forEach(action =\u003e actionsSet.add(action));\n  });\n\n  const actions = Array.from(actionsSet);\n\n  // Step 3: Build datasets (one per action)\n  const colorMap = {\n    \u0027Citire\u0027: \u0027#2ec4b6\u0027,\n    \u0027Actualizare\u0027: \u0027#ff9f1c\u0027,\n    \u0027Creare\u0027: \u0027#3a86ef\u0027,\n    \u0027Ștergere\u0027: \u0027#e71d36\u0027,\n    \u0027Stergere\u0027: \u0027#e71d36\u0027\n  };\n\n  const fallbackColors = [\u0027#3a86ef\u0027, \u0027#2ec4b6\u0027, \u0027#ffbe0b\u0027, \u0027#ff006e\u0027, \u0027#8338ec\u0027];\n\n  const datasets = actions.map((action, index) =\u003e {\n    const data = dataTypes.map(type =\u003e {\n      return aggregation[type][action] || 0;\n    });\n\n    return {\n      label: action,\n      data: data,\n      backgroundColor: colorMap[action] || fallbackColors[index % fallbackColors.length],\n      borderRadius: 4\n    };\n  });\n\n  const hasData = dataTypes.length \u003e 0 \u0026\u0026 datasets.some(ds =\u003e ds.data.some(v =\u003e v \u003e 0));\n\n  const ctx = document.getElementById(\u0027stackedActionsChart\u0027).getContext(\u00272d\u0027);\n\n  new Chart(ctx, {\n    type: \u0027bar\u0027,\n    data: {\n      labels: hasData ? dataTypes : [\u0027\u0027],\n      datasets: hasData ? datasets : []\n    },\n    options: {\n      responsive: true,\n      maintainAspectRatio: false,\n      plugins: {\n        legend: {\n          position: \u0027bottom\u0027\n        },\n        tooltip: {\n          enabled: hasData\n        }\n      },\n      scales: {\n        x: {\n          stacked: true,\n          title: {\n            display: true,\n            text: \u0027Tipuri de date\u0027\n          }\n        },\n        y: {\n          stacked: true,\n          beginAtZero: true,\n          ticks: {\n            precision: 0\n          },\n          title: {\n            display: true,\n            text: \u0027Număr accesări\u0027\n          }\n        }\n      }\n    }\n  });\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card&quot;&gt;
+  &lt;h2&gt;Matricea Acțiunilor pe Tip de Date&lt;/h2&gt;
+  &lt;div class=&quot;chart-container&quot;&gt;
+    &lt;canvas id=&quot;stackedActionsChart&quot;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  const rawData = [dataArr] || [];
+
+  // Step 1: Aggregate → { dataType: { action: count } }
+  const aggregation = {};
+
+  rawData.forEach(item =&gt; {
+    const dataType = item?.S22?.value || &#39;Necunoscut&#39;;
+    const action = item?.S20?.value || &#39;Necunoscut&#39;;
+
+    if (!aggregation[dataType]) {
+      aggregation[dataType] = {};
+    }
+
+    if (!aggregation[dataType][action]) {
+      aggregation[dataType][action] = 0;
+    }
+
+    aggregation[dataType][action]++;
+  });
+
+  const dataTypes = Object.keys(aggregation);
+
+  // Step 2: Get all actions
+  const actionsSet = new Set();
+  Object.values(aggregation).forEach(obj =&gt; {
+    Object.keys(obj).forEach(action =&gt; actionsSet.add(action));
+  });
+
+  const actions = Array.from(actionsSet);
+
+  // Step 3: Build datasets (one per action)
+  const colorMap = {
+    &#39;Citire&#39;: &#39;#2ec4b6&#39;,
+    &#39;Actualizare&#39;: &#39;#ff9f1c&#39;,
+    &#39;Creare&#39;: &#39;#3a86ef&#39;,
+    &#39;Ștergere&#39;: &#39;#e71d36&#39;,
+    &#39;Stergere&#39;: &#39;#e71d36&#39;
+  };
+
+  const fallbackColors = [&#39;#3a86ef&#39;, &#39;#2ec4b6&#39;, &#39;#ffbe0b&#39;, &#39;#ff006e&#39;, &#39;#8338ec&#39;];
+
+  const datasets = actions.map((action, index) =&gt; {
+    const data = dataTypes.map(type =&gt; {
+      return aggregation[type][action] || 0;
+    });
+
+    return {
+      label: action,
+      data: data,
+      backgroundColor: colorMap[action] || fallbackColors[index % fallbackColors.length],
+      borderRadius: 4
+    };
+  });
+
+  const hasData = dataTypes.length &gt; 0 &amp;&amp; datasets.some(ds =&gt; ds.data.some(v =&gt; v &gt; 0));
+
+  const ctx = document.getElementById(&#39;stackedActionsChart&#39;).getContext(&#39;2d&#39;);
+
+  new Chart(ctx, {
+    type: &#39;bar&#39;,
+    data: {
+      labels: hasData ? dataTypes : [&#39;&#39;],
+      datasets: hasData ? datasets : []
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: &#39;bottom&#39;
+        },
+        tooltip: {
+          enabled: hasData
+        }
+      },
+      scales: {
+        x: {
+          stacked: true,
+          title: {
+            display: true,
+            text: &#39;Tipuri de date&#39;
+          }
+        },
+        y: {
+          stacked: true,
+          beginAtZero: true,
+          ticks: {
+            precision: 0
+          },
+          title: {
+            display: true,
+            text: &#39;Număr accesări&#39;
+          }
+        }
+      }
+    }
+  });
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;28&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;2&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;4&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[850]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Statistica Notificărilor și Alertelor]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;StatisticaNotificriloriAlertelor&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card\&quot;\u003e\n  \u003ch2\u003eStatistica Notificărilor și Alertelor (zilnic)\u003c/h2\u003e\n  \u003cdiv class=\&quot;chart-container\&quot;\u003e\n    \u003ccanvas id=\&quot;notificationsComboChart\&quot;\u003e\u003c/canvas\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  function ensureArray(data) {\n    if (!data) return [];\n    if (Array.isArray(data)) return data;\n\n    try {\n      const parsed = JSON.parse(data);\n      return Array.isArray(parsed) ? parsed : [];\n    } catch {\n      return [];\n    }\n  }\n\n  const events = ensureArray([dataArr]);\n  const notifications = ensureArray([NotificariJSON]);\n\n  // Index notificări\n  const notifMap = {};\n  notifications.forEach(n =\u003e {\n    if (n \u0026\u0026 n.LogId) {\n      notifMap[n.LogId] = n;\n    }\n  });\n\n  // Agregare pe zi\n  const aggregation = {};\n\n  events.forEach(event =\u003e {\n    const dateStr = event?.S14?.value;\n    const logId = event?.[\&quot;Log.id\&quot;]?.value;\n\n    if (!dateStr) return;\n\n    const date = new Date(dateStr);\n    const dayKey = date.toISOString().split(\u0027T\u0027)[0];\n\n    if (!aggregation[dayKey]) {\n      aggregation[dayKey] = {\n        events: 0,\n        email: 0,\n        app: 0\n      };\n    }\n\n    aggregation[dayKey].events++;\n\n    const notif = notifMap[logId];\n\n    if (notif) {\n      if (notif.StatusNotificareEmail) {\n        aggregation[dayKey].email++;\n      }\n\n      if (notif.StatusNotificareApp) {\n        aggregation[dayKey].app++;\n      }\n    }\n  });\n\n  const days = Object.keys(aggregation).sort();\n\n  const eventData = days.map(d =\u003e aggregation[d].events);\n  const emailData = days.map(d =\u003e aggregation[d].email);\n  const appData = days.map(d =\u003e aggregation[d].app);\n\n  const hasData = days.length \u003e 0 \u0026\u0026 eventData.some(v =\u003e v \u003e 0);\n\n  const ctx = document.getElementById(\u0027notificationsComboChart\u0027).getContext(\u00272d\u0027);\n\n  new Chart(ctx, {\n    data: {\n      labels: hasData \n        ? days.map(d =\u003e new Date(d).toLocaleDateString(\u0027ro-RO\u0027, { day: \u00272-digit\u0027, month: \u0027short\u0027 }))\n        : [\u0027\u0027],\n      datasets: hasData ? [\n        {\n          type: \u0027bar\u0027,\n          label: \u0027Accesări\u0027,\n          data: eventData,\n          backgroundColor: \u0027#3a86ef\u0027,\n          yAxisID: \u0027y\u0027\n        },\n        {\n          type: \u0027line\u0027,\n          label: \u0027Notificări Email\u0027,\n          data: emailData,\n          borderColor: \u0027#ff9f1c\u0027,\n          backgroundColor: \u0027#ff9f1c\u0027,\n          tension: 0.3,\n          pointRadius: 4,\n          pointHoverRadius: 6,\n          yAxisID: \u0027y1\u0027\n        },\n        {\n          type: \u0027line\u0027,\n          label: \u0027Notificări App\u0027,\n          data: appData,\n          borderColor: \u0027#2ec4b6\u0027,\n          backgroundColor: \u0027#2ec4b6\u0027,\n          tension: 0.3,\n          pointRadius: 4,\n          pointHoverRadius: 6,\n          yAxisID: \u0027y1\u0027\n        }\n      ] : []\n    },\n    options: {\n      responsive: true,\n      maintainAspectRatio: false,\n      plugins: {\n        legend: {\n          position: \u0027bottom\u0027\n        },\n        tooltip: {\n          enabled: hasData\n        }\n      },\n      scales: {\n        x: {\n          title: {\n            display: true,\n            text: \u0027Zi\u0027\n          }\n        },\n        y: {\n          beginAtZero: true,\n          position: \u0027left\u0027,\n          title: {\n            display: true,\n            text: \u0027Număr accesări\u0027\n          }\n        },\n        y1: {\n          beginAtZero: true,\n          position: \u0027right\u0027,\n          grid: {\n            drawOnChartArea: false\n          },\n          title: {\n            display: true,\n            text: \u0027Notificări\u0027\n          }\n        }\n      }\n    }\n  });\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card&quot;&gt;
+  &lt;h2&gt;Statistica Notificărilor și Alertelor (zilnic)&lt;/h2&gt;
+  &lt;div class=&quot;chart-container&quot;&gt;
+    &lt;canvas id=&quot;notificationsComboChart&quot;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  function ensureArray(data) {
+    if (!data) return [];
+    if (Array.isArray(data)) return data;
+
+    try {
+      const parsed = JSON.parse(data);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+
+  const events = ensureArray([dataArr]);
+  const notifications = ensureArray([NotificariJSON]);
+
+  // Index notificări
+  const notifMap = {};
+  notifications.forEach(n =&gt; {
+    if (n &amp;&amp; n.LogId) {
+      notifMap[n.LogId] = n;
+    }
+  });
+
+  // Agregare pe zi
+  const aggregation = {};
+
+  events.forEach(event =&gt; {
+    const dateStr = event?.S14?.value;
+    const logId = event?.[&quot;Log.id&quot;]?.value;
+
+    if (!dateStr) return;
+
+    const date = new Date(dateStr);
+    const dayKey = date.toISOString().split(&#39;T&#39;)[0];
+
+    if (!aggregation[dayKey]) {
+      aggregation[dayKey] = {
+        events: 0,
+        email: 0,
+        app: 0
+      };
+    }
+
+    aggregation[dayKey].events++;
+
+    const notif = notifMap[logId];
+
+    if (notif) {
+      if (notif.StatusNotificareEmail) {
+        aggregation[dayKey].email++;
+      }
+
+      if (notif.StatusNotificareApp) {
+        aggregation[dayKey].app++;
+      }
+    }
+  });
+
+  const days = Object.keys(aggregation).sort();
+
+  const eventData = days.map(d =&gt; aggregation[d].events);
+  const emailData = days.map(d =&gt; aggregation[d].email);
+  const appData = days.map(d =&gt; aggregation[d].app);
+
+  const hasData = days.length &gt; 0 &amp;&amp; eventData.some(v =&gt; v &gt; 0);
+
+  const ctx = document.getElementById(&#39;notificationsComboChart&#39;).getContext(&#39;2d&#39;);
+
+  new Chart(ctx, {
+    data: {
+      labels: hasData 
+        ? days.map(d =&gt; new Date(d).toLocaleDateString(&#39;ro-RO&#39;, { day: &#39;2-digit&#39;, month: &#39;short&#39; }))
+        : [&#39;&#39;],
+      datasets: hasData ? [
+        {
+          type: &#39;bar&#39;,
+          label: &#39;Accesări&#39;,
+          data: eventData,
+          backgroundColor: &#39;#3a86ef&#39;,
+          yAxisID: &#39;y&#39;
+        },
+        {
+          type: &#39;line&#39;,
+          label: &#39;Notificări Email&#39;,
+          data: emailData,
+          borderColor: &#39;#ff9f1c&#39;,
+          backgroundColor: &#39;#ff9f1c&#39;,
+          tension: 0.3,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          yAxisID: &#39;y1&#39;
+        },
+        {
+          type: &#39;line&#39;,
+          label: &#39;Notificări App&#39;,
+          data: appData,
+          borderColor: &#39;#2ec4b6&#39;,
+          backgroundColor: &#39;#2ec4b6&#39;,
+          tension: 0.3,
+          pointRadius: 4,
+          pointHoverRadius: 6,
+          yAxisID: &#39;y1&#39;
+        }
+      ] : []
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: &#39;bottom&#39;
+        },
+        tooltip: {
+          enabled: hasData
+        }
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: &#39;Zi&#39;
+          }
+        },
+        y: {
+          beginAtZero: true,
+          position: &#39;left&#39;,
+          title: {
+            display: true,
+            text: &#39;Număr accesări&#39;
+          }
+        },
+        y1: {
+          beginAtZero: true,
+          position: &#39;right&#39;,
+          grid: {
+            drawOnChartArea: false
+          },
+          title: {
+            display: true,
+            text: &#39;Notificări&#39;
+          }
+        }
+      }
+    }
+  });
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;32&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;2&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;4&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[851]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Dashboard Interactiv de Analiză a Amprentei Digitale]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;DashboardInteractivdeAnalizaAmprenteiDigitale&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card\&quot;\u003e\n  \u003ch2\u003eDashboard Interactiv de Analiză a Amprentei Digitale\u003c/h2\u003e\n  \u003cdiv class=\&quot;chart-container\&quot;\u003e\n    \u003ccanvas id=\&quot;monthlyAccessChart\&quot;\u003e\u003c/canvas\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  function ensureArray(data) {\n    if (!data) return [];\n    if (Array.isArray(data)) return data;\n\n    try {\n      const parsed = JSON.parse(data);\n      return Array.isArray(parsed) ? parsed : [];\n    } catch {\n      return [];\n    }\n  }\n\n  const events = ensureArray([dataArr]);\n\n  // ✅ Agregare pe lună\n  const aggregation = {};\n\n  events.forEach(event =\u003e {\n    const dateStr = event?.S14?.value;\n    if (!dateStr) return;\n\n    const date = new Date(dateStr);\n    const monthKey = date.getFullYear() + \u0027-\u0027 + String(date.getMonth() + 1).padStart(2, \u00270\u0027);\n\n    if (!aggregation[monthKey]) {\n      aggregation[monthKey] = 0;\n    }\n\n    aggregation[monthKey]++;\n  });\n\n  const months = Object.keys(aggregation).sort();\n  const values = months.map(m =\u003e aggregation[m]);\n\n  const hasData = months.length \u003e 0 \u0026\u0026 values.some(v =\u003e v \u003e 0);\n\n  const ctx = document.getElementById(\u0027monthlyAccessChart\u0027).getContext(\u00272d\u0027);\n\n  const chart = new Chart(ctx, {\n    type: \u0027bar\u0027,\n    data: {\n      labels: hasData \n        ? months.map(m =\u003e {\n            const [year, month] = m.split(\u0027-\u0027);\n            return new Date(year, month - 1).toLocaleDateString(\u0027ro-RO\u0027, { month: \u0027short\u0027, year: \u0027numeric\u0027 });\n          })\n        : [\u0027\u0027],\n      datasets: hasData ? [{\n        label: \u0027Număr accesări\u0027,\n        data: values,\n        backgroundColor: \u0027#3a86ef\u0027,\n        borderRadius: 6\n      }] : []\n    },\n    options: {\n      responsive: true,\n      maintainAspectRatio: false,\n      onClick: (evt, elements) =\u003e {\n        if (elements.length \u003e 0) {\n              const index = elements[0].index;\n    const month = months[index]; // YYYY-MM\n\n    const [year, monthNum] = month.split(\u0027-\u0027).map(Number);\n\n    const firstDate = new Date(year, monthNum - 1, 1, 0, 0, 0);\n    const lastDate = new Date(year, monthNum, 0, 23, 59, 0);\n\n    function formatDate(d) {\n      const pad = n =\u003e String(n).padStart(2, \u00270\u0027);\n      return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;\n    }\n          \n          dnnsf.updateQueryStringParam(\u0027drillStartdate\u0027,formatDate(firstDate));\n          dnnsf.updateQueryStringParam(\u0027drillEnddate\u0027,formatDate(lastDate));\n\n          dnnsf.api.actionGrid.refresh(620);\n          dnnsf.api.actionGrid.showGridOrPopup(620);\n        }\n      },\n      plugins: {\n        legend: {\n          display: false\n        }\n      },\n      scales: {\n        y: {\n          beginAtZero: true,\n          ticks: {\n            precision: 0\n          },\n          title: {\n            display: true,\n            text: \u0027Număr accesări\u0027\n          }\n        },\n        x: {\n          title: {\n            display: true,\n            text: \u0027Lună\u0027\n          }\n        }\n      }\n    }\n  });\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card&quot;&gt;
+  &lt;h2&gt;Dashboard Interactiv de Analiză a Amprentei Digitale&lt;/h2&gt;
+  &lt;div class=&quot;chart-container&quot;&gt;
+    &lt;canvas id=&quot;monthlyAccessChart&quot;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  function ensureArray(data) {
+    if (!data) return [];
+    if (Array.isArray(data)) return data;
+
+    try {
+      const parsed = JSON.parse(data);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+
+  const events = ensureArray([dataArr]);
+
+  // ✅ Agregare pe lună
+  const aggregation = {};
+
+  events.forEach(event =&gt; {
+    const dateStr = event?.S14?.value;
+    if (!dateStr) return;
+
+    const date = new Date(dateStr);
+    const monthKey = date.getFullYear() + &#39;-&#39; + String(date.getMonth() + 1).padStart(2, &#39;0&#39;);
+
+    if (!aggregation[monthKey]) {
+      aggregation[monthKey] = 0;
+    }
+
+    aggregation[monthKey]++;
+  });
+
+  const months = Object.keys(aggregation).sort();
+  const values = months.map(m =&gt; aggregation[m]);
+
+  const hasData = months.length &gt; 0 &amp;&amp; values.some(v =&gt; v &gt; 0);
+
+  const ctx = document.getElementById(&#39;monthlyAccessChart&#39;).getContext(&#39;2d&#39;);
+
+  const chart = new Chart(ctx, {
+    type: &#39;bar&#39;,
+    data: {
+      labels: hasData 
+        ? months.map(m =&gt; {
+            const [year, month] = m.split(&#39;-&#39;);
+            return new Date(year, month - 1).toLocaleDateString(&#39;ro-RO&#39;, { month: &#39;short&#39;, year: &#39;numeric&#39; });
+          })
+        : [&#39;&#39;],
+      datasets: hasData ? [{
+        label: &#39;Număr accesări&#39;,
+        data: values,
+        backgroundColor: &#39;#3a86ef&#39;,
+        borderRadius: 6
+      }] : []
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      onClick: (evt, elements) =&gt; {
+        if (elements.length &gt; 0) {
+              const index = elements[0].index;
+    const month = months[index]; // YYYY-MM
+
+    const [year, monthNum] = month.split(&#39;-&#39;).map(Number);
+
+    const firstDate = new Date(year, monthNum - 1, 1, 0, 0, 0);
+    const lastDate = new Date(year, monthNum, 0, 23, 59, 0);
+
+    function formatDate(d) {
+      const pad = n =&gt; String(n).padStart(2, &#39;0&#39;);
+      return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+    }
+          
+          dnnsf.updateQueryStringParam(&#39;drillStartdate&#39;,formatDate(firstDate));
+          dnnsf.updateQueryStringParam(&#39;drillEnddate&#39;,formatDate(lastDate));
+
+          dnnsf.api.actionGrid.refresh(620);
+          dnnsf.api.actionGrid.showGridOrPopup(620);
+        }
+      },
+      plugins: {
+        legend: {
+          display: false
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            precision: 0
+          },
+          title: {
+            display: true,
+            text: &#39;Număr accesări&#39;
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: &#39;Lună&#39;
+          }
+        }
+      }
+    }
+  });
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;36&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;3&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[834]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[CSS]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName /&gt;
+      &lt;Name&gt;CSS&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cstyle\u003e\n  .chart-card {\n    width: 100%;\n    max-width: 700px;\n    background: #ffffff;\n    padding: 24px;\n    border-radius: 12px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);\n  }\n   \n  .chart-card h2 {\n    margin-top: 0;\n    color: #333;\n    font-size: 1.25rem;\n    font-weight: 500;\n    text-align: center;\n    margin-bottom: 20px;\n  }\n  \n  .chart-container {\n  position: relative;\n  height: 350px;\n  }\n  \n  .kpi-card {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 200px;\n  text-align: center;\n}\n\n.kpi-value {\n  font-size: 3rem;\n  font-weight: 600;\n  color: #3a86ef;\n  margin-top: 10px;\n}\n\u003c/style\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;style&gt;
+  .chart-card {
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+   
+  .chart-card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .chart-container {
+  position: relative;
+  height: 350px;
+  }
+  
+  .kpi-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+
+.kpi-value {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #3a86ef;
+  margin-top: 10px;
+}
+&lt;/style&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;48&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;4&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;12&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+  &lt;/Fields&gt;
+  &lt;Settings&gt;
+    &lt;Title&gt;Grafice Form&lt;/Title&gt;
+    &lt;CssName&gt;grafice-form&lt;/CssName&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.226&lt;/Build&gt;
+    &lt;CultureCode&gt;en&lt;/CultureCode&gt;
+    &lt;RenderContext&gt;Form&lt;/RenderContext&gt;
+    &lt;FrontEndTemplate&gt;&amp;lt;p&amp;gt;This is a sample text, edit this to match the purpose and describe the resource you&#39;re targeting (page, file).&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;lt;a href = &quot;[FormUrl]&quot;&amp;gt;ACCESS this resource&amp;lt;/a&amp;gt; now.&amp;lt;/p&amp;gt;&lt;/FrontEndTemplate&gt;
+    &lt;HasCustomLayout&gt;False&lt;/HasCustomLayout&gt;
+    &lt;ShowLoading&gt;False&lt;/ShowLoading&gt;
+    &lt;LoadingBarsColor&gt;#00c0ef&lt;/LoadingBarsColor&gt;
+    &lt;LoadingBackgroundColor&gt;#fff&lt;/LoadingBackgroundColor&gt;
+    &lt;LoadingText /&gt;
+    &lt;TabsProLoading&gt;False&lt;/TabsProLoading&gt;
+    &lt;LayoutHtml&gt;&lt;![CDATA[]]&gt;&lt;/LayoutHtml&gt;
+    &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
+    &lt;LabelAlign&gt;default&lt;/LabelAlign&gt;
+    &lt;LabelWidth&gt;3&lt;/LabelWidth&gt;
+    &lt;FieldSpacing&gt;loose&lt;/FieldSpacing&gt;
+    &lt;OpenFormMode&gt;Always&lt;/OpenFormMode&gt;
+    &lt;ModuleId&gt;619&lt;/ModuleId&gt;
+    &lt;ModuleVersion&gt;5.28.226&lt;/ModuleVersion&gt;
+    &lt;TabId&gt;58&lt;/TabId&gt;
+    &lt;ModuleBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm&lt;/ModuleBaseUrl&gt;
+    &lt;ResourceBaseUrl&gt;/DesktopModules/DnnSharp/ActionForm/static&lt;/ResourceBaseUrl&gt;
+    &lt;FormTemplate&gt;bootstrap5&lt;/FormTemplate&gt;
+    &lt;FormTemplateFolder&gt;/DesktopModules/DnnSharp/ActionForm/templates/Form/bootstrap5&lt;/FormTemplateFolder&gt;
+    &lt;ModuleId&gt;619&lt;/ModuleId&gt;
+    &lt;IsDebug&gt;False&lt;/IsDebug&gt;
+    &lt;EnableReports&gt;False&lt;/EnableReports&gt;
+    &lt;ClientSideValidation&gt;True&lt;/ClientSideValidation&gt;
+    &lt;RequiredFieldAllowsWhiteSpace&gt;False&lt;/RequiredFieldAllowsWhiteSpace&gt;
+    &lt;OnFocusoutValidation&gt;False&lt;/OnFocusoutValidation&gt;
+    &lt;ShowTooltips&gt;False&lt;/ShowTooltips&gt;
+    &lt;ShowTooltipTitle&gt;True&lt;/ShowTooltipTitle&gt;
+    &lt;ShowFormCondition /&gt;
+    &lt;InitJs&gt;&lt;![CDATA[]]&gt;&lt;/InitJs&gt;
+    &lt;PopupWidth&gt;600&lt;/PopupWidth&gt;
+    &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
+    &lt;PopupHeight /&gt;
+    &lt;SubmitHiddenFields&gt;False&lt;/SubmitHiddenFields&gt;
+    &lt;CacheFormInit&gt;False&lt;/CacheFormInit&gt;
+    &lt;IncludeBootstrap&gt;True&lt;/IncludeBootstrap&gt;
+    &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
+    &lt;FloatingLabels&gt;False&lt;/FloatingLabels&gt;
+    &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
+    &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
+    &lt;TextColor&gt;inherit&lt;/TextColor&gt;
+    &lt;Padding&gt;0&lt;/Padding&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;BaseId&gt;dnn619&lt;/BaseId&gt;
+    &lt;PopupName /&gt;
+    &lt;RootClasses /&gt;
+    &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
+    &lt;RevisionNumber&gt;64&lt;/RevisionNumber&gt;
+    &lt;RevisionLastChangedBy&gt;dragos.dascaleanu@plantanapp.com&lt;/RevisionLastChangedBy&gt;
+    &lt;RevisionLastChangedDate&gt;2026-07-24T15:23:48.9792367+00:00&lt;/RevisionLastChangedDate&gt;
+  &lt;/Settings&gt;
+  &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;pageload&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;RegisterStaticFiles&lt;/ActionType&gt;
+      &lt;ActionData&gt;{&quot;JsPaths&quot;:[{&quot;value&quot;:&quot;https://cdn.jsdelivr.net/npm/chart.js&quot;,&quot;name&quot;:&quot;chartjs&quot;},{&quot;value&quot;:&quot;https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/3.0.1/chartjs-plugin-annotation.min.js&quot;,&quot;name&quot;:&quot;chartjs-plugin-annotations&quot;}],&quot;CssPaths&quot;:null}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;preinit&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ServerRequestHttpClient&lt;/ActionType&gt;
+      &lt;Description&gt;request pentru bar chart - top 5 institutii&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;InputParameters&quot;:null,&quot;URL&quot;:&quot;[URL:DomainRoot]/api/v1/rapoarte/getAggregateDataCQ&quot;,&quot;UrlTokenContext&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Url&quot;},&quot;UseSSL&quot;:false,&quot;Certificate&quot;:null,&quot;Timeout&quot;:null,&quot;HttpMethod&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;GET&quot;},&quot;Data&quot;:&quot;EventId=*\nutilizator=[User:UserId]\ndataStart=[QueryString:datastart=[DateTime:Relative(add=\&quot;-30 days\&quot;,RelativeTo=\&quot;[DateTime:Now]\&quot;)|yyyy-MM-dd HH:mm:ss]]\ndataEnd=[QueryString:datasfarsit=[DateTime:Now|yyyy-MM-dd HH:mm:ss]]\ncampAgreagare=S13\nEvents=[QueryString:tipuriactiuni=\&quot;*\&quot;]\nInstitutii=[QueryString:institutii=\&quot;\&quot;]&quot;,&quot;DoNotEscapeTokens&quot;:false,&quot;FormFiles&quot;:null,&quot;FileIds&quot;:null,&quot;DisableReferer&quot;:false,&quot;Headers&quot;:[{&quot;value&quot;:&quot;application/json&quot;,&quot;name&quot;:&quot;Content-Type&quot;},{&quot;value&quot;:&quot;Bearer 97e21635bceb93d27a94772e39321fc1&quot;,&quot;name&quot;:&quot;Authorization&quot;}],&quot;UseDNNProxySettings&quot;:false,&quot;AddCurrentCookies&quot;:false,&quot;Events&quot;:null,&quot;IgnoreErrors&quot;:false,&quot;OnError&quot;:[],&quot;OutputParameters&quot;:null,&quot;CookieContainerToken&quot;:null,&quot;OutputTokenName&quot;:&quot;JSONAggrTop5Inst&quot;,&quot;OutputHeaders&quot;:null}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;preinit&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ServerRequestHttpClient&lt;/ActionType&gt;
+      &lt;Description&gt;request pentru pie chart - tipuri de accesari&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;InputParameters&quot;:null,&quot;URL&quot;:&quot;[URL:DomainRoot]/api/v1/rapoarte/getAggregateDataCQ&quot;,&quot;UrlTokenContext&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Url&quot;},&quot;UseSSL&quot;:false,&quot;Certificate&quot;:null,&quot;Timeout&quot;:null,&quot;HttpMethod&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;GET&quot;},&quot;Data&quot;:&quot;EventId=*\nutilizator=[User:UserId]\ndataStart=[QueryString:datastart=[DateTime:Relative(add=\&quot;-30 days\&quot;,RelativeTo=\&quot;[DateTime:Now]\&quot;)|yyyy-MM-dd HH:mm:ss]]\ndataEnd=[QueryString:datasfarsit=[DateTime:Now|yyyy-MM-dd HH:mm:ss]]\ncampAgreagare=S20\nEvents=[QueryString:tipuriactiuni=\&quot;*\&quot;]\nInstitutii=[QueryString:institutii=\&quot;\&quot;]&quot;,&quot;DoNotEscapeTokens&quot;:false,&quot;FormFiles&quot;:null,&quot;FileIds&quot;:null,&quot;DisableReferer&quot;:false,&quot;Headers&quot;:[{&quot;value&quot;:&quot;application/json&quot;,&quot;name&quot;:&quot;Content-Type&quot;},{&quot;value&quot;:&quot;Bearer 97e21635bceb93d27a94772e39321fc1&quot;,&quot;name&quot;:&quot;Authorization&quot;}],&quot;UseDNNProxySettings&quot;:false,&quot;AddCurrentCookies&quot;:false,&quot;Events&quot;:null,&quot;IgnoreErrors&quot;:false,&quot;OnError&quot;:[],&quot;OutputParameters&quot;:null,&quot;CookieContainerToken&quot;:null,&quot;OutputTokenName&quot;:&quot;JSONAggrTipActiune&quot;,&quot;OutputHeaders&quot;:null}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;preinit&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
+      &lt;Description&gt;pentru donut chart cu categorii de date&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:2677,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;request pentru donut chart - categorii de date&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3729,&quot;ActionType&quot;:&quot;ServerRequestHttpClient&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;InputParameters&quot;:null,&quot;URL&quot;:&quot;[URL:DomainRoot]/api/v1/rapoarte/getAggregateDataCQ&quot;,&quot;UrlTokenContext&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Url&quot;},&quot;UseSSL&quot;:false,&quot;Certificate&quot;:null,&quot;Timeout&quot;:null,&quot;HttpMethod&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;GET&quot;},&quot;Data&quot;:&quot;EventId=*\nutilizator=[User:UserId]\ndataStart=[QueryString:datastart=[DateTime:Relative(add=\&quot;-30 days\&quot;,RelativeTo=\&quot;[DateTime:Now]\&quot;)|yyyy-MM-dd HH:mm:ss]]\ndataEnd=[QueryString:datasfarsit=[DateTime:Now|yyyy-MM-dd HH:mm:ss]]\ncampAgreagare=S21\nEvents=[QueryString:tipuriactiuni=\&quot;*\&quot;]\nInstitutii=[QueryString:institutii=\&quot;\&quot;]&quot;,&quot;DoNotEscapeTokens&quot;:false,&quot;FormFiles&quot;:null,&quot;FileIds&quot;:null,&quot;DisableReferer&quot;:false,&quot;Headers&quot;:[{&quot;value&quot;:&quot;application/json&quot;,&quot;name&quot;:&quot;Content-Type&quot;},{&quot;value&quot;:&quot;Bearer 97e21635bceb93d27a94772e39321fc1&quot;,&quot;name&quot;:&quot;Authorization&quot;}],&quot;UseDNNProxySettings&quot;:false,&quot;AddCurrentCookies&quot;:false,&quot;Events&quot;:null,&quot;IgnoreErrors&quot;:false,&quot;OnError&quot;:[],&quot;OutputParameters&quot;:null,&quot;CookieContainerToken&quot;:null,&quot;OutputTokenName&quot;:&quot;JSONAggrCategoriiDate&quot;,&quot;OutputHeaders&quot;:null},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2678,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3729,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;UseTransactions&quot;:true,&quot;SqlQuery&quot;:&quot;SELECT (\n    SELECT \n        NTD.[Cod],\n        CTD.Nume\n    FROM [app].[NomenclatorTipurideDate] NTD\n    INNER JOIN app.Categorietipuridedate CTD ON NTD.Categorie = CTD.Id\n    FOR JSON PATH\n) AS JsonCategories;&quot;,&quot;BindTokens&quot;:null,&quot;OutputTokenName&quot;:&quot;JSONCategorii&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+    &lt;ActionInfo&gt;
+      &lt;ModuleId&gt;0&lt;/ModuleId&gt;
+      &lt;EventName&gt;preinit&lt;/EventName&gt;
+      &lt;Metadata /&gt;
+      &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
+      &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
+      &lt;Description&gt;pentru mai multe grafice&lt;/Description&gt;
+      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:2688,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;simulam razvan cetatean&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;] == \&quot;-1\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;1231321312312321300&quot;,&quot;name&quot;:&quot;codidentificare&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2689,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;ExecuteJavascript&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;ScriptName&quot;:&quot;createFilter&quot;,&quot;Code&quot;:&quot;function generateFilterQuery(events, institutii = &#39;&#39;) {\n  const defaultIds = [&#39;9316000&#39;, &#39;9316001&#39;, &#39;9316002&#39;, &#39;9316003&#39;];\n\n  // Helper function to process semicolon-separated lists into query clauses\n  const buildClause = (input, prefix, isQuoted = false) =&amp;gt; {\n    if (!input || !input.trim()) return &#39;&#39;;\n\n    // Split input or use default IDs if wildcard\n    const items = input === &#39;*&#39; \n      ? defaultIds \n      : input.split(&#39;;&#39;).map(item =&amp;gt; item.trim()).filter(Boolean);\n\n    if (items.length === 0) return &#39;&#39;;\n\n    // Format items with prefix (and escaped quotes if specified)\n    const formatted = items.map(item =&amp;gt; \n      isQuoted ? `${prefix}\\\\\&quot;${item}\\\\\&quot;` : `${prefix}${item}`\n    );\n\n    // Return single item directly, or multiple items wrapped in OR + parentheses\n    return formatted.length === 1 ? formatted[0] : `(${formatted.join(&#39; OR &#39;)})`;\n  };\n\n  const eventsClause = buildClause(events, &#39;EventID:&#39;);\n  const institutiiClause = buildClause(institutii, &#39;S13:&#39;, true);\n\n  // Combine with AND if both clauses exist, otherwise return whichever is available\n  if (eventsClause &amp;amp;&amp;amp; institutiiClause) {\n    return `${eventsClause} AND ${institutiiClause}`;\n  }\n\n  return eventsClause || institutiiClause;\n}\n\nreturn generateFilterQuery(evenimente, inst);&quot;,&quot;OnError&quot;:[],&quot;LocalVariables&quot;:[{&quot;Type&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;string&quot;},&quot;Name&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;evenimente&quot;},&quot;Value&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[QueryString:tipuriactiuni=\&quot;*\&quot;]&quot;}},{&quot;Type&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;string&quot;},&quot;Name&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;inst&quot;},&quot;Value&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[QueryString:institutii=\&quot;\&quot;]&quot;}}],&quot;OutputTokenName&quot;:&quot;Filter&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2690,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;PlantAnApp.ExecuteWorkflow.66c3c872ef4e4eb6a54e19e96cb5379e&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;InputHelpText&quot;:null,&quot;EventId&quot;:&quot;*&quot;,&quot;codIdentificare&quot;:&quot;[codidentificare=[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;]]&quot;,&quot;dataStart&quot;:&quot;[QueryString:datastart=[DateTime:Relative(add=\&quot;-30 days\&quot;,RelativeTo=\&quot;[DateTime:Now]\&quot;)|yyyy-MM-dd HH:mm:ss]]&quot;,&quot;dataEnd&quot;:&quot;[QueryString:datasfarsit=[DateTime:Now|yyyy-MM-dd HH:mm:ss]]&quot;,&quot;OnError&quot;:[],&quot;ContinueOnError&quot;:false,&quot;OutputHelpText&quot;:null,&quot;RawResult&quot;:null,&quot;DataArray&quot;:&quot;dataArr&quot;,&quot;EventsNumber&quot;:&quot;eventsNumber&quot;,&quot;Filter&quot;:&quot;[Filter]&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2701,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:3,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;UseTransactions&quot;:true,&quot;SqlQuery&quot;:&quot;SELECT \n    (\n        SELECT \n            [IsEmailNotified] AS StatusNotificareEmail,\n            [IsInAppNotified] AS StatusNotificareApp,\n            [LogId] \n        FROM [app].[Notificare] N\n      \tINNER JOIN app.Cetatean C ON N.Cetatean = C.Id\n        WHERE C.UserId = @usrId\n        FOR JSON PATH\n    ) AS JsonOutput;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[User:UserId]&quot;,&quot;name&quot;:&quot;usrId&quot;}],&quot;OutputTokenName&quot;:&quot;NotificariJSON&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2691,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;LogEvent&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:4,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;EventType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;ADMIN_ALERT&quot;},&quot;UserID&quot;:null,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[Filter]&quot;,&quot;name&quot;:&quot;Filter&quot;},{&quot;value&quot;:&quot;[eventsNumber]&quot;,&quot;name&quot;:&quot;eventsNumber&quot;},{&quot;value&quot;:&quot;[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;]&quot;,&quot;name&quot;:&quot;codident&quot;}]},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+    &lt;/ActionInfo&gt;
+  &lt;/Actions&gt;
+&lt;/ActionForm&gt;]]></content>
+</module>

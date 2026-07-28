@@ -1,0 +1,26 @@
+{
+  "globalId": "0bce7592-89f4-4669-aac6-9b0f37bfa5b6",
+  "namespace": {
+    "globalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
+    "name": "Notifications",
+    "isSystem": false
+  },
+  "name": "CountUnreadNotifications",
+  "description": "",
+  "defaultValue": "",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "db",
+    "sql": "SELECT COUNT (*) AS NotificariCount\r\nFROM app.Notificare N INNER JOIN app.Cetatean C ON N.Cetatean = C.Id\r\nWHERE N.IsInAppNotified = 0 AND C.NotificariAppActivate = 1 AND C.UserId = '[TknParams:UserId]'",
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": [
+      "UserId"
+    ]
+  }
+}

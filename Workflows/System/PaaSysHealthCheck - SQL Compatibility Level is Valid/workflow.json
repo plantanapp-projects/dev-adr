@@ -1,0 +1,203 @@
+{
+  "InputFields": [],
+  "OutputFields": [
+    {
+      "Id": 80,
+      "Name": "AlertsJson",
+      "DefaultValue": "[AlertsJson=[]]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 59,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "Id": 59,
+  "GlobalId": "2a5fda3b-b733-4ae4-99cd-410eabe87e3a",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "2a5fda3b-b733-4ae4-99cd-410eabe87e3a",
+  "EnvironmentId": 1,
+  "Name": "PaaSysHealthCheck - SQL Compatibility Level is Valid",
+  "Description": "System Workflow - HealthCheck SQL Compatibility Level is Valid",
+  "IsDebug": false,
+  "IsSystem": true,
+  "ActionList": {
+    "Id": 3593,
+    "GlobalId": "caa6a7e9-79a8-446b-91bc-3aef78340018",
+    "Actions": [
+      {
+        "Id": 2574,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Run SQL Query",
+        "ActionErrorMessage": null,
+        "ActionStackId": 3593,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_01zhsqo",
+        "ActionParameters": [
+          {
+            "Id": 11619,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11620,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11621,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11622,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "SqlQuery",
+            "Value": "SELECT \r\n    1 AS resourceId,\r\n    CASE \r\n        WHEN d.compatibility_level < 130 THEN 'Critical'\r\n        WHEN d.compatibility_level = 130 THEN 'Medium'\r\n        WHEN d.compatibility_level = 140 THEN 'Warning'\r\n    END AS severity,\r\n    JSON_QUERY(\r\n        (\r\n            SELECT \r\n                CASE \r\n                    WHEN d.compatibility_level < 130 \r\n                        THEN 'Database compatibility level ' + CAST(d.compatibility_level AS VARCHAR(10)) + \r\n                             ' is below the minimum required (130 / SQL Server 2016) for Plant an App 1.28.'\r\n                    \r\n                    WHEN d.compatibility_level = 130 \r\n                        THEN 'Database is at minimum supported compatibility level (130 / SQL Server 2016). Consider upgrading to 150+ for best performance and compatibility.'\r\n                    \r\n                    WHEN d.compatibility_level = 140 \r\n                        THEN 'Database is on SQL Server 2017 compatibility (140). Supported, but upgrading to 150+ (SQL Server 2019) is recommended.'\r\n                END AS errorMessage\r\n            FOR JSON PATH, WITHOUT_ARRAY_WRAPPER\r\n        )\r\n    ) AS properties\r\nFROM sys.databases d\r\nWHERE d.name = DB_NAME()\r\n  AND d.compatibility_level < 150\r\nFOR JSON PATH;",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11623,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "OnError",
+            "Value": {
+              "Id": 3594,
+              "GlobalId": "951804e7-0abc-48c1-a29d-1903ca941134",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 3594,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11624,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "ShowErrors",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11625,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11626,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "BindTokens",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11627,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "OutputTokenName",
+            "Value": "AlertsJson",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11628,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2574,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": -1,
+  "CreatedOn": "2026-05-05T09:16:10.757402+00:00",
+  "LastModifiedBy": -1,
+  "LastModifiedOn": "2026-05-05T09:16:10.757402+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "7c267b0c-9d16-4d75-a1b6-11276424627e"
+}

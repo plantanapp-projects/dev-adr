@@ -1,0 +1,111 @@
+{
+  "Name": "Get Events from CQ Aggregate endpoint",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Input": [
+    {
+      "Name": "EventId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "utilizator",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "dataStart",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "dataEnd",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "campAgreagare",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Events",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "Institutii",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 6,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "OnActions": [
+    {
+      "ActionType": "ApplyTokens",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "ApplyTokens",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "ExecuteJavascript",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "LogEvent",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.192669651a974adb9b6462b83c755b5c",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}

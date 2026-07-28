@@ -1,0 +1,203 @@
+{
+  "InputFields": [],
+  "OutputFields": [
+    {
+      "Id": 81,
+      "Name": "AlertsJson",
+      "DefaultValue": "[AlertsJson=[]]",
+      "Type": "Output",
+      "InputType": "Text",
+      "EntityVersionId": null,
+      "WorkflowId": 60,
+      "ContractFieldId": null,
+      "IsDeleted": false,
+      "Required": false,
+      "Description": null,
+      "OrderIndex": 0
+    }
+  ],
+  "Id": 60,
+  "GlobalId": "28eb6565-e488-463f-85b9-e942d9486d6d",
+  "ContractId": null,
+  "ConfigGenerationGlobalId": "28eb6565-e488-463f-85b9-e942d9486d6d",
+  "EnvironmentId": 1,
+  "Name": "PaaSysHealthCheck - SQL User has necessary rights",
+  "Description": "System Workflow - HealthCheck SQL User has necessary rights",
+  "IsDebug": false,
+  "IsSystem": true,
+  "ActionList": {
+    "Id": 3595,
+    "GlobalId": "4c96ba7a-e385-4753-92a9-156e2345af19",
+    "Actions": [
+      {
+        "Id": 2575,
+        "GlobalId": "00000000-0000-0000-0000-000000000000",
+        "Description": "Run SQL Query",
+        "ActionErrorMessage": null,
+        "ActionStackId": 3595,
+        "ActionType": "RunSql",
+        "Condition": null,
+        "IsDeleted": false,
+        "IsDisabled": false,
+        "OrderIndex": 0,
+        "DiagramUID": "Activity_01zhsqo",
+        "ActionParameters": [
+          {
+            "Id": 11629,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "ConnectionString",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11630,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "QueryTimeout",
+            "Value": null,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11631,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "UseTransactions",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11632,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "SqlQuery",
+            "Value": "WITH Checks AS (\r\n    SELECT\r\n        IS_MEMBER('db_owner') AS IsDbOwner,\r\n        IS_MEMBER('db_ddladmin') AS IsDdlAdmin,\r\n        HAS_PERMS_BY_NAME(DB_NAME(), 'DATABASE', 'CREATE SCHEMA') AS HasCreateSchema\r\n),\r\nEvaluation AS (\r\n    SELECT\r\n        CASE \r\n            WHEN IsDbOwner = 1 THEN 1\r\n            WHEN IsDdlAdmin = 1 AND HasCreateSchema = 1 THEN 1\r\n            ELSE 0\r\n        END AS IsPass,\r\n        CASE \r\n            WHEN IsDbOwner = 1 THEN NULL\r\n            WHEN IsDdlAdmin = 0 AND HasCreateSchema = 0 \r\n                THEN 'User is missing db_ddladmin role and CREATE SCHEMA permission'\r\n            WHEN IsDdlAdmin = 0 \r\n                THEN 'User is missing db_ddladmin role'\r\n            WHEN HasCreateSchema = 0 \r\n                THEN 'User is missing CREATE SCHEMA permission'\r\n            ELSE 'User does not meet required permission model'\r\n        END AS ErrorMessage\r\n    FROM Checks\r\n)\r\nSELECT \r\n    1 AS resourceId,\r\n    'Critical' AS severity,\r\n    JSON_QUERY(\r\n        (SELECT ErrorMessage AS errorMessage FOR JSON PATH, WITHOUT_ARRAY_WRAPPER)\r\n    ) AS properties\r\nFROM Evaluation\r\nWHERE IsPass = 0\r\nFOR JSON PATH",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11633,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "OnError",
+            "Value": {
+              "Id": 3596,
+              "GlobalId": "d3b18d51-aab5-4e61-a10c-7a3338eee94f",
+              "Actions": [],
+              "IsInvalid": false
+            },
+            "ActionStackId": 3596,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11634,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "ShowErrors",
+            "Value": true,
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11635,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "DbConnector",
+            "Value": {
+              "Entry": "",
+              "Group": "",
+              "EntireGroup": false,
+              "Type": "Database",
+              "IsExpression": false,
+              "Expression": ""
+            },
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11636,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "BindTokens",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11637,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "OutputTokenName",
+            "Value": "AlertsJson",
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          },
+          {
+            "Id": 11638,
+            "GlobalId": "00000000-0000-0000-0000-000000000000",
+            "ActionId": 2575,
+            "Name": "ExtractColumns",
+            "Value": [],
+            "ActionStackId": null,
+            "ParentParameterId": null,
+            "IsExpression": false,
+            "OrderIndex": 0,
+            "LastModified": "0001-01-01T00:00:00+00:00",
+            "LastModifiedBy": null
+          }
+        ],
+        "Parameters": {},
+        "Metadata": {},
+        "HasActionParameters": false
+      }
+    ],
+    "IsInvalid": false
+  },
+  "ActionStackId": 0,
+  "CreatedBy": -1,
+  "CreatedOn": "2026-05-05T09:16:10.757402+00:00",
+  "LastModifiedBy": -1,
+  "LastModifiedOn": "2026-05-05T09:16:10.757402+00:00",
+  "DiagramXML": null,
+  "IsCorrupted": false,
+  "NamespaceUid": "7c267b0c-9d16-4d75-a1b6-11276424627e"
+}

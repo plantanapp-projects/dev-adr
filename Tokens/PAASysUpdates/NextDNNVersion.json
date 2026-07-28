@@ -1,0 +1,25 @@
+{
+  "globalId": "c87aa991-f8dc-4cdd-9cd9-abd335a2abf8",
+  "namespace": {
+    "globalId": "62f87937-617d-409f-990d-0c2028932681",
+    "name": "PAASysUpdates",
+    "description": "",
+    "isSystem": true
+  },
+  "name": "NextDNNVersion",
+  "description": "",
+  "defaultValue": "",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "execworkflow",
+    "workflowUid": "84650210-1219-4946-b846-a24c7ac7185f",
+    "defaultOutputField": "Version",
+    "params": [
+      "NextPAAVersion"
+    ]
+  }
+}

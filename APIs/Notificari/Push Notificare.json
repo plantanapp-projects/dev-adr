@@ -1,0 +1,182 @@
+{
+  "Name": "Push Notificare",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Input": [
+    {
+      "Name": "cnp",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 0,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {}
+        }
+      ]
+    },
+    {
+      "Name": "tipActiune",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 1,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {}
+        }
+      ]
+    },
+    {
+      "Name": "aplicatie",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 2,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {}
+        }
+      ]
+    },
+    {
+      "Name": "tipData",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 3,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": [
+        {
+          "Data": "{\"Message\":\"{FieldName} is required\"}",
+          "Type": "default-required",
+          "IsDeleted": false,
+          "IsEnabled": false,
+          "OrderIndex": 0,
+          "Metadata": {}
+        }
+      ]
+    },
+    {
+      "Name": "data",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 4,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    },
+    {
+      "Name": "logId",
+      "IsDeleted": false,
+      "IsEnabled": true,
+      "OrderIndex": 5,
+      "Parameters": {},
+      "InputTypeStr": "text",
+      "Validations": []
+    }
+  ],
+  "OnActions": [
+    {
+      "ActionType": "LoadUser",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RunSql",
+      "Description": "to check for action",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "Description": "if actiune does not exist",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RunSql",
+      "Description": "to check for app sursa",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "Description": "if app sursa does not exist",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RunSql",
+      "Description": "to get id of tip data",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "Description": "if data type does not exist",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RunSql",
+      "Description": "to get id of cetatean",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "Description": "if citizen does not exist",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "PlantAnApp.CreateEntity.7c09e18a-9e9a-4ed7-98f4-bd68aa2e6bed",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RunSql",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}

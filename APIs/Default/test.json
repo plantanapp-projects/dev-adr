@@ -1,0 +1,23 @@
+{
+  "Name": "test",
+  "HttpMethod": "POST",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "PortalAliasesOnly",
+  "Input": [],
+  "OnActions": [
+    {
+      "ActionType": "PlantAnApp.ExecuteWorkflow.66c3c872ef4e4eb6a54e19e96cb5379e",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "RawResponse",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}

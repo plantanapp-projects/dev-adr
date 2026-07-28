@@ -1,0 +1,22 @@
+{
+  "globalId": "4883ed04-fad4-4de0-8a0f-b15e6e9491a5",
+  "namespace": {
+    "globalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
+    "name": "Notifications",
+    "isSystem": false
+  },
+  "name": "SimpleRzR",
+  "description": "",
+  "defaultValue": "",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "razorwebpages",
+    "lang": "csharp",
+    "language": "csharp",
+    "params": []
+  }
+}

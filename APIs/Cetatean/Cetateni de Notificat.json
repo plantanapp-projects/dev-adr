@@ -1,0 +1,23 @@
+{
+  "Name": "Cetateni de Notificat",
+  "HttpMethod": "GET",
+  "IsEnabled": true,
+  "OrderIndex": 0,
+  "CrossDomainPolicy": "Public",
+  "Input": [],
+  "OnActions": [
+    {
+      "ActionType": "LoadEntitiesFromSql",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    },
+    {
+      "ActionType": "JsonEntityList",
+      "IsDisabled": false,
+      "Parameters": {},
+      "Metadata": {}
+    }
+  ],
+  "OnErrorActions": []
+}

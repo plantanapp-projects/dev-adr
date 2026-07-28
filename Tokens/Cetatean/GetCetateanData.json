@@ -1,0 +1,26 @@
+{
+  "globalId": "08a0498b-3a5b-4f8c-80d1-9bb4be406f3f",
+  "namespace": {
+    "globalId": "30c73246-2227-49d7-8710-cf0aac3e02eb",
+    "name": "Cetatean",
+    "isSystem": false
+  },
+  "name": "GetCetateanData",
+  "description": "",
+  "defaultValue": "",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "db",
+    "sql": "IF EXISTS (SELECT 1 FROM [app].[Cetatean] WHERE UserId = '[TknParams:UserId]')\r\nBEGIN\r\n    SELECT \r\n        [Id], [CreatedBy], [CreatedDate], [Email], [LastModifiedBy], \r\n        [LastModifiedDate], [NotificariAppActivate], [NotificariEmailActivate], \r\n        [Nume], [Prenume], [UserId], [CNP] \r\n    FROM [app].[Cetatean]\r\n    WHERE UserId = '[TknParams:UserId]';\r\nEND\r\nELSE\r\nBEGIN\r\n    SELECT \r\n        -1 AS [Id],\r\n        -1 AS [CreatedBy],\r\n        -1 AS [CreatedDate],\r\n        '-1' AS [Email],\r\n        -1 AS [LastModifiedBy],\r\n        -1 AS [LastModifiedDate],\r\n        -1 AS [NotificariAppActivate],\r\n        -1 AS [NotificariEmailActivate],\r\n        '-1' AS [Nume],\r\n        '-1' AS [Prenume],\r\n        -1 AS [UserId],\r\n        '-1' AS [CNP];\r\nEND",
+    "col": "",
+    "cols": "",
+    "connStr": "",
+    "params": [
+      "UserId"
+    ]
+  }
+}

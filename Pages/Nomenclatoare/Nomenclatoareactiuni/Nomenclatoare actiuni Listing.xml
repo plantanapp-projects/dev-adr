@@ -1,0 +1,369 @@
+<module type="ActionGrid" version="05.28.314.00">
+    <contentKey />
+    <moduleID>435</moduleID>
+    <alignment />
+    <alltabs>false</alltabs>
+    <border />
+    <cachemethod />
+    <cachetime>0</cachetime>
+    <color />
+    <containersrc />
+    <displayprint>true</displayprint>
+    <displaysyndicate>false</displaysyndicate>
+    <displaytitle>true</displaytitle>
+    <enddate>0001-01-01T00:00:00</enddate>
+    <footer />
+    <header />
+    <iconfile />
+    <inheritviewpermissions>true</inheritviewpermissions>
+    <modulepermissions>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Editors</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>CONTENT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>DELETE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EXPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>IMPORT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>MANAGE</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_MODULE_DEFINITION</permissioncode>
+            <permissionkey>EDIT</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Content Managers</rolename>
+        </permission>
+    </modulepermissions>
+    <title>Nomenclatoare actiuni Listing</title>
+    <startdate>0001-01-01T00:00:00</startdate>
+    <uniqueId>2a03ccd6-1a5c-4b3f-b90b-07f5c2a07aa7</uniqueId>
+    <visibility>Maximized</visibility>
+    <cultureCode />
+    <modulesettings>
+        <modulesetting>
+            <settingname>InternalIdentifier</settingname>
+            <settingvalue>Entity_Listing_ff24c0ce-7cc4-494c-abd4-21688fdd150c</settingvalue>
+        </modulesetting>
+    </modulesettings>
+    <tabmodulesettings />
+    <definition>Action Grid</definition>
+    <moduledefinition>avt.ActionGrid</moduledefinition>
+    <content type="ActionGrid" version="05.28.314.00"><![CDATA[&lt;ActionGrid&gt;
+  &lt;Settings&gt;
+    &lt;Version&gt;5.28.0&lt;/Version&gt;
+    &lt;Build&gt;5.28.314&lt;/Build&gt;
+    &lt;CurrentContext&gt;ExportImport&lt;/CurrentContext&gt;
+    &lt;ModuleId&gt;435&lt;/ModuleId&gt;
+    &lt;DataSource&gt;{&quot;DefinitionId&quot;:&quot;PlantAnApp.EntityDatasource.ff24c0ce-7cc4-494c-abd4-21688fdd150c&quot;,&quot;Parameters&quot;:{},&quot;Fields&quot;:[{&quot;Title&quot;:&quot;Denumire&quot;,&quot;Name&quot;:&quot;Denumire&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;EventId&quot;,&quot;Name&quot;:&quot;EventId&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedBy&quot;,&quot;Name&quot;:&quot;CreatedBy&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedDate&quot;,&quot;Name&quot;:&quot;CreatedDate&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedBy&quot;,&quot;Name&quot;:&quot;LastModifiedBy&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedDate&quot;,&quot;Name&quot;:&quot;LastModifiedDate&quot;,&quot;TypeStr&quot;:&quot;System.Nullable`1[[System.DateTimeOffset, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:false,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:true,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedByUsername&quot;,&quot;Name&quot;:&quot;CreatedByUsername&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedByDisplayName&quot;,&quot;Name&quot;:&quot;CreatedByDisplayName&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;CreatedByEmail&quot;,&quot;Name&quot;:&quot;CreatedByEmail&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedByUsername&quot;,&quot;Name&quot;:&quot;LastModifiedByUsername&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedByDisplayName&quot;,&quot;Name&quot;:&quot;LastModifiedByDisplayName&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;LastModifiedByEmail&quot;,&quot;Name&quot;:&quot;LastModifiedByEmail&quot;,&quot;TypeStr&quot;:&quot;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:true,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:&quot;&quot;},{&quot;Title&quot;:&quot;Id&quot;,&quot;Name&quot;:&quot;Id&quot;,&quot;TypeStr&quot;:&quot;System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;,&quot;CanBeSearchable&quot;:true,&quot;CanBeSortable&quot;:true,&quot;CanBeFilterable&quot;:false,&quot;SupportsUpdate&quot;:false,&quot;IsNullable&quot;:false,&quot;DefaultValue&quot;:0}]}&lt;/DataSource&gt;
+    &lt;ShowTitle&gt;True&lt;/ShowTitle&gt;
+    &lt;NoDataMessage&gt;No Data&lt;/NoDataMessage&gt;
+    &lt;AditionalHtmlHeader /&gt;
+    &lt;OnInitJs /&gt;
+    &lt;OnRefreshJs /&gt;
+    &lt;EnableEmbed&gt;False&lt;/EnableEmbed&gt;
+    &lt;ShowCondition /&gt;
+    &lt;SearchPlaceholder&gt;Search&lt;/SearchPlaceholder&gt;
+    &lt;SearchDelayTime&gt;300&lt;/SearchDelayTime&gt;
+    &lt;TableHeight /&gt;
+    &lt;PagerStyle&gt;TouchFriendly&lt;/PagerStyle&gt;
+    &lt;DisplayMode&gt;Always&lt;/DisplayMode&gt;
+    &lt;PopupWidth /&gt;
+    &lt;WidthCoordinate&gt;px&lt;/WidthCoordinate&gt;
+    &lt;PopupName /&gt;
+    &lt;PageSizes&gt;[12,24,48]&lt;/PageSizes&gt;
+    &lt;DefaultPageSize&gt;12&lt;/DefaultPageSize&gt;
+    &lt;IsDebug&gt;False&lt;/IsDebug&gt;
+    &lt;SearchEnabled&gt;True&lt;/SearchEnabled&gt;
+    &lt;ExactSearch&gt;False&lt;/ExactSearch&gt;
+    &lt;HideEmptyGrid&gt;False&lt;/HideEmptyGrid&gt;
+    &lt;LoadOnSearch&gt;False&lt;/LoadOnSearch&gt;
+    &lt;HideTableHead&gt;False&lt;/HideTableHead&gt;
+    &lt;EnableStickyHead&gt;False&lt;/EnableStickyHead&gt;
+    &lt;ItemButtonPosition&gt;Right&lt;/ItemButtonPosition&gt;
+    &lt;ItemButtonPositionInColumn&gt;Right&lt;/ItemButtonPositionInColumn&gt;
+    &lt;ItemButtonGroupingOptions&gt;HorizontalAlign&lt;/ItemButtonGroupingOptions&gt;
+    &lt;FiltersEnabled&gt;True&lt;/FiltersEnabled&gt;
+    &lt;ShowFilters&gt;False&lt;/ShowFilters&gt;
+    &lt;SyncUrl&gt;True&lt;/SyncUrl&gt;
+    &lt;IncludeBootstrapJS&gt;True&lt;/IncludeBootstrapJS&gt;
+    &lt;IncludeBootstrapCSS&gt;True&lt;/IncludeBootstrapCSS&gt;
+    &lt;IncludeFontAwesome&gt;True&lt;/IncludeFontAwesome&gt;
+    &lt;AngularnoConflict&gt;True&lt;/AngularnoConflict&gt;
+    &lt;SelectAllPosition&gt;None&lt;/SelectAllPosition&gt;
+    &lt;SearchPosition&gt;expandabletop&lt;/SearchPosition&gt;
+    &lt;RootCSSClasses /&gt;
+    &lt;ModalRefresh&gt;False&lt;/ModalRefresh&gt;
+    &lt;ShowLoading&gt;True&lt;/ShowLoading&gt;
+    &lt;TabsProLoading&gt;True&lt;/TabsProLoading&gt;
+    &lt;EnableGridSelect&gt;True&lt;/EnableGridSelect&gt;
+    &lt;DataSourceAutoRefreshInterval&gt;1&lt;/DataSourceAutoRefreshInterval&gt;
+    &lt;DataSourceRefreshType&gt;manual&lt;/DataSourceRefreshType&gt;
+    &lt;DateFormat&gt;m/d/yy&lt;/DateFormat&gt;
+    &lt;ItemButtonGroups&gt;[]&lt;/ItemButtonGroups&gt;
+    &lt;GridButtonGroups&gt;[]&lt;/GridButtonGroups&gt;
+    &lt;ItemButtons&gt;[{&quot;ItemActions&quot;:[{&quot;Id&quot;:-1,&quot;IsDeleted&quot;:false,&quot;ActionInfo&quot;:{&quot;Id&quot;:-1,&quot;GlobalId&quot;:&quot;51b444bc-5f9b-4c76-ac50-b179b7dcf135&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:-1,&quot;ActionType&quot;:&quot;OpenAFPopup&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;7f2d8714-859b-42ca-9804-9a352f2e273c&quot;},&quot;ReinitForm&quot;:true,&quot;Params&quot;:[{&quot;name&quot;:&quot;NomenclatoractiuniId&quot;,&quot;value&quot;:&quot;[Id]&quot;}]},&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Edit.OpenForm&quot;},&quot;HasActionParameters&quot;:true}}],&quot;OnItemClickActionStackId&quot;:-1,&quot;Url&quot;:&quot;&amp;amp;buttonName=Edit&quot;,&quot;ModuleId&quot;:435,&quot;AutoName&quot;:false,&quot;Name&quot;:&quot;Edit&quot;,&quot;Title&quot;:&quot;&quot;,&quot;Help&quot;:&quot;Edit&quot;,&quot;ShowCondition&quot;:&quot;([HasRole:Admins] || [HasRole:CitizenDevelopers] || [HasRole:Low-CodeEngineer] || [HasRole:Managers])&quot;,&quot;IsEnabled&quot;:false,&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Edit&quot;},&quot;Type&quot;:&quot;ItemButton&quot;,&quot;OrderIndex&quot;:0,&quot;CssClass&quot;:&quot;default&quot;,&quot;CustomCssClass&quot;:null,&quot;IconClass&quot;:&quot;&quot;,&quot;FaIconClass&quot;:&quot;fas fa-pen&quot;,&quot;PermissionAllUsers&quot;:false,&quot;PermissionsExportJson&quot;:&quot;[\&quot;Admins\&quot;,\&quot;Citizen Developers\&quot;,\&quot;Low-Code Engineer\&quot;,\&quot;Managers\&quot;]&quot;,&quot;Permissions&quot;:[1,2,3,4],&quot;AskForConfirmation&quot;:false,&quot;ConfirmationMessage&quot;:null,&quot;ConfirmationOk&quot;:null,&quot;ConfirmationCancel&quot;:null,&quot;JsCode&quot;:null,&quot;IsClientButton&quot;:false,&quot;ButtonGroupId&quot;:null,&quot;ButtonGroupName&quot;:null,&quot;Id&quot;:0,&quot;EnableCondition&quot;:null,&quot;IsDeleted&quot;:false},{&quot;ItemActions&quot;:[{&quot;Id&quot;:-1,&quot;IsDeleted&quot;:false,&quot;ActionInfo&quot;:{&quot;Id&quot;:-1,&quot;GlobalId&quot;:&quot;db63e2ff-b976-4ae9-87fb-e58845e5c01a&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:-1,&quot;ActionType&quot;:&quot;PlantAnApp.DeleteEntity.ff24c0ce-7cc4-494c-abd4-21688fdd150c&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;RecordId&quot;:&quot;[Id]&quot;},&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Delete.DeleteEntity&quot;,&quot;EntityIdentifier&quot;:&quot;ff24c0ce-7cc4-494c-abd4-21688fdd150c&quot;,&quot;IsUidEnabled&quot;:&quot;True&quot;},&quot;HasActionParameters&quot;:true}},{&quot;Id&quot;:-1,&quot;IsDeleted&quot;:false,&quot;ActionInfo&quot;:{&quot;Id&quot;:-1,&quot;GlobalId&quot;:&quot;3ac41a6e-78f9-48d3-bf84-b10d8f056820&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:-1,&quot;ActionType&quot;:&quot;DataSource.Refresh&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{},&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Delete.RefreshDatasource&quot;},&quot;HasActionParameters&quot;:true}}],&quot;OnItemClickActionStackId&quot;:-1,&quot;Url&quot;:&quot;&amp;amp;buttonName=Delete&quot;,&quot;ModuleId&quot;:435,&quot;AutoName&quot;:false,&quot;Name&quot;:&quot;Delete&quot;,&quot;Title&quot;:&quot;&quot;,&quot;Help&quot;:&quot;Delete&quot;,&quot;ShowCondition&quot;:&quot;([HasRole:Admins] || [HasRole:CitizenDevelopers] || [HasRole:Low-CodeEngineer] || [HasRole:Managers])&quot;,&quot;IsEnabled&quot;:false,&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Delete&quot;},&quot;Type&quot;:&quot;ItemButton&quot;,&quot;OrderIndex&quot;:1,&quot;CssClass&quot;:&quot;danger&quot;,&quot;CustomCssClass&quot;:null,&quot;IconClass&quot;:&quot;&quot;,&quot;FaIconClass&quot;:&quot;fas fa-trash&quot;,&quot;PermissionAllUsers&quot;:false,&quot;PermissionsExportJson&quot;:&quot;[\&quot;Admins\&quot;,\&quot;Citizen Developers\&quot;,\&quot;Low-Code Engineer\&quot;,\&quot;Managers\&quot;]&quot;,&quot;Permissions&quot;:[1,2,3,4],&quot;AskForConfirmation&quot;:true,&quot;ConfirmationMessage&quot;:&quot;Delete this Nomenclator actiuni? Note: Any related fields that reference this record will lose their value.&quot;,&quot;ConfirmationOk&quot;:&quot;Yes&quot;,&quot;ConfirmationCancel&quot;:&quot;No&quot;,&quot;JsCode&quot;:null,&quot;IsClientButton&quot;:false,&quot;ButtonGroupId&quot;:null,&quot;ButtonGroupName&quot;:null,&quot;Id&quot;:0,&quot;EnableCondition&quot;:null,&quot;IsDeleted&quot;:false}]&lt;/ItemButtons&gt;
+    &lt;GridButtons&gt;[{&quot;EnableSelection&quot;:false,&quot;RequiresSelection&quot;:false,&quot;RequiresData&quot;:false,&quot;ShowCount&quot;:false,&quot;SumColumn&quot;:null,&quot;SumMode&quot;:&quot;Default&quot;,&quot;SumCoefficient&quot;:null,&quot;TextBeforeSum&quot;:null,&quot;TextAfterSum&quot;:null,&quot;ConfirmationPosition&quot;:&quot;centered&quot;,&quot;VerticalPosition&quot;:&quot;Top&quot;,&quot;HorizontalPosition&quot;:&quot;Left&quot;,&quot;BulkActions&quot;:[{&quot;Id&quot;:-1,&quot;IsDeleted&quot;:false,&quot;ActionInfo&quot;:{&quot;Id&quot;:-1,&quot;GlobalId&quot;:&quot;8275ad06-baf0-4f05-841a-b3af3bbb8abd&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:-1,&quot;ActionType&quot;:&quot;OpenAFPopup&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;ModuleId&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;7f2d8714-859b-42ca-9804-9a352f2e273c&quot;},&quot;ReinitForm&quot;:true,&quot;Params&quot;:null},&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add.OpenForm&quot;},&quot;HasActionParameters&quot;:true}}],&quot;BulkActionsAfter&quot;:[],&quot;ItemActions&quot;:[],&quot;OnItemClickActionStackId&quot;:-1,&quot;OnBulkClickActionStackId&quot;:-1,&quot;OnBulkClickAfterActionStackId&quot;:-1,&quot;Url&quot;:&quot;&amp;amp;buttonName=Add&quot;,&quot;ModuleId&quot;:435,&quot;AutoName&quot;:false,&quot;Name&quot;:&quot;Add&quot;,&quot;Title&quot;:&quot;New&quot;,&quot;Help&quot;:&quot;Add&quot;,&quot;ShowCondition&quot;:null,&quot;IsEnabled&quot;:false,&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Add&quot;},&quot;Type&quot;:&quot;GridButton&quot;,&quot;OrderIndex&quot;:0,&quot;CssClass&quot;:&quot;primary&quot;,&quot;CustomCssClass&quot;:null,&quot;IconClass&quot;:null,&quot;FaIconClass&quot;:null,&quot;PermissionAllUsers&quot;:false,&quot;PermissionsExportJson&quot;:&quot;[\&quot;Admins\&quot;,\&quot;Citizen Developers\&quot;,\&quot;Low-Code Engineer\&quot;,\&quot;Managers\&quot;]&quot;,&quot;Permissions&quot;:[1,2,3,4],&quot;AskForConfirmation&quot;:false,&quot;ConfirmationMessage&quot;:null,&quot;ConfirmationOk&quot;:null,&quot;ConfirmationCancel&quot;:null,&quot;JsCode&quot;:null,&quot;IsClientButton&quot;:false,&quot;ButtonGroupId&quot;:null,&quot;ButtonGroupName&quot;:null,&quot;Id&quot;:0,&quot;EnableCondition&quot;:null,&quot;IsDeleted&quot;:false},{&quot;EnableSelection&quot;:false,&quot;RequiresSelection&quot;:false,&quot;RequiresData&quot;:false,&quot;ShowCount&quot;:false,&quot;SumColumn&quot;:null,&quot;SumMode&quot;:&quot;Default&quot;,&quot;SumCoefficient&quot;:null,&quot;TextBeforeSum&quot;:null,&quot;TextAfterSum&quot;:null,&quot;ConfirmationPosition&quot;:&quot;centered&quot;,&quot;VerticalPosition&quot;:&quot;Bottom&quot;,&quot;HorizontalPosition&quot;:&quot;Right&quot;,&quot;BulkActions&quot;:[{&quot;Id&quot;:-1,&quot;IsDeleted&quot;:false,&quot;ActionInfo&quot;:{&quot;Id&quot;:-1,&quot;GlobalId&quot;:&quot;0d3476df-cb1c-4e18-b507-4d932dde7fd6&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:-1,&quot;ActionType&quot;:&quot;ExcelFromEntityList&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Duplicates&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;Rename&quot;},&quot;IncludeAllFields&quot;:true,&quot;StoreAbsoluteURL&quot;:&quot;ExcelUrl&quot;},&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Export.ExportXlsx&quot;},&quot;HasActionParameters&quot;:true}},{&quot;Id&quot;:-1,&quot;IsDeleted&quot;:false,&quot;ActionInfo&quot;:{&quot;Id&quot;:-1,&quot;GlobalId&quot;:&quot;9c4144fb-b2c0-4bd3-8d88-64f43d6e2570&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:-1,&quot;ActionType&quot;:&quot;RedirectToUrl&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Url&quot;:&quot;[ExcelUrl]&quot;,&quot;ForceDownload&quot;:true},&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Export.RedirectUrl&quot;},&quot;HasActionParameters&quot;:true}}],&quot;BulkActionsAfter&quot;:[],&quot;ItemActions&quot;:[],&quot;OnItemClickActionStackId&quot;:-1,&quot;OnBulkClickActionStackId&quot;:-1,&quot;OnBulkClickAfterActionStackId&quot;:-1,&quot;Url&quot;:&quot;&amp;amp;buttonName=Export&quot;,&quot;ModuleId&quot;:435,&quot;AutoName&quot;:true,&quot;Name&quot;:&quot;Export&quot;,&quot;Title&quot;:&quot;Export&quot;,&quot;Help&quot;:&quot;Export&quot;,&quot;ShowCondition&quot;:null,&quot;IsEnabled&quot;:false,&quot;Metadata&quot;:{&quot;PAP_InternalIdentifier&quot;:&quot;Button.Export&quot;},&quot;Type&quot;:&quot;GridButton&quot;,&quot;OrderIndex&quot;:1,&quot;CssClass&quot;:&quot;link&quot;,&quot;CustomCssClass&quot;:null,&quot;IconClass&quot;:null,&quot;FaIconClass&quot;:null,&quot;PermissionAllUsers&quot;:false,&quot;PermissionsExportJson&quot;:&quot;[\&quot;Admins\&quot;,\&quot;Citizen Developers\&quot;,\&quot;Low-Code Engineer\&quot;,\&quot;Managers\&quot;,\&quot;Administratori\&quot;]&quot;,&quot;Permissions&quot;:[1,2,3,4,12],&quot;AskForConfirmation&quot;:false,&quot;ConfirmationMessage&quot;:null,&quot;ConfirmationOk&quot;:null,&quot;ConfirmationCancel&quot;:null,&quot;JsCode&quot;:null,&quot;IsClientButton&quot;:false,&quot;ButtonGroupId&quot;:null,&quot;ButtonGroupName&quot;:null,&quot;Id&quot;:0,&quot;EnableCondition&quot;:null,&quot;IsDeleted&quot;:false}]&lt;/GridButtons&gt;
+    &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
+    &lt;TooltipContent /&gt;
+    &lt;TooltipDataTrigger /&gt;
+    &lt;TooltipIcon&gt;glyphicon-info-sign&lt;/TooltipIcon&gt;
+    &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
+    &lt;TooltipInEdit&gt;right&lt;/TooltipInEdit&gt;
+    &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+    &lt;TooltipOrientation /&gt;
+    &lt;TooltipTitle /&gt;
+    &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+    &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+    &lt;DefaultDesktopView /&gt;
+    &lt;DefaultMobileView /&gt;
+    &lt;RefreshOnTabChange&gt;False&lt;/RefreshOnTabChange&gt;
+    &lt;UseDragAndDropActions&gt;False&lt;/UseDragAndDropActions&gt;
+    &lt;DragAndDropActions&gt;[]&lt;/DragAndDropActions&gt;
+    &lt;InitLoadFromTabsPro&gt;False&lt;/InitLoadFromTabsPro&gt;
+    &lt;LockIntoEditMode&gt;False&lt;/LockIntoEditMode&gt;
+    &lt;LockInEditForEachRowActions&gt;[]&lt;/LockInEditForEachRowActions&gt;
+    &lt;LockInEditFinalActions&gt;[]&lt;/LockInEditFinalActions&gt;
+    &lt;Template /&gt;
+    &lt;MobileTemplate /&gt;
+    &lt;SwitchingTemplates&gt;False&lt;/SwitchingTemplates&gt;
+    &lt;TemplateConfig&gt;{}&lt;/TemplateConfig&gt;
+    &lt;Views&gt;[{&quot;Id&quot;:141,&quot;ListingModuleId&quot;:435,&quot;ViewName&quot;:&quot;Calendar&quot;,&quot;ViewTitle&quot;:&quot;Calendar&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:false,&quot;ShowWhenNoData&quot;:true,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;Icon&quot;:&quot;far fa-calendar-alt&quot;,&quot;Settings&quot;:{&quot;EventCssClasses&quot;:{&quot;ViewId&quot;:141,&quot;Id&quot;:254,&quot;Name&quot;:&quot;EventCssClasses&quot;,&quot;ValueType&quot;:null,&quot;ValueToString&quot;:null,&quot;Value&quot;:null,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6385864+00:00&quot;,&quot;IsDeleted&quot;:false}},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:142,&quot;ListingModuleId&quot;:435,&quot;ViewName&quot;:&quot;Cards&quot;,&quot;ViewTitle&quot;:&quot;Cards&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;Icon&quot;:&quot;fas fa-th-large&quot;,&quot;Settings&quot;:{&quot;PageSizes&quot;:{&quot;ViewId&quot;:142,&quot;Id&quot;:255,&quot;Name&quot;:&quot;PageSizes&quot;,&quot;ValueType&quot;:&quot;System.String&quot;,&quot;ValueToString&quot;:&quot;10,20,50&quot;,&quot;Value&quot;:&quot;10,20,50&quot;,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6542111+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;DefaultPageSize&quot;:{&quot;ViewId&quot;:142,&quot;Id&quot;:256,&quot;Name&quot;:&quot;DefaultPageSize&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;10&quot;,&quot;Value&quot;:10,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6542111+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;CardCssClasses&quot;:{&quot;ViewId&quot;:142,&quot;Id&quot;:257,&quot;Name&quot;:&quot;CardCssClasses&quot;,&quot;ValueType&quot;:null,&quot;ValueToString&quot;:null,&quot;Value&quot;:null,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6698359+00:00&quot;,&quot;IsDeleted&quot;:false}},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:143,&quot;ListingModuleId&quot;:435,&quot;ViewName&quot;:&quot;Conversation&quot;,&quot;ViewTitle&quot;:&quot;Conversation (Experimental)&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;Icon&quot;:&quot;fas fa-comments&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:144,&quot;ListingModuleId&quot;:435,&quot;ViewName&quot;:&quot;DataTable&quot;,&quot;ViewTitle&quot;:&quot;Data Table&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:true,&quot;OrderIndex&quot;:3,&quot;Icon&quot;:&quot;fas fa-th-list&quot;,&quot;Settings&quot;:{&quot;PageSizes&quot;:{&quot;ViewId&quot;:144,&quot;Id&quot;:258,&quot;Name&quot;:&quot;PageSizes&quot;,&quot;ValueType&quot;:&quot;System.String&quot;,&quot;ValueToString&quot;:&quot;10,20,50&quot;,&quot;Value&quot;:&quot;10,20,50&quot;,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6698359+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;DefaultPageSize&quot;:{&quot;ViewId&quot;:144,&quot;Id&quot;:259,&quot;Name&quot;:&quot;DefaultPageSize&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;10&quot;,&quot;Value&quot;:10,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6854593+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonPosition&quot;:{&quot;ViewId&quot;:144,&quot;Id&quot;:260,&quot;Name&quot;:&quot;ItemButtonPosition&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6854593+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonPositionInColumn&quot;:{&quot;ViewId&quot;:144,&quot;Id&quot;:261,&quot;Name&quot;:&quot;ItemButtonPositionInColumn&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6854593+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;ItemButtonGroupingOptions&quot;:{&quot;ViewId&quot;:144,&quot;Id&quot;:262,&quot;Name&quot;:&quot;ItemButtonGroupingOptions&quot;,&quot;ValueType&quot;:&quot;System.Int64&quot;,&quot;ValueToString&quot;:&quot;0&quot;,&quot;Value&quot;:0,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.6854593+00:00&quot;,&quot;IsDeleted&quot;:false},&quot;RowCssClasses&quot;:{&quot;ViewId&quot;:144,&quot;Id&quot;:263,&quot;Name&quot;:&quot;RowCssClasses&quot;,&quot;ValueType&quot;:null,&quot;ValueToString&quot;:null,&quot;Value&quot;:null,&quot;LastModifiedBy&quot;:5,&quot;LastModifiedDate&quot;:&quot;2026-07-23T14:40:45.7010848+00:00&quot;,&quot;IsDeleted&quot;:false}},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:145,&quot;ListingModuleId&quot;:435,&quot;ViewName&quot;:&quot;Hierarchy&quot;,&quot;ViewTitle&quot;:&quot;Hierarchy (Experimental)&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:4,&quot;Icon&quot;:&quot;fas fa-folder-tree&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:146,&quot;ListingModuleId&quot;:435,&quot;ViewName&quot;:&quot;Kanban&quot;,&quot;ViewTitle&quot;:&quot;Kanban Board (Experimental)&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:true,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:5,&quot;Icon&quot;:&quot;fas fa-columns&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false},{&quot;Id&quot;:147,&quot;ListingModuleId&quot;:435,&quot;ViewName&quot;:&quot;Legacy&quot;,&quot;ViewTitle&quot;:&quot;Legacy View&quot;,&quot;RendersTopButtons&quot;:false,&quot;RendersBottomButtons&quot;:false,&quot;ShowWhenNoData&quot;:false,&quot;IsEnabled&quot;:false,&quot;OrderIndex&quot;:6,&quot;Icon&quot;:&quot;fas fa-th-list&quot;,&quot;Settings&quot;:{},&quot;IsDeleted&quot;:false}]&lt;/Views&gt;
+    &lt;RevisionNumber&gt;5&lt;/RevisionNumber&gt;
+    &lt;RevisionLastChangedBy&gt;dragos.dascaleanu@plantanapp.com&lt;/RevisionLastChangedBy&gt;
+    &lt;RevisionLastChangedDate&gt;2026-07-23T14:40:45.4667149+00:00&lt;/RevisionLastChangedDate&gt;
+  &lt;/Settings&gt;
+  &lt;Fields&gt;
+    &lt;FieldInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Title&gt;Id&lt;/Title&gt;
+      &lt;RefName&gt;Id&lt;/RefName&gt;
+      &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
+      &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
+      &lt;IsSortable&gt;true&lt;/IsSortable&gt;
+      &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
+      &lt;IsSearchable&gt;true&lt;/IsSearchable&gt;
+      &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
+      &lt;CanBeSearchable&gt;true&lt;/CanBeSearchable&gt;
+      &lt;IsFilterable&gt;false&lt;/IsFilterable&gt;
+      &lt;CanBeFilterable&gt;false&lt;/CanBeFilterable&gt;
+      &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
+      &lt;OrderIndex&gt;0&lt;/OrderIndex&gt;
+      &lt;Template /&gt;
+      &lt;FormatterParameters /&gt;
+      &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
+      &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+      &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
+      &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
+      &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+      &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+      &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
+      &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
+      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
+      &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;Format /&gt;
+      &lt;EditFieldType&gt;none&lt;/EditFieldType&gt;
+      &lt;EditFieldTypeParameters /&gt;
+      &lt;Validation /&gt;
+      &lt;FieldType&gt;Field&lt;/FieldType&gt;
+      &lt;FieldTypeStr&gt;Field&lt;/FieldTypeStr&gt;
+      &lt;ShowOnDetail&gt;false&lt;/ShowOnDetail&gt;
+      &lt;ShowOnMobile&gt;true&lt;/ShowOnMobile&gt;
+      &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
+      &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
+      &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Field.Id&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Field.Id&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+    &lt;/FieldInfo&gt;
+    &lt;FieldInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Title&gt;Denumire&lt;/Title&gt;
+      &lt;RefName&gt;Denumire&lt;/RefName&gt;
+      &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
+      &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
+      &lt;IsSortable&gt;true&lt;/IsSortable&gt;
+      &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
+      &lt;IsSearchable&gt;true&lt;/IsSearchable&gt;
+      &lt;AllowHtml&gt;true&lt;/AllowHtml&gt;
+      &lt;CanBeSearchable&gt;true&lt;/CanBeSearchable&gt;
+      &lt;IsFilterable&gt;false&lt;/IsFilterable&gt;
+      &lt;CanBeFilterable&gt;false&lt;/CanBeFilterable&gt;
+      &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
+      &lt;OrderIndex&gt;1&lt;/OrderIndex&gt;
+      &lt;Template /&gt;
+      &lt;FormatterParameters&gt;
+        &lt;item&gt;
+          &lt;key&gt;
+            &lt;string&gt;Target&lt;/string&gt;
+          &lt;/key&gt;
+          &lt;value&gt;
+            &lt;FormatterParameterInfo xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+              &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+              &lt;DefinitionId&gt;Link&lt;/DefinitionId&gt;
+              &lt;TypeStr&gt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/TypeStr&gt;
+              &lt;Name&gt;Target&lt;/Name&gt;
+              &lt;IsExpression&gt;false&lt;/IsExpression&gt;
+              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;_self&lt;/Value&gt;
+            &lt;/FormatterParameterInfo&gt;
+          &lt;/value&gt;
+        &lt;/item&gt;
+        &lt;item&gt;
+          &lt;key&gt;
+            &lt;string&gt;Link&lt;/string&gt;
+          &lt;/key&gt;
+          &lt;value&gt;
+            &lt;FormatterParameterInfo xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+              &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+              &lt;DefinitionId&gt;Link&lt;/DefinitionId&gt;
+              &lt;TypeStr&gt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&lt;/TypeStr&gt;
+              &lt;Name&gt;Link&lt;/Name&gt;
+              &lt;IsExpression&gt;false&lt;/IsExpression&gt;
+              &lt;Value xsi:type=&quot;xsd:string&quot;&gt;//[Portal:url]/Nomenclatoare/Nomenclatoareactiuni/Detail?NomenclatoractiuniId=[Id]&lt;/Value&gt;
+            &lt;/FormatterParameterInfo&gt;
+          &lt;/value&gt;
+        &lt;/item&gt;
+      &lt;/FormatterParameters&gt;
+      &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
+      &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+      &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
+      &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
+      &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+      &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+      &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
+      &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
+      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
+      &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;Format&gt;Link&lt;/Format&gt;
+      &lt;EditFieldType&gt;none&lt;/EditFieldType&gt;
+      &lt;EditFieldTypeParameters /&gt;
+      &lt;Validation /&gt;
+      &lt;FieldType&gt;Field&lt;/FieldType&gt;
+      &lt;FieldTypeStr&gt;Field&lt;/FieldTypeStr&gt;
+      &lt;ShowOnDetail&gt;false&lt;/ShowOnDetail&gt;
+      &lt;ShowOnMobile&gt;true&lt;/ShowOnMobile&gt;
+      &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
+      &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
+      &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Field.3f59c4d8-1cc8-4ac3-8d4d-2e0dd70dd66d&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Field.3f59c4d8-1cc8-4ac3-8d4d-2e0dd70dd66d&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+    &lt;/FieldInfo&gt;
+    &lt;FieldInfo&gt;
+      &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
+      &lt;Title&gt;EventId&lt;/Title&gt;
+      &lt;RefName&gt;EventId&lt;/RefName&gt;
+      &lt;IsEnabled&gt;true&lt;/IsEnabled&gt;
+      &lt;IsInitiallyVisible&gt;true&lt;/IsInitiallyVisible&gt;
+      &lt;IsSortable&gt;true&lt;/IsSortable&gt;
+      &lt;CanBeSortable&gt;true&lt;/CanBeSortable&gt;
+      &lt;IsSearchable&gt;true&lt;/IsSearchable&gt;
+      &lt;AllowHtml&gt;false&lt;/AllowHtml&gt;
+      &lt;CanBeSearchable&gt;true&lt;/CanBeSearchable&gt;
+      &lt;IsFilterable&gt;false&lt;/IsFilterable&gt;
+      &lt;CanBeFilterable&gt;false&lt;/CanBeFilterable&gt;
+      &lt;FormatFilters&gt;false&lt;/FormatFilters&gt;
+      &lt;OrderIndex&gt;2&lt;/OrderIndex&gt;
+      &lt;Template /&gt;
+      &lt;FormatterParameters /&gt;
+      &lt;TooltipEnabled&gt;false&lt;/TooltipEnabled&gt;
+      &lt;TooltipOrientation&gt;top&lt;/TooltipOrientation&gt;
+      &lt;TooltipDataTrigger&gt;click&lt;/TooltipDataTrigger&gt;
+      &lt;TooltipIconPosition&gt;right&lt;/TooltipIconPosition&gt;
+      &lt;TooltipInEdit&gt;false&lt;/TooltipInEdit&gt;
+      &lt;TooltipHeight&gt;0&lt;/TooltipHeight&gt;
+      &lt;TooltipWidth&gt;0&lt;/TooltipWidth&gt;
+      &lt;ColumnTextAlignment&gt;left&lt;/ColumnTextAlignment&gt;
+      &lt;HeaderTextAlignment&gt;false&lt;/HeaderTextAlignment&gt;
+      &lt;ShowInFooter&gt;no&lt;/ShowInFooter&gt;
+      &lt;ShowInFooterSumDecimals&gt;2&lt;/ShowInFooterSumDecimals&gt;
+      &lt;Format /&gt;
+      &lt;EditFieldType&gt;none&lt;/EditFieldType&gt;
+      &lt;EditFieldTypeParameters /&gt;
+      &lt;Validation /&gt;
+      &lt;FieldType&gt;Field&lt;/FieldType&gt;
+      &lt;FieldTypeStr&gt;Field&lt;/FieldTypeStr&gt;
+      &lt;ShowOnDetail&gt;false&lt;/ShowOnDetail&gt;
+      &lt;ShowOnMobile&gt;true&lt;/ShowOnMobile&gt;
+      &lt;ShowOnTablet&gt;true&lt;/ShowOnTablet&gt;
+      &lt;ShowOnDesktop&gt;true&lt;/ShowOnDesktop&gt;
+      &lt;ShowOnLargeScreens&gt;true&lt;/ShowOnLargeScreens&gt;
+      &lt;MetadataJson&gt;{&quot;PAP_InternalIdentifier&quot;:&quot;Field.a36eab67-ae0a-4316-ac61-d4e43c036e23&quot;}&lt;/MetadataJson&gt;
+      &lt;Metadata&gt;
+        &lt;PAP_InternalIdentifier&gt;Field.a36eab67-ae0a-4316-ac61-d4e43c036e23&lt;/PAP_InternalIdentifier&gt;
+      &lt;/Metadata&gt;
+    &lt;/FieldInfo&gt;
+  &lt;/Fields&gt;
+&lt;/ActionGrid&gt;]]></content>
+</module>

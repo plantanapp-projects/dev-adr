@@ -1,0 +1,22 @@
+{
+  "globalId": "8efda07b-8c12-439b-bf46-ba7cf16636ad",
+  "namespace": {
+    "globalId": "8bb2748f-f519-491d-a1bc-5cd9c81c273e",
+    "name": "Notifications",
+    "isSystem": false
+  },
+  "name": "RenderUnreadNotificationsIcon",
+  "description": "",
+  "defaultValue": "",
+  "cacheTimeSec": 0,
+  "cacheLayer": "global",
+  "replaceTokens": false,
+  "decodeHtml": false,
+  "stripHtmlTags": false,
+  "src": {
+    "type": "razorwebpages",
+    "lang": "csharp",
+    "language": "csharp",
+    "params": []
+  }
+}
