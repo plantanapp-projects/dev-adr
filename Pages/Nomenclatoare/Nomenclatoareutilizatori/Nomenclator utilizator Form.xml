@@ -579,9 +579,9 @@
     &lt;PopupName&gt;[popupTitle]&lt;/PopupName&gt;
     &lt;RootClasses /&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;11&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;13&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;dragos.dascaleanu@plantanapp.com&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-07-23T06:29:52.8152848+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2026-07-28T14:13:22.6991695+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;

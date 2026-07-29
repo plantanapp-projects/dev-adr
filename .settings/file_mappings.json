@@ -905,6 +905,33 @@
       "PaneName": "ContentPane",
       "Order": 7,
       "ContentPath": "Pages/Nomenclatoare/Nomenclatoareutilizatori/Statusuri/Detail/Tabs.xml"
+    },
+    {
+      "GlobalId": "1a7b090c-e0ca-4428-ab1d-57f2b862e3ac",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Deleg\u0103 persoan\u0103",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P4_50_1",
+      "Order": 1,
+      "ContentPath": "Pages/Contulmeu/Deleg\u0103 persoan\u0103.xml"
+    },
+    {
+      "GlobalId": "eff14ac1-0b8f-41f5-b41d-4bdc661e3fa4",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "Conturi delegate",
+      "FriendlyName": "avt.Action Form",
+      "PaneName": "P4_50_1",
+      "Order": 3,
+      "ContentPath": "Pages/Contulmeu/Conturi delegate.xml"
+    },
+    {
+      "GlobalId": "36d3b7d4-d7ea-48ca-80bb-feb90c4c7494",
+      "ParentPageId": "17dba445-eda3-4505-858d-71b354f3c960",
+      "ModuleTitle": "List\u0103 acces\u0103ri pe lun\u0103",
+      "FriendlyName": "avt.ActionGrid",
+      "PaneName": "P2_75_2",
+      "Order": 1,
+      "ContentPath": "Pages/Contulmeu/List\u0103 acces\u0103ri pe lun\u0103.xml"
     }
   ],
   "TokenNamespaces": [

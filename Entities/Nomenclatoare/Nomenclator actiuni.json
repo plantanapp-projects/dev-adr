@@ -240,6 +240,36 @@
         "RoleId": 12,
         "RoleName": "Administratori",
         "Value": "all"
+      },
+      {
+        "Id": 170,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 12,
+        "RoleName": "Administratori",
+        "Value": "true"
+      },
+      {
+        "Id": 171,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 12,
+        "RoleName": "Administratori",
+        "Value": "all"
+      },
+      {
+        "Id": 172,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 12,
+        "RoleName": "Administratori",
+        "Value": "all"
       }
     ]
   },
@@ -254,7 +284,7 @@
   "CreatedDate": "2026-06-29T13:59:35.86",
   "CreatedBy": "SuperUser Account",
   "LastModifiedBy": "Dragos Dascaleanu",
-  "LastModifiedOn": "2026-07-23T14:40:44.6233333",
+  "LastModifiedOn": "2026-07-28T14:12:29.3866667",
   "Icon": "list-ol",
   "Type": 0,
   "BuiltInType": null,

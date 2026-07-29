@@ -203,6 +203,18 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "12": [
+      {
+        "Id": 181,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 12,
+        "RoleName": "Administratori",
+        "Value": "all"
+      }
     ]
   },
   "Id": 13,
@@ -215,8 +227,8 @@
   "PageUiLibrary": 2,
   "CreatedDate": "2026-07-14T11:21:09.0233333",
   "CreatedBy": "Dragos Dascaleanu",
-  "LastModifiedBy": "",
-  "LastModifiedOn": null,
+  "LastModifiedBy": "Dragos Dascaleanu",
+  "LastModifiedOn": "2026-07-29T09:09:11.06",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

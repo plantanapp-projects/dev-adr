@@ -46,6 +46,12 @@
         </permission>
         <permission>
             <permissioncode>SYSTEM_TAB</permissioncode>
+            <permissionkey>VIEW</permissionkey>
+            <allowaccess>true</allowaccess>
+            <rolename>Administratori</rolename>
+        </permission>
+        <permission>
+            <permissioncode>SYSTEM_TAB</permissioncode>
             <permissionkey>EDIT</permissionkey>
             <allowaccess>true</allowaccess>
             <rolename>Citizen Developers</rolename>

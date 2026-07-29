@@ -203,6 +203,48 @@
         "RoleName": "Managers",
         "Value": "all"
       }
+    ],
+    "12": [
+      {
+        "Id": 177,
+        "PermissionType": {
+          "Id": 1,
+          "Name": "Can View"
+        },
+        "RoleId": 12,
+        "RoleName": "Administratori",
+        "Value": "all"
+      },
+      {
+        "Id": 178,
+        "PermissionType": {
+          "Id": 2,
+          "Name": "Can Add"
+        },
+        "RoleId": 12,
+        "RoleName": "Administratori",
+        "Value": "true"
+      },
+      {
+        "Id": 179,
+        "PermissionType": {
+          "Id": 3,
+          "Name": "Can Edit"
+        },
+        "RoleId": 12,
+        "RoleName": "Administratori",
+        "Value": "all"
+      },
+      {
+        "Id": 180,
+        "PermissionType": {
+          "Id": 4,
+          "Name": "Can Delete"
+        },
+        "RoleId": 12,
+        "RoleName": "Administratori",
+        "Value": "all"
+      }
     ]
   },
   "Id": 6,
@@ -216,7 +258,7 @@
   "CreatedDate": "2026-06-29T13:55:34.79",
   "CreatedBy": "SuperUser Account",
   "LastModifiedBy": "Dragos Dascaleanu",
-  "LastModifiedOn": "2026-07-06T09:28:38.5233333",
+  "LastModifiedOn": "2026-07-28T14:13:21.0866667",
   "Icon": "table",
   "Type": 0,
   "BuiltInType": null,

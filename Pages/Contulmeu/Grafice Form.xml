@@ -1275,6 +1275,201 @@
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
       &lt;ViewOrder&gt;36&lt;/ViewOrder&gt;
       &lt;RowIndex&gt;3&lt;/RowIndex&gt;
+      &lt;ColSpan&gt;4&lt;/ColSpan&gt;
+      &lt;ColOffset&gt;0&lt;/ColOffset&gt;
+    &lt;/Field&gt;
+    &lt;Field&gt;
+      &lt;Id&gt;&lt;![CDATA[856]]&gt;&lt;/Id&gt;
+      &lt;Title&gt;&lt;![CDATA[Evoluția Accesărilor &#238;n Timp]]&gt;&lt;/Title&gt;
+      &lt;ShortDesc&gt;&lt;![CDATA[]]&gt;&lt;/ShortDesc&gt;
+      &lt;CustomAttributesJson&gt;&lt;![CDATA[[]]]&gt;&lt;/CustomAttributesJson&gt;
+      &lt;MetadataJson&gt;&lt;![CDATA[{}]]&gt;&lt;/MetadataJson&gt;
+      &lt;IsEnabled&gt;True&lt;/IsEnabled&gt;
+      &lt;OverrideName&gt;EvolutiaAccesarilorinTimp&lt;/OverrideName&gt;
+      &lt;Name&gt;EvolutiaAccesarilorinTimp&lt;/Name&gt;
+      &lt;HelpText&gt;&lt;![CDATA[]]&gt;&lt;/HelpText&gt;
+      &lt;ShowCondition&gt;&lt;![CDATA[]]&gt;&lt;/ShowCondition&gt;
+      &lt;ValidationCondition&gt;&lt;![CDATA[]]&gt;&lt;/ValidationCondition&gt;
+      &lt;CanValidate&gt;&lt;![CDATA[True]]&gt;&lt;/CanValidate&gt;
+      &lt;BindShow&gt;&lt;![CDATA[]]&gt;&lt;/BindShow&gt;
+      &lt;BindEnable&gt;&lt;![CDATA[]]&gt;&lt;/BindEnable&gt;
+      &lt;BindPreserveLayout&gt;&lt;![CDATA[False]]&gt;&lt;/BindPreserveLayout&gt;
+      &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
+      &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
+      &lt;InputType&gt;static-text&lt;/InputType&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cdiv class=\&quot;chart-card chart-card-full\&quot;\u003e\n  \u003ch2\u003eEvoluția accesărilor &#238;n timp\u003c/h2\u003e\n  \u003cdiv class=\&quot;chart-container\&quot;\u003e\n    \u003ccanvas id=\&quot;timeSeriesChart\&quot;\u003e\u003c/canvas\u003e\n  \u003c/div\u003e\n\u003c/div\u003e\n\n\u003cscript\u003e\n  function ensureArray(data) {\n    if (!data) return [];\n    if (Array.isArray(data)) return data;\n\n    try {\n      const parsed = JSON.parse(data);\n      return Array.isArray(parsed) ? parsed : [];\n    } catch {\n      return [];\n    }\n  }\n\n  const events = ensureArray([Get:graf10dataArr=[dataArr]]);\n\n  // ✅ agregare din query string\n  const agregare = \u0027[QueryString:graf10Agregare]\u0027 || \u0027luni\u0027;\n\n  const aggregation = {};\n\n  events.forEach(event =\u003e {\n    const dateStr = event?.S14?.value;\n    if (!dateStr) return;\n\n    const date = new Date(dateStr);\n\n    let key;\n\n    if (agregare === \u0027zile\u0027) {\n      key = date.toISOString().split(\u0027T\u0027)[0]; // YYYY-MM-DD\n    } else {\n      key = date.getFullYear() + \u0027-\u0027 + String(date.getMonth() + 1).padStart(2, \u00270\u0027); // YYYY-MM\n    }\n\n    aggregation[key] = (aggregation[key] || 0) + 1;\n  });\n\n  const keys = Object.keys(aggregation).sort();\n  const values = keys.map(k =\u003e aggregation[k]);\n\n  const hasData = keys.length \u003e 0 \u0026\u0026 values.some(v =\u003e v \u003e 0);\n\n  // ✅ Romanian labels\n  function formatLabel(key) {\n    if (agregare === \u0027zile\u0027) {\n      const d = new Date(key);\n      return d.toLocaleDateString(\u0027ro-RO\u0027, { day: \u00272-digit\u0027, month: \u0027short\u0027 });\n    } else {\n      const [year, month] = key.split(\u0027-\u0027);\n      return new Date(year, month - 1).toLocaleDateString(\u0027ro-RO\u0027, { month: \u0027short\u0027, year: \u0027numeric\u0027 });\n    }\n  }\n\n  const labels = hasData ? keys.map(formatLabel) : [\u0027Fără date\u0027];\n\n  // ✅ date formatter yyyy-MM-dd HH:mm:ss\n  function formatDateTime(d) {\n    const pad = n =\u003e String(n).padStart(2, \u00270\u0027);\n    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;\n  }\n\n  const ctx = document.getElementById(\u0027timeSeriesChart\u0027).getContext(\u00272d\u0027);\n\n  new Chart(ctx, {\n    type: \u0027line\u0027,\n    data: {\n      labels: labels,\n      datasets: hasData ? [{\n        label: \u0027Număr accesări\u0027,\n        data: values,\n        borderColor: \u0027#3a86ef\u0027,\n        backgroundColor: \u0027rgba(58, 134, 239, 0.2)\u0027,\n        tension: 0.3,\n        fill: true,\n        pointRadius: 4,\n        pointHoverRadius: 6\n      }] : [{\n        label: \u0027Fără date\u0027,\n        data: [1],\n        backgroundColor: \u0027#e0e0e0\u0027,\n        borderColor: \u0027#e0e0e0\u0027\n      }]\n    },\n    options: {\n      responsive: true,\n      maintainAspectRatio: false,\n\n      onClick: (evt, elements) =\u003e {\n        if (!elements.length) return;\n\n        // ✅ doar dacă suntem pe luni\n        if (agregare !== \u0027zile\u0027) {\n          const index = elements[0].index;\n          const selectedKey = keys[index]; // YYYY-MM\n\n          const [year, month] = selectedKey.split(\u0027-\u0027).map(Number);\n\n          // ✅ first \u0026 last day\n          const firstDay = new Date(year, month - 1, 1, 0, 0, 0);\n          const lastDay = new Date(year, month, 0, 23, 59, 59);\n\n          const firstFormatted = formatDateTime(firstDay);\n          const lastFormatted = formatDateTime(lastDay);\n\n          // ✅ update query params\n          dnnsf.updateQueryStringParam(\u0027graf10Agregare\u0027,\u0027zile\u0027);\n          dnnsf.updateQueryStringParam(\u0027graf10Start\u0027, firstFormatted);\n          dnnsf.updateQueryStringParam(\u0027graf10End\u0027, lastFormatted);\n\n          dnnsf.api.actionForm.initForm(619);\n        }\n      },\n\n      plugins: {\n        legend: {\n          display: hasData\n        },\n        tooltip: {\n          enabled: hasData\n        }\n      },\n\n      scales: {\n        y: {\n          beginAtZero: true,\n          ticks: {\n            precision: 0\n          },\n          title: {\n            display: true,\n            text: \u0027Număr accesări\u0027\n          }\n        },\n        x: {\n          title: {\n            display: true,\n            text: agregare === \u0027zile\u0027 ? \u0027Zi\u0027 : \u0027Lună\u0027\n          }\n        }\n      }\n    }\n  });\n\u003c/script\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;Align&gt;
+        &lt;Expression /&gt;
+        &lt;Value&gt;left&lt;/Value&gt;
+        &lt;IsExpression&gt;False&lt;/IsExpression&gt;
+        &lt;Parameters&gt;System.Collections.Generic.Dictionary`2[System.String,System.Object]&lt;/Parameters&gt;
+      &lt;/Align&gt;
+      &lt;SaveToReport&gt;False&lt;/SaveToReport&gt;
+      &lt;Value&gt;&lt;![CDATA[&lt;div class=&quot;chart-card chart-card-full&quot;&gt;
+  &lt;h2&gt;Evoluția accesărilor &#238;n timp&lt;/h2&gt;
+  &lt;div class=&quot;chart-container&quot;&gt;
+    &lt;canvas id=&quot;timeSeriesChart&quot;&gt;&lt;/canvas&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  function ensureArray(data) {
+    if (!data) return [];
+    if (Array.isArray(data)) return data;
+
+    try {
+      const parsed = JSON.parse(data);
+      return Array.isArray(parsed) ? parsed : [];
+    } catch {
+      return [];
+    }
+  }
+
+  const events = ensureArray([Get:graf10dataArr=[dataArr]]);
+
+  // ✅ agregare din query string
+  const agregare = &#39;[QueryString:graf10Agregare]&#39; || &#39;luni&#39;;
+
+  const aggregation = {};
+
+  events.forEach(event =&gt; {
+    const dateStr = event?.S14?.value;
+    if (!dateStr) return;
+
+    const date = new Date(dateStr);
+
+    let key;
+
+    if (agregare === &#39;zile&#39;) {
+      key = date.toISOString().split(&#39;T&#39;)[0]; // YYYY-MM-DD
+    } else {
+      key = date.getFullYear() + &#39;-&#39; + String(date.getMonth() + 1).padStart(2, &#39;0&#39;); // YYYY-MM
+    }
+
+    aggregation[key] = (aggregation[key] || 0) + 1;
+  });
+
+  const keys = Object.keys(aggregation).sort();
+  const values = keys.map(k =&gt; aggregation[k]);
+
+  const hasData = keys.length &gt; 0 &amp;&amp; values.some(v =&gt; v &gt; 0);
+
+  // ✅ Romanian labels
+  function formatLabel(key) {
+    if (agregare === &#39;zile&#39;) {
+      const d = new Date(key);
+      return d.toLocaleDateString(&#39;ro-RO&#39;, { day: &#39;2-digit&#39;, month: &#39;short&#39; });
+    } else {
+      const [year, month] = key.split(&#39;-&#39;);
+      return new Date(year, month - 1).toLocaleDateString(&#39;ro-RO&#39;, { month: &#39;short&#39;, year: &#39;numeric&#39; });
+    }
+  }
+
+  const labels = hasData ? keys.map(formatLabel) : [&#39;Fără date&#39;];
+
+  // ✅ date formatter yyyy-MM-dd HH:mm:ss
+  function formatDateTime(d) {
+    const pad = n =&gt; String(n).padStart(2, &#39;0&#39;);
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())} ${pad(d.getHours())}:${pad(d.getMinutes())}:${pad(d.getSeconds())}`;
+  }
+
+  const ctx = document.getElementById(&#39;timeSeriesChart&#39;).getContext(&#39;2d&#39;);
+
+  new Chart(ctx, {
+    type: &#39;line&#39;,
+    data: {
+      labels: labels,
+      datasets: hasData ? [{
+        label: &#39;Număr accesări&#39;,
+        data: values,
+        borderColor: &#39;#3a86ef&#39;,
+        backgroundColor: &#39;rgba(58, 134, 239, 0.2)&#39;,
+        tension: 0.3,
+        fill: true,
+        pointRadius: 4,
+        pointHoverRadius: 6
+      }] : [{
+        label: &#39;Fără date&#39;,
+        data: [1],
+        backgroundColor: &#39;#e0e0e0&#39;,
+        borderColor: &#39;#e0e0e0&#39;
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+
+      onClick: (evt, elements) =&gt; {
+        if (!elements.length) return;
+
+        // ✅ doar dacă suntem pe luni
+        if (agregare !== &#39;zile&#39;) {
+          const index = elements[0].index;
+          const selectedKey = keys[index]; // YYYY-MM
+
+          const [year, month] = selectedKey.split(&#39;-&#39;).map(Number);
+
+          // ✅ first &amp; last day
+          const firstDay = new Date(year, month - 1, 1, 0, 0, 0);
+          const lastDay = new Date(year, month, 0, 23, 59, 59);
+
+          const firstFormatted = formatDateTime(firstDay);
+          const lastFormatted = formatDateTime(lastDay);
+
+          // ✅ update query params
+          dnnsf.updateQueryStringParam(&#39;graf10Agregare&#39;,&#39;zile&#39;);
+          dnnsf.updateQueryStringParam(&#39;graf10Start&#39;, firstFormatted);
+          dnnsf.updateQueryStringParam(&#39;graf10End&#39;, lastFormatted);
+
+          dnnsf.api.actionForm.initForm(619);
+        }
+      },
+
+      plugins: {
+        legend: {
+          display: hasData
+        },
+        tooltip: {
+          enabled: hasData
+        }
+      },
+
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            precision: 0
+          },
+          title: {
+            display: true,
+            text: &#39;Număr accesări&#39;
+          }
+        },
+        x: {
+          title: {
+            display: true,
+            text: agregare === &#39;zile&#39; ? &#39;Zi&#39; : &#39;Lună&#39;
+          }
+        }
+      }
+    }
+  });
+&lt;/script&gt;]]&gt;&lt;/Value&gt;
+      &lt;IsRequired&gt;False&lt;/IsRequired&gt;
+      &lt;IsActive&gt;True&lt;/IsActive&gt;
+      &lt;EnableCondition /&gt;
+      &lt;CssClass&gt;&lt;![CDATA[]]&gt;&lt;/CssClass&gt;
+      &lt;FirstCssClass&gt;&lt;![CDATA[]]&gt;&lt;/FirstCssClass&gt;
+      &lt;CssStyles&gt;&lt;![CDATA[]]&gt;&lt;/CssStyles&gt;
+      &lt;LabelCssClass&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssClass&gt;
+      &lt;LabelCssStyles&gt;&lt;![CDATA[]]&gt;&lt;/LabelCssStyles&gt;
+      &lt;CustomValidator1 /&gt;
+      &lt;CustomValidator2 /&gt;
+      &lt;ValidationGroup /&gt;
+      &lt;GroupValidator /&gt;
+      &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
+      &lt;ViewOrder&gt;48&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;4&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -1297,7 +1492,7 @@
       &lt;BindValue&gt;&lt;![CDATA[]]&gt;&lt;/BindValue&gt;
       &lt;BindOnChange&gt;&lt;![CDATA[]]&gt;&lt;/BindOnChange&gt;
       &lt;InputType&gt;static-text&lt;/InputType&gt;
-      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cstyle\u003e\n  .chart-card {\n    width: 100%;\n    max-width: 700px;\n    background: #ffffff;\n    padding: 24px;\n    border-radius: 12px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);\n  }\n   \n  .chart-card h2 {\n    margin-top: 0;\n    color: #333;\n    font-size: 1.25rem;\n    font-weight: 500;\n    text-align: center;\n    margin-bottom: 20px;\n  }\n  \n  .chart-container {\n  position: relative;\n  height: 350px;\n  }\n  \n  .kpi-card {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 200px;\n  text-align: center;\n}\n\n.kpi-value {\n  font-size: 3rem;\n  font-weight: 600;\n  color: #3a86ef;\n  margin-top: 10px;\n}\n\u003c/style\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
+      &lt;InputData&gt;{&quot;Value&quot;:&quot;\u003cstyle\u003e\n  .chart-card {\n    width: 100%;\n    max-width: 700px;\n    background: #ffffff;\n    padding: 24px;\n    border-radius: 12px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);\n  }\n  \n  .chart-card-full {\n  max-width: 100%;\n}\n   \n  .chart-card h2 {\n    margin-top: 0;\n    color: #333;\n    font-size: 1.25rem;\n    font-weight: 500;\n    text-align: center;\n    margin-bottom: 20px;\n  }\n  \n  .chart-container {\n  position: relative;\n  height: 350px;\n  }\n  \n  .kpi-card {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  height: 200px;\n  text-align: center;\n}\n\n.kpi-value {\n  font-size: 3rem;\n  font-weight: 600;\n  color: #3a86ef;\n  margin-top: 10px;\n}\n\u003c/style\u003e&quot;,&quot;Align&quot;:{&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;left&quot;,&quot;IsExpression&quot;:false,&quot;Parameters&quot;:{}},&quot;SaveToReport&quot;:false}&lt;/InputData&gt;
       &lt;Align&gt;
         &lt;Expression /&gt;
         &lt;Value&gt;left&lt;/Value&gt;
@@ -1314,6 +1509,10 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
+  
+  .chart-card-full {
+  max-width: 100%;
+}
    
   .chart-card h2 {
     margin-top: 0;
@@ -1358,8 +1557,8 @@
       &lt;ValidationGroup /&gt;
       &lt;GroupValidator /&gt;
       &lt;DisableAutocomplete&gt;False&lt;/DisableAutocomplete&gt;
-      &lt;ViewOrder&gt;48&lt;/ViewOrder&gt;
-      &lt;RowIndex&gt;4&lt;/RowIndex&gt;
+      &lt;ViewOrder&gt;60&lt;/ViewOrder&gt;
+      &lt;RowIndex&gt;5&lt;/RowIndex&gt;
       &lt;ColSpan&gt;12&lt;/ColSpan&gt;
       &lt;ColOffset&gt;0&lt;/ColOffset&gt;
     &lt;/Field&gt;
@@ -1418,9 +1617,9 @@
     &lt;PopupName /&gt;
     &lt;RootClasses /&gt;
     &lt;PortalHomeUrl&gt;/Portals/0/&lt;/PortalHomeUrl&gt;
-    &lt;RevisionNumber&gt;64&lt;/RevisionNumber&gt;
+    &lt;RevisionNumber&gt;74&lt;/RevisionNumber&gt;
     &lt;RevisionLastChangedBy&gt;dragos.dascaleanu@plantanapp.com&lt;/RevisionLastChangedBy&gt;
-    &lt;RevisionLastChangedDate&gt;2026-07-24T15:23:48.9792367+00:00&lt;/RevisionLastChangedDate&gt;
+    &lt;RevisionLastChangedDate&gt;2026-07-29T14:33:53.1769111+00:00&lt;/RevisionLastChangedDate&gt;
   &lt;/Settings&gt;
   &lt;Actions xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
     &lt;ActionInfo&gt;
@@ -1469,7 +1668,7 @@
       &lt;OrderIndex&gt;3&lt;/OrderIndex&gt;
       &lt;ActionType&gt;ExecuteActions&lt;/ActionType&gt;
       &lt;Description&gt;pentru mai multe grafice&lt;/Description&gt;
-      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:2688,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;simulam razvan cetatean&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;] == \&quot;-1\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;1231321312312321300&quot;,&quot;name&quot;:&quot;codidentificare&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2689,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;ExecuteJavascript&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;ScriptName&quot;:&quot;createFilter&quot;,&quot;Code&quot;:&quot;function generateFilterQuery(events, institutii = &#39;&#39;) {\n  const defaultIds = [&#39;9316000&#39;, &#39;9316001&#39;, &#39;9316002&#39;, &#39;9316003&#39;];\n\n  // Helper function to process semicolon-separated lists into query clauses\n  const buildClause = (input, prefix, isQuoted = false) =&amp;gt; {\n    if (!input || !input.trim()) return &#39;&#39;;\n\n    // Split input or use default IDs if wildcard\n    const items = input === &#39;*&#39; \n      ? defaultIds \n      : input.split(&#39;;&#39;).map(item =&amp;gt; item.trim()).filter(Boolean);\n\n    if (items.length === 0) return &#39;&#39;;\n\n    // Format items with prefix (and escaped quotes if specified)\n    const formatted = items.map(item =&amp;gt; \n      isQuoted ? `${prefix}\\\\\&quot;${item}\\\\\&quot;` : `${prefix}${item}`\n    );\n\n    // Return single item directly, or multiple items wrapped in OR + parentheses\n    return formatted.length === 1 ? formatted[0] : `(${formatted.join(&#39; OR &#39;)})`;\n  };\n\n  const eventsClause = buildClause(events, &#39;EventID:&#39;);\n  const institutiiClause = buildClause(institutii, &#39;S13:&#39;, true);\n\n  // Combine with AND if both clauses exist, otherwise return whichever is available\n  if (eventsClause &amp;amp;&amp;amp; institutiiClause) {\n    return `${eventsClause} AND ${institutiiClause}`;\n  }\n\n  return eventsClause || institutiiClause;\n}\n\nreturn generateFilterQuery(evenimente, inst);&quot;,&quot;OnError&quot;:[],&quot;LocalVariables&quot;:[{&quot;Type&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;string&quot;},&quot;Name&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;evenimente&quot;},&quot;Value&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[QueryString:tipuriactiuni=\&quot;*\&quot;]&quot;}},{&quot;Type&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;string&quot;},&quot;Name&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;inst&quot;},&quot;Value&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[QueryString:institutii=\&quot;\&quot;]&quot;}}],&quot;OutputTokenName&quot;:&quot;Filter&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2690,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;PlantAnApp.ExecuteWorkflow.66c3c872ef4e4eb6a54e19e96cb5379e&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;InputHelpText&quot;:null,&quot;EventId&quot;:&quot;*&quot;,&quot;codIdentificare&quot;:&quot;[codidentificare=[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;]]&quot;,&quot;dataStart&quot;:&quot;[QueryString:datastart=[DateTime:Relative(add=\&quot;-30 days\&quot;,RelativeTo=\&quot;[DateTime:Now]\&quot;)|yyyy-MM-dd HH:mm:ss]]&quot;,&quot;dataEnd&quot;:&quot;[QueryString:datasfarsit=[DateTime:Now|yyyy-MM-dd HH:mm:ss]]&quot;,&quot;OnError&quot;:[],&quot;ContinueOnError&quot;:false,&quot;OutputHelpText&quot;:null,&quot;RawResult&quot;:null,&quot;DataArray&quot;:&quot;dataArr&quot;,&quot;EventsNumber&quot;:&quot;eventsNumber&quot;,&quot;Filter&quot;:&quot;[Filter]&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2701,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:3,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;UseTransactions&quot;:true,&quot;SqlQuery&quot;:&quot;SELECT \n    (\n        SELECT \n            [IsEmailNotified] AS StatusNotificareEmail,\n            [IsInAppNotified] AS StatusNotificareApp,\n            [LogId] \n        FROM [app].[Notificare] N\n      \tINNER JOIN app.Cetatean C ON N.Cetatean = C.Id\n        WHERE C.UserId = @usrId\n        FOR JSON PATH\n    ) AS JsonOutput;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[User:UserId]&quot;,&quot;name&quot;:&quot;usrId&quot;}],&quot;OutputTokenName&quot;:&quot;NotificariJSON&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2691,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;LogEvent&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:4,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;EventType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;ADMIN_ALERT&quot;},&quot;UserID&quot;:null,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[Filter]&quot;,&quot;name&quot;:&quot;Filter&quot;},{&quot;value&quot;:&quot;[eventsNumber]&quot;,&quot;name&quot;:&quot;eventsNumber&quot;},{&quot;value&quot;:&quot;[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;]&quot;,&quot;name&quot;:&quot;codident&quot;}]},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
+      &lt;ActionData&gt;{&quot;ActionList&quot;:[{&quot;Id&quot;:2688,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;simulam razvan cetatean&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;ApplyTokens&quot;,&quot;Condition&quot;:&quot;[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;] == \&quot;-1\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:0,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;Tokens&quot;:[{&quot;value&quot;:&quot;1231321312312321300&quot;,&quot;name&quot;:&quot;codidentificare&quot;}],&quot;TokenizeTokenNames&quot;:false,&quot;RecursionCount&quot;:&quot;1&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2689,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;ExecuteJavascript&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:1,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;ScriptName&quot;:&quot;createFilter&quot;,&quot;Code&quot;:&quot;function generateFilterQuery(events, institutii = &#39;&#39;) {\n  const defaultIds = [&#39;9316000&#39;, &#39;9316001&#39;, &#39;9316002&#39;, &#39;9316003&#39;];\n\n  // Helper function to process semicolon-separated lists into query clauses\n  const buildClause = (input, prefix, isQuoted = false) =&amp;gt; {\n    if (!input || !input.trim()) return &#39;&#39;;\n\n    // Split input or use default IDs if wildcard\n    const items = input === &#39;*&#39; \n      ? defaultIds \n      : input.split(&#39;;&#39;).map(item =&amp;gt; item.trim()).filter(Boolean);\n\n    if (items.length === 0) return &#39;&#39;;\n\n    // Format items with prefix (and escaped quotes if specified)\n    const formatted = items.map(item =&amp;gt; \n      isQuoted ? `${prefix}\\\\\&quot;${item}\\\\\&quot;` : `${prefix}${item}`\n    );\n\n    // Return single item directly, or multiple items wrapped in OR + parentheses\n    return formatted.length === 1 ? formatted[0] : `(${formatted.join(&#39; OR &#39;)})`;\n  };\n\n  const eventsClause = buildClause(events, &#39;EventID:&#39;);\n  const institutiiClause = buildClause(institutii, &#39;S13:&#39;, true);\n\n  // Combine with AND if both clauses exist, otherwise return whichever is available\n  if (eventsClause &amp;amp;&amp;amp; institutiiClause) {\n    return `${eventsClause} AND ${institutiiClause}`;\n  }\n\n  return eventsClause || institutiiClause;\n}\n\nreturn generateFilterQuery(evenimente, inst);&quot;,&quot;OnError&quot;:[],&quot;LocalVariables&quot;:[{&quot;Type&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;string&quot;},&quot;Name&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;evenimente&quot;},&quot;Value&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[QueryString:tipuriactiuni=\&quot;*\&quot;]&quot;}},{&quot;Type&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;string&quot;},&quot;Name&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;inst&quot;},&quot;Value&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;[QueryString:institutii=\&quot;\&quot;]&quot;}}],&quot;OutputTokenName&quot;:&quot;Filter&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2710,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:&quot;folosit doar pentru ultimul grafic, la drilldown din luna in zile&quot;,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;PlantAnApp.ExecuteWorkflow.66c3c872ef4e4eb6a54e19e96cb5379e&quot;,&quot;Condition&quot;:&quot;[QueryString:graf10Agregare] == \&quot;zile\&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:2,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;InputHelpText&quot;:null,&quot;EventId&quot;:&quot;*&quot;,&quot;codIdentificare&quot;:&quot;[codidentificare=[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;]]&quot;,&quot;dataStart&quot;:&quot;[Get:graf10Start=[QueryString:datastart=[DateTime:Relative(add=\&quot;-30 days\&quot;,RelativeTo=\&quot;[DateTime:Now]\&quot;)|yyyy-MM-dd HH:mm:ss]]]&quot;,&quot;dataEnd&quot;:&quot;[Get:graf10End=[QueryString:datasfarsit=[DateTime:Now|yyyy-MM-dd HH:mm:ss]]]&quot;,&quot;OnError&quot;:[],&quot;ContinueOnError&quot;:false,&quot;OutputHelpText&quot;:null,&quot;RawResult&quot;:null,&quot;DataArray&quot;:&quot;graf10dataArr&quot;,&quot;EventsNumber&quot;:&quot;eventsNumber&quot;,&quot;Filter&quot;:&quot;[Filter]&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2690,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;PlantAnApp.ExecuteWorkflow.66c3c872ef4e4eb6a54e19e96cb5379e&quot;,&quot;Condition&quot;:&quot;&quot;,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:3,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;InputHelpText&quot;:null,&quot;EventId&quot;:&quot;*&quot;,&quot;codIdentificare&quot;:&quot;[codidentificare=[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;]]&quot;,&quot;dataStart&quot;:&quot;[QueryString:datastart=[DateTime:Relative(add=\&quot;-30 days\&quot;,RelativeTo=\&quot;[DateTime:Now]\&quot;)|yyyy-MM-dd HH:mm:ss]]&quot;,&quot;dataEnd&quot;:&quot;[QueryString:datasfarsit=[DateTime:Now|yyyy-MM-dd HH:mm:ss]]&quot;,&quot;OnError&quot;:[],&quot;ContinueOnError&quot;:false,&quot;OutputHelpText&quot;:null,&quot;RawResult&quot;:null,&quot;DataArray&quot;:&quot;dataArr&quot;,&quot;EventsNumber&quot;:&quot;eventsNumber&quot;,&quot;Filter&quot;:&quot;[Filter]&quot;},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2701,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;RunSql&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:4,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;DbConnector&quot;:{&quot;Type&quot;:&quot;Database&quot;,&quot;Group&quot;:&quot;&quot;,&quot;EntireGroup&quot;:false},&quot;ConnectionString&quot;:null,&quot;QueryTimeout&quot;:null,&quot;UseTransactions&quot;:true,&quot;SqlQuery&quot;:&quot;SELECT \n    (\n        SELECT \n            [IsEmailNotified] AS StatusNotificareEmail,\n            [IsInAppNotified] AS StatusNotificareApp,\n            [LogId] \n        FROM [app].[Notificare] N\n      \tINNER JOIN app.Cetatean C ON N.Cetatean = C.Id\n        WHERE C.UserId = @usrId\n        FOR JSON PATH\n    ) AS JsonOutput;&quot;,&quot;BindTokens&quot;:[{&quot;value&quot;:&quot;[User:UserId]&quot;,&quot;name&quot;:&quot;usrId&quot;}],&quot;OutputTokenName&quot;:&quot;NotificariJSON&quot;,&quot;ExtractColumns&quot;:null,&quot;OnError&quot;:[],&quot;ShowErrors&quot;:false},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true},{&quot;Id&quot;:2691,&quot;GlobalId&quot;:&quot;00000000-0000-0000-0000-000000000000&quot;,&quot;Description&quot;:null,&quot;ActionErrorMessage&quot;:null,&quot;ActionStackId&quot;:3742,&quot;ActionType&quot;:&quot;LogEvent&quot;,&quot;Condition&quot;:null,&quot;IsDeleted&quot;:false,&quot;IsDisabled&quot;:false,&quot;OrderIndex&quot;:5,&quot;DiagramUID&quot;:null,&quot;ActionParameters&quot;:null,&quot;Parameters&quot;:{&quot;EventType&quot;:{&quot;IsExpression&quot;:false,&quot;Expression&quot;:&quot;&quot;,&quot;Value&quot;:&quot;ADMIN_ALERT&quot;},&quot;UserID&quot;:null,&quot;LogProperties&quot;:[{&quot;value&quot;:&quot;[Filter]&quot;,&quot;name&quot;:&quot;Filter&quot;},{&quot;value&quot;:&quot;[eventsNumber]&quot;,&quot;name&quot;:&quot;eventsNumber&quot;},{&quot;value&quot;:&quot;[Cetatean:GetCetateanData.CNP(UserId=\&quot;[User:UserId]\&quot;)=\&quot;1231321312312321300\&quot;]&quot;,&quot;name&quot;:&quot;codident&quot;}]},&quot;Metadata&quot;:{},&quot;HasActionParameters&quot;:true}],&quot;OnError&quot;:[]}&lt;/ActionData&gt;
       &lt;IsDeleted&gt;false&lt;/IsDeleted&gt;
     &lt;/ActionInfo&gt;
   &lt;/Actions&gt;
